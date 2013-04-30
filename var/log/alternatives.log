@@ -1,0 +1,36 @@
+2013-04-27 22:43:16 update-alternatives: run with --quiet --install /usr/bin/awk awk /usr/bin/mawk 5 --slave /usr/share/man/man1/awk.1.gz awk.1.gz /usr/share/man/man1/mawk.1.gz --slave /usr/bin/nawk nawk /usr/bin/mawk --slave /usr/share/man/man1/nawk.1.gz nawk.1.gz /usr/share/man/man1/mawk.1.gz
+2013-04-27 22:43:16 update-alternatives: link group awk updated to point to /usr/bin/mawk
+2013-04-27 22:43:57 update-alternatives: run with --install /usr/sbin/rmt rmt /usr/sbin/rmt-tar 50 --slave /usr/share/man/man8/rmt.8.gz rmt.8.gz /usr/share/man/man8/rmt-tar.8.gz
+2013-04-27 22:43:57 update-alternatives: link group rmt updated to point to /usr/sbin/rmt-tar
+2013-04-27 22:43:58 update-alternatives: run with --quiet --install /usr/bin/awk awk /usr/bin/mawk 5 --slave /usr/share/man/man1/awk.1.gz awk.1.gz /usr/share/man/man1/mawk.1.gz --slave /usr/bin/nawk nawk /usr/bin/mawk --slave /usr/share/man/man1/nawk.1.gz nawk.1.gz /usr/share/man/man1/mawk.1.gz
+2013-04-27 22:44:04 update-alternatives: run with --install /usr/share/man/man7/builtins.7.gz builtins.7.gz /usr/share/man/man7/bash-builtins.7.gz 10
+2013-04-27 22:44:04 update-alternatives: link group builtins.7.gz updated to point to /usr/share/man/man7/bash-builtins.7.gz
+2013-04-27 22:44:13 update-alternatives: run with --install /usr/bin/pager pager /bin/more 50 --slave /usr/share/man/man1/pager.1.gz pager.1.gz /usr/share/man/man1/more.1.gz
+2013-04-27 22:44:13 update-alternatives: link group pager updated to point to /bin/more
+2013-04-27 22:44:13 update-alternatives: run with --install /usr/bin/pager pager /usr/bin/pg 10 --slave /usr/share/man/man1/pager.1.gz pager.1.gz /usr/share/man/man1/pg.1.gz
+2013-04-27 23:17:50 update-alternatives: run with --install /usr/bin/editor editor /bin/nano 40 --slave /usr/share/man/man1/editor.1.gz editor.1.gz /usr/share/man/man1/nano.1.gz
+2013-04-27 23:17:50 update-alternatives: link group editor updated to point to /bin/nano
+2013-04-27 23:17:50 update-alternatives: run with --install /usr/bin/pico pico /bin/nano 10 --slave /usr/share/man/man1/pico.1.gz pico.1.gz /usr/share/man/man1/nano.1.gz
+2013-04-27 23:17:50 update-alternatives: link group pico updated to point to /bin/nano
+2013-04-27 23:28:17 update-alternatives: run with --install /bin/mt mt /bin/mt-gnu 10 --slave /usr/share/man/man1/mt.1.gz mt.1.gz /usr/share/man/man1/mt-gnu.1.gz
+2013-04-27 23:28:17 update-alternatives: link group mt updated to point to /bin/mt-gnu
+2013-04-29 21:30:35 update-alternatives: run with --install /usr/bin/w w /usr/bin/w.procps 50 --slave /usr/share/man/man1/w.1.gz w.1.gz /usr/share/man/man1/w.procps.1.gz
+2013-04-29 21:30:35 update-alternatives: link group w updated to point to /usr/bin/w.procps
+2013-04-29 21:32:31 update-alternatives: run with --remove w /usr/bin/w.procps
+2013-04-29 21:32:31 update-alternatives: link group w fully removed
+2013-04-30 02:32:46 update-alternatives: run with --install /usr/bin/view view /usr/bin/see 1 --slave /usr/share/man/man1/view.1.gz view.1.gz /usr/share/man/man1/see.1.gz
+2013-04-30 02:32:46 update-alternatives: link group view updated to point to /usr/bin/see
+2013-04-30 02:32:47 update-alternatives: run with --install /usr/bin/php-cgi php-cgi /usr/bin/php5-cgi 50 --slave /usr/share/man/man1/php-cgi.1.gz php-cgi.1.gz /usr/share/man/man1/php5-cgi.1.gz
+2013-04-30 02:32:47 update-alternatives: link group php-cgi updated to point to /usr/bin/php5-cgi
+2013-04-30 02:32:47 update-alternatives: run with --install /usr/lib/cgi-bin/php php-cgi-bin /usr/lib/cgi-bin/php5 50
+2013-04-30 02:32:47 update-alternatives: link group php-cgi-bin updated to point to /usr/lib/cgi-bin/php5
+2013-04-30 02:33:49 update-alternatives: run with --install /usr/bin/w w /usr/bin/w.procps 50 --slave /usr/share/man/man1/w.1.gz w.1.gz /usr/share/man/man1/w.procps.1.gz
+2013-04-30 02:33:49 update-alternatives: link group w updated to point to /usr/bin/w.procps
+2013-04-30 02:35:23 update-alternatives: run with --remove w /usr/bin/w.procps
+2013-04-30 02:35:23 update-alternatives: link group w fully removed
+2013-04-30 15:40:21 update-alternatives: run with --remove php-cgi /usr/bin/php5-cgi
+2013-04-30 15:40:21 update-alternatives: link group php-cgi fully removed
+2013-04-30 15:40:21 update-alternatives: run with --remove php-cgi-bin /usr/lib/cgi-bin/php5
+2013-04-30 15:40:21 update-alternatives: link group php-cgi-bin fully removed
+2013-04-30 15:40:34 update-alternatives: run with --remove view /usr/bin/see
+2013-04-30 15:40:34 update-alternatives: link group view fully removed

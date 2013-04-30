@@ -1,0 +1,33 @@
+kernel/fs/mbcache.ko:
+kernel/fs/ext3/ext3.ko: kernel/fs/jbd/jbd.ko kernel/fs/mbcache.ko
+kernel/fs/ext4/ext4.ko: kernel/fs/mbcache.ko kernel/fs/jbd2/jbd2.ko kernel/lib/crc16.ko
+kernel/fs/jbd/jbd.ko:
+kernel/fs/jbd2/jbd2.ko:
+kernel/fs/squashfs/squashfs.ko:
+kernel/fs/aufs/aufs.ko:
+kernel/drivers/scsi/scsi_wait_scan.ko:
+kernel/drivers/hid/hid-logitech-dj.ko:
+kernel/net/sched/sch_htb.ko:
+kernel/net/sched/sch_hfsc.ko:
+kernel/net/sched/sch_sfq.ko:
+kernel/net/netfilter/nfnetlink_queue.ko:
+kernel/net/netfilter/xt_mark.ko:
+kernel/net/netfilter/xt_connmark.ko:
+kernel/net/netfilter/xt_AUDIT.ko:
+kernel/net/netfilter/xt_CLASSIFY.ko:
+kernel/net/netfilter/xt_NFQUEUE.ko:
+kernel/net/netfilter/xt_RATEEST.ko:
+kernel/net/netfilter/xt_TEE.ko:
+kernel/net/netfilter/xt_addrtype.ko:
+kernel/net/netfilter/xt_connbytes.ko:
+kernel/net/netfilter/xt_connlimit.ko:
+kernel/net/netfilter/xt_iprange.ko:
+kernel/net/netfilter/xt_mac.ko:
+kernel/net/netfilter/xt_multiport.ko:
+kernel/net/netfilter/xt_quota.ko:
+kernel/net/netfilter/xt_string.ko:
+kernel/net/netfilter/xt_u32.ko:
+kernel/lib/crc16.ko:
+kernel/lib/ts_kmp.ko:
+kernel/lib/ts_bm.ko:
+kernel/lib/ts_fsm.ko:

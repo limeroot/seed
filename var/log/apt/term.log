@@ -1,0 +1,332 @@
+
+Log started: 2013-04-30  02:19:45
+Selecting previously deselected package extlinux.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 7089 files and directories currently installed.)
+Unpacking extlinux (from .../extlinux_2%3a4.05+dfsg-2~bpo60+1_i386.deb) ...
+Setting up extlinux (2:4.05+dfsg-2~bpo60+1) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 75.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (Can't locate Term/ReadLine.pm in @INC (@INC contains: /etc/perl /usr/local/lib/perl/5.10.1 /usr/local/share/perl/5.10.1 /usr/lib/perl5 /usr/share/perl5 /usr/lib/perl/5.10 /usr/share/perl/5.10 /usr/local/lib/site_perl .) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 7.)
+debconf: falling back to frontend: Teletype
+P: Checking for EXTLINUX directory... not found.
+P: Creating EXTLINUX directory... done: /boot/extlinux
+P: Writing config for /boot/vmlinuz-3.2.41-rt60-limeroot...
+P: Updating /boot/extlinux/linux.cfg...
+P: Updating /boot/extlinux/memdisk.cfg...
+P: Updating /boot/extlinux/extlinux.conf...
+Log ended: 2013-04-30  02:19:47
+
+Log started: 2013-04-30  02:32:36
+Selecting previously deselected package libkeyutils1.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 7107 files and directories currently installed.)
+Unpacking libkeyutils1 (from .../libkeyutils1_1.5.2-2~bpo60+1_i386.deb) ...
+Selecting previously deselected package libkrb5support0.
+Unpacking libkrb5support0 (from .../libkrb5support0_1.8.3+dfsg-4squeeze6_i386.deb) ...
+Selecting previously deselected package libk5crypto3.
+Unpacking libk5crypto3 (from .../libk5crypto3_1.8.3+dfsg-4squeeze6_i386.deb) ...
+Selecting previously deselected package libkrb5-3.
+Unpacking libkrb5-3 (from .../libkrb5-3_1.8.3+dfsg-4squeeze6_i386.deb) ...
+Selecting previously deselected package libgssapi-krb5-2.
+Unpacking libgssapi-krb5-2 (from .../libgssapi-krb5-2_1.8.3+dfsg-4squeeze6_i386.deb) ...
+Selecting previously deselected package libpcre3.
+Unpacking libpcre3 (from .../libpcre3_8.02-1.1_i386.deb) ...
+Selecting previously deselected package libxml2.
+Unpacking libxml2 (from .../libxml2_2.7.8.dfsg-2+squeeze6_i386.deb) ...
+Selecting previously deselected package mime-support.
+Unpacking mime-support (from .../mime-support_3.48-1_all.deb) ...
+Selecting previously deselected package ucf.
+Unpacking ucf (from .../ucf_3.0025+nmu1_all.deb) ...
+Moving old data out of the way
+Selecting previously deselected package libonig2.
+Unpacking libonig2 (from .../libonig2_5.9.1-1_i386.deb) ...
+Selecting previously deselected package libqdbm14.
+Unpacking libqdbm14 (from .../libqdbm14_1.8.77-4_i386.deb) ...
+Selecting previously deselected package php5-common.
+Unpacking php5-common (from .../php5-common_5.3.3-7+squeeze14_i386.deb) ...
+Selecting previously deselected package php5-cgi.
+Unpacking php5-cgi (from .../php5-cgi_5.3.3-7+squeeze14_i386.deb) ...
+Setting up libkeyutils1 (1.5.2-2~bpo60+1) ...
+Setting up libkrb5support0 (1.8.3+dfsg-4squeeze6) ...
+Setting up libk5crypto3 (1.8.3+dfsg-4squeeze6) ...
+Setting up libkrb5-3 (1.8.3+dfsg-4squeeze6) ...
+Setting up libgssapi-krb5-2 (1.8.3+dfsg-4squeeze6) ...
+Setting up libpcre3 (8.02-1.1) ...
+Setting up libxml2 (2.7.8.dfsg-2+squeeze6) ...
+Setting up mime-support (3.48-1) ...
+update-alternatives: using /usr/bin/see to provide /usr/bin/view (view) in auto mode.
+Setting up ucf (3.0025+nmu1) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 75.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (Can't locate Term/ReadLine.pm in @INC (@INC contains: /etc/perl /usr/local/lib/perl/5.10.1 /usr/local/share/perl/5.10.1 /usr/lib/perl5 /usr/share/perl5 /usr/lib/perl/5.10 /usr/share/perl/5.10 /usr/local/lib/site_perl .) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 7.)
+debconf: falling back to frontend: Teletype
+Setting up libonig2 (5.9.1-1) ...
+Setting up libqdbm14 (1.8.77-4) ...
+Setting up php5-common (5.3.3-7+squeeze14) ...
+Setting up php5-cgi (5.3.3-7+squeeze14) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 75.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (Can't locate Term/ReadLine.pm in @INC (@INC contains: /etc/perl /usr/local/lib/perl/5.10.1 /usr/local/share/perl/5.10.1 /usr/lib/perl5 /usr/share/perl5 /usr/lib/perl/5.10 /usr/share/perl/5.10 /usr/local/lib/site_perl .) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 7.)
+debconf: falling back to frontend: Teletype
+
+Creating config file /etc/php5/cgi/php.ini with new version
+update-alternatives: using /usr/bin/php5-cgi to provide /usr/bin/php-cgi (php-cgi) in auto mode.
+update-alternatives: using /usr/lib/cgi-bin/php5 to provide /usr/lib/cgi-bin/php (php-cgi-bin) in auto mode.
+Log ended: 2013-04-30  02:32:48
+
+Log started: 2013-04-30  02:33:46
+Selecting previously deselected package procps.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 7272 files and directories currently installed.)
+Unpacking procps (from .../procps_1%3a3.2.8-9squeeze1_i386.deb) ...
+Selecting previously deselected package locales.
+Unpacking locales (from .../locales_2.11.3-4_all.deb) ...
+Selecting previously deselected package localepurge.
+Unpacking localepurge (from .../localepurge_0.6.2+nmu1_all.deb) ...
+Setting up procps (1:3.2.8-9squeeze1) ...
+update-alternatives: using /usr/bin/w.procps to provide /usr/bin/w (w) in auto mode.
+Setting kernel variables ...done.
+Setting up locales (2.11.3-4) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 75.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (Can't locate Term/ReadLine.pm in @INC (@INC contains: /etc/perl /usr/local/lib/perl/5.10.1 /usr/local/share/perl/5.10.1 /usr/lib/perl5 /usr/share/perl5 /usr/lib/perl/5.10 /usr/share/perl/5.10 /usr/local/lib/site_perl .) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 7.)
+debconf: falling back to frontend: Teletype
+Generating locales (this might take a while)...
+Generation complete.
+Setting up localepurge (0.6.2+nmu1) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 75.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (Can't locate Term/ReadLine.pm in @INC (@INC contains: /etc/perl /usr/local/lib/perl/5.10.1 /usr/local/share/perl/5.10.1 /usr/lib/perl5 /usr/share/perl5 /usr/lib/perl/5.10 /usr/share/perl/5.10 /usr/local/lib/site_perl .) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 7.)
+debconf: falling back to frontend: Teletype
+Configuring localepurge
+-----------------------
+
+localepurge will remove all locale files from your system but the ones for the language codes you select now. Usually two character locales like "de" or "pt" rather 
+than "de_DE" or "pt_BR" contain the major portion of localizations. So please select both for best support of your national language settings.  The entries from 
+/etc/locale.gen will be preselected if no prior configuration has been successfully completed.
+
+  1. aa             83. ca                    165. en_ZW              247. fur              329. kl_GL.UTF-8       411. nso_ZA            493. sv_FI@euro
+  2. aa_DJ          84. ca_AD                 166. en_ZW.UTF-8        248. fur_IT           330. km                412. oc                494. sv_SE
+  3. aa_DJ.UTF-8    85. ca_AD.UTF-8           167. eo                 249. fy               331. km_KH             413. oc_FR             495. sv_SE.ISO-8859-15
+  4. aa_ER          86. ca_ES                 168. eo.UTF-8           250. fy_DE            332. kn                414. oc_FR.UTF-8       496. sv_SE.UTF-8
+  5. aa_ER@saaho    87. ca_ES.UTF-8           169. es                 251. fy_NL            333. kn_IN             415. om                497. ta
+  6. aa_ET          88. ca_ES.UTF-8@valencia  170. es_AR              252. ga               334. ko                416. om_ET             498. ta_IN
+  7. af             89. ca_ES@euro            171. es_AR.UTF-8        253. ga_IE            335. ko_KR.EUC-KR      417. om_KE             499. te
+  8. af_ZA          90. ca_ES@valencia        172. es_BO              254. ga_IE.UTF-8      336. ko_KR.UTF-8       418. om_KE.UTF-8       500. te_IN
+  9. af_ZA.UTF-8    91. ca_FR                 173. es_BO.UTF-8        255. ga_IE@euro       337. ks                419. or                501. tg
+  10. am            92. ca_FR.UTF-8           174. es_CL              256. gd               338. ks_IN             420. or_IN             502. tg_TJ
+  11. am_ET         93. ca_IT                 175. es_CL.UTF-8        257. gd_GB            339. ks_IN@devanagari  421. pa                503. tg_TJ.UTF-8
+  12. an            94. ca_IT.UTF-8           176. es_CO              258. gd_GB.UTF-8      340. ku                422. pa_IN             504. th
+  13. an_ES         95. crh                   177. es_CO.UTF-8        259. gez              341. ku_TR             423. pa_PK             505. th_TH
+  14. an_ES.UTF-8   96. crh_UA                178. es_CR              260. gez_ER           342. ku_TR.UTF-8       424. pap               506. th_TH.UTF-8
+  15. ar            97. cs                    179. es_CR.UTF-8        261. gez_ER@abegede   343. kw                425. pap_AN            507. ti
+  16. ar_AE         98. cs_CZ                 180. es_DO              262. gez_ET           344. kw_GB             426. pl                508. ti_ER
+  17. ar_AE.UTF-8   99. cs_CZ.UTF-8           181. es_DO.UTF-8        263. gez_ET@abegede   345. kw_GB.UTF-8       427. pl_PL             509. ti_ET
+  18. ar_BH         100. csb                  182. es_EC              264. gl               346. ky                428. pl_PL.UTF-8       510. tig
+  19. ar_BH.UTF-8   101. csb_PL               183. es_EC.UTF-8        265. gl_ES            347. ky_KG             429. ps                511. tig_ER
+  20. ar_DZ         102. cy                   184. es_ES              266. gl_ES.UTF-8      348. lg                430. ps_AF             512. tk
+  21. ar_DZ.UTF-8   103. cy_GB                185. es_ES.UTF-8        267. gl_ES@euro       349. lg_UG             431. pt                513. tk_TM
+  22. ar_EG         104. cy_GB.UTF-8          186. es_ES@euro         268. gu               350. lg_UG.UTF-8       432. pt_BR             514. tl
+  23. ar_EG.UTF-8   105. da                   187. es_GT              269. gu_IN            351. li                433. pt_BR.UTF-8       515. tl_PH
+  24. ar_IN         106. da_DK                188. es_GT.UTF-8        270. gv               352. li_BE             434. pt_PT             516. tl_PH.UTF-8
+  25. ar_IQ         107. da_DK.UTF-8          189. es_HN              271. gv_GB            353. li_NL             435. pt_PT.UTF-8       517. tn
+  26. ar_IQ.UTF-8   108. de                   190. es_HN.UTF-8        272. gv_GB.UTF-8      354. lo                436. pt_PT@euro        518. tn_ZA
+  27. ar_JO         109. de_AT                191. es_MX              273. ha               355. lo_LA             437. ro                519. tr
+  28. ar_JO.UTF-8   110. de_AT.UTF-8          192. es_MX.UTF-8        274. ha_NG            356. lt                438. ro_RO             520. tr_CY
+  29. ar_KW         111. de_AT@euro           193. es_NI              275. he               357. lt_LT             439. ro_RO.UTF-8       521. tr_CY.UTF-8
+  30. ar_KW.UTF-8   112. de_BE                194. es_NI.UTF-8        276. he_IL            358. lt_LT.UTF-8       440. ru                522. tr_TR
+  31. ar_LB         113. de_BE.UTF-8          195. es_PA              277. he_IL.UTF-8      359. lv                441. ru_RU             523. tr_TR.UTF-8
+[More] 
+
+  32. ar_LB.UTF-8   114. de_BE@euro           196. es_PA.UTF-8        278. hi               360. lv_LV             442. ru_RU.CP1251      524. ts
+  33. ar_LY         115. de_CH                197. es_PE              279. hi_IN            361. lv_LV.UTF-8       443. ru_RU.KOI8-R      525. ts_ZA
+  34. ar_LY.UTF-8   116. de_CH.UTF-8          198. es_PE.UTF-8        280. hne              362. mai               444. ru_RU.UTF-8       526. tt
+  35. ar_MA         117. de_DE                199. es_PR              281. hne_IN           363. mai_IN            445. ru_UA             527. tt_RU.UTF-8
+  36. ar_MA.UTF-8   118. de_DE.UTF-8          200. es_PR.UTF-8        282. hr               364. mg                446. ru_UA.UTF-8       528. tt_RU@iqtelif.UTF-8
+  37. ar_OM         119. de_DE@euro           201. es_PY              283. hr_HR            365. mg_MG             447. rw                529. ug
+  38. ar_OM.UTF-8   120. de_LI.UTF-8          202. es_PY.UTF-8        284. hr_HR.UTF-8      366. mg_MG.UTF-8       448. rw_RW             530. ug_CN
+  39. ar_QA         121. de_LU                203. es_SV              285. hsb              367. mi                449. sa                531. uk
+  40. ar_QA.UTF-8   122. de_LU.UTF-8          204. es_SV.UTF-8        286. hsb_DE           368. mi_NZ             450. sa_IN             532. uk_UA
+  41. ar_SA         123. de_LU@euro           205. es_US              287. hsb_DE.UTF-8     369. mi_NZ.UTF-8       451. sc                533. uk_UA.UTF-8
+  42. ar_SA.UTF-8   124. dv                   206. es_US.UTF-8        288. ht               370. mk                452. sc_IT             534. ur
+  43. ar_SD         125. dv_MV                207. es_UY              289. ht_HT            371. mk_MK             453. sd                535. ur_PK
+  44. ar_SD.UTF-8   126. dz                   208. es_UY.UTF-8        290. hu               372. mk_MK.UTF-8       454. sd_IN             536. uz
+  45. ar_SY         127. dz_BT                209. es_VE              291. hu_HU            373. ml                455. sd_IN@devanagari  537. uz_UZ
+  46. ar_SY.UTF-8   128. el                   210. es_VE.UTF-8        292. hu_HU.UTF-8      374. ml_IN             456. se                538. uz_UZ.UTF-8
+  47. ar_TN         129. el_CY                211. et                 293. hy               375. mn                457. se_NO             539. uz_UZ@cyrillic
+  48. ar_TN.UTF-8   130. el_CY.UTF-8          212. et_EE              294. hy_AM            376. mn_MN             458. shs               540. ve
+  49. ar_YE         131. el_GR                213. et_EE.ISO-8859-15  295. hy_AM.ARMSCII-8  377. mr                459. shs_CA            541. ve_ZA
+  50. ar_YE.UTF-8   132. el_GR.UTF-8          214. et_EE.UTF-8        296. ia               378. mr_IN             460. si                542. vi
+  51. as            133. en                   215. eu                 297. id               379. ms                461. si_LK             543. vi_VN
+  52. as_IN.UTF-8   134. en_AG                216. eu_ES              298. id_ID            380. ms_MY             462. sid               544. vi_VN.TCVN
+  53. ast           135. en_AU                217. eu_ES.UTF-8        299. id_ID.UTF-8      381. ms_MY.UTF-8       463. sid_ET            545. wa
+  54. ast_ES        136. en_AU.UTF-8          218. eu_ES@euro         300. ig               382. mt                464. sk                546. wa_BE
+  55. ast_ES.UTF-8  137. en_BW                219. eu_FR              301. ig_NG            383. mt_MT             465. sk_SK             547. wa_BE.UTF-8
+  56. az            138. en_BW.UTF-8          220. eu_FR.UTF-8        302. ik               384. mt_MT.UTF-8       466. sk_SK.UTF-8       548. wa_BE@euro
+  57. az_AZ.UTF-8   139. en_CA                221. eu_FR@euro         303. ik_CA            385. my                467. sl                549. wo
+  58. be            140. en_CA.UTF-8          222. fa                 304. is               386. my_MM             468. sl_SI             550. wo_SN
+  59. be_BY         141. en_DK                223. fa_IR              305. is_IS            387. nan               469. sl_SI.UTF-8       551. xh
+  60. be_BY.UTF-8   142. en_DK.ISO-8859-15    224. fi                 306. is_IS.UTF-8      388. nan_TW@latin      470. so                552. xh_ZA
+  61. be_BY@latin   143. en_DK.UTF-8          225. fi_FI              307. it               389. nb                471. so_DJ             553. xh_ZA.UTF-8
+  62. ber           144. en_GB                226. fi_FI.UTF-8        308. it_CH            390. nb_NO             472. so_DJ.UTF-8       554. yi
+  63. ber_DZ        145. en_GB.ISO-8859-15    227. fi_FI@euro         309. it_CH.UTF-8      391. nb_NO.UTF-8       473. so_ET             555. yi_US
+  64. ber_MA        146. en_GB.UTF-8          228. fil                310. it_IT            392. nds               474. so_KE             556. yi_US.UTF-8
+  65. bg            147. en_HK                229. fil_PH             311. it_IT.UTF-8      393. nds_DE            475. so_KE.UTF-8       557. yo
+  66. bg_BG         148. en_HK.UTF-8          230. fo                 312. it_IT@euro       394. nds_NL            476. so_SO             558. yo_NG
+  67. bg_BG.UTF-8   149. en_IE                231. fo_FO              313. iu               395. ne                477. so_SO.UTF-8       559. zh
+  68. bn            150. en_IE.UTF-8          232. fo_FO.UTF-8        314. iu_CA            396. ne_NP             478. sq                560. zh_CN
+  69. bn_BD         151. en_IE@euro           233. fr                 315. iw               397. nl                479. sq_AL             561. zh_CN.GB18030
+[More] 
+
+  70. bn_IN         152. en_IN                234. fr_BE              316. iw_IL            398. nl_AW             480. sq_AL.UTF-8       562. zh_CN.GBK
+  71. bo            153. en_NG                235. fr_BE.UTF-8        317. iw_IL.UTF-8      399. nl_BE             481. sr                563. zh_CN.UTF-8
+  72. bo_CN         154. en_NZ                236. fr_BE@euro         318. ja               400. nl_BE.UTF-8       482. sr_ME             564. zh_HK
+  73. bo_IN         155. en_NZ.UTF-8          237. fr_CA              319. ja_JP.EUC-JP     401. nl_BE@euro        483. sr_RS             565. zh_HK.UTF-8
+  74. br            156. en_PH                238. fr_CA.UTF-8        320. ja_JP.UTF-8      402. nl_NL             484. sr_RS@latin       566. zh_SG
+  75. br_FR         157. en_PH.UTF-8          239. fr_CH              321. ka               403. nl_NL.UTF-8       485. ss                567. zh_SG.GBK
+  76. br_FR.UTF-8   158. en_SG                240. fr_CH.UTF-8        322. ka_GE            404. nl_NL@euro        486. ss_ZA             568. zh_SG.UTF-8
+  77. br_FR@euro    159. en_SG.UTF-8          241. fr_FR              323. ka_GE.UTF-8      405. nn                487. st                569. zh_TW
+  78. bs            160. en_US                242. fr_FR.UTF-8        324. kk               406. nn_NO             488. st_ZA             570. zh_TW.EUC-TW
+  79. bs_BA         161. en_US.ISO-8859-15    243. fr_FR@euro         325. kk_KZ            407. nn_NO.UTF-8       489. st_ZA.UTF-8       571. zh_TW.UTF-8
+  80. bs_BA.UTF-8   162. en_US.UTF-8          244. fr_LU              326. kk_KZ.UTF-8      408. nr                490. sv                572. zu
+  81. byn           163. en_ZA                245. fr_LU.UTF-8        327. kl               409. nr_ZA             491. sv_FI             573. zu_ZA
+  82. byn_ER        164. en_ZA.UTF-8          246. fr_LU@euro         328. kl_GL            410. nso               492. sv_FI.UTF-8       574. zu_ZA.UTF-8
+
+(Enter the items you want to select, separated by spaces.)
+
+Selecting locale files 162
+
+
+
+Creating config file /etc/locale.nopurge with new version
+Log ended: 2013-04-30  02:33:59
+
+Log started: 2013-04-30  02:34:27
+Selecting previously deselected package iproute.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 7912 files and directories currently installed.)
+Unpacking iproute (from .../iproute_20100519-3_i386.deb) ...
+Setting up iproute (20100519-3) ...
+Log ended: 2013-04-30  02:34:29
+
+Log started: 2013-04-30  02:34:46
+Selecting previously deselected package libnfnetlink0.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 7968 files and directories currently installed.)
+Unpacking libnfnetlink0 (from .../libnfnetlink0_1.0.0-1_i386.deb) ...
+Selecting previously deselected package iptables.
+Unpacking iptables (from .../iptables_1.4.8-3_i386.deb) ...
+Setting up libnfnetlink0 (1.0.0-1) ...
+Setting up iptables (1.4.8-3) ...
+Log ended: 2013-04-30  02:34:48
+
+Log started: 2013-04-30  02:35:12
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 8103 files and directories currently installed.)
+Removing localepurge ...
+Log ended: 2013-04-30  02:35:13
+
+Log started: 2013-04-30  02:35:23
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 8094 files and directories currently installed.)
+Removing locales ...
+Removing procps ...
+Log ended: 2013-04-30  02:35:24
+
+Log started: 2013-04-30  15:40:21
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 7463 files and directories currently installed.)
+Removing php5-cgi ...
+Log ended: 2013-04-30  15:40:22
+
+Log started: 2013-04-30  15:40:30
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 7456 files and directories currently installed.)
+Removing libgssapi-krb5-2 ...
+Removing libkrb5-3 ...
+Removing libk5crypto3 ...
+Removing libkrb5support0 ...
+Removing libkeyutils1 ...
+Removing libonig2 ...
+Removing libpcre3 ...
+Removing libqdbm14 ...
+Removing libxml2 ...
+Removing mime-support ...
+Removing php5-common ...
+Removing ucf ...
+Log ended: 2013-04-30  15:40:35
+
+Log started: 2013-04-30  16:15:22
+Selecting previously deselected package mdadm.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 7601 files and directories currently installed.)
+Unpacking mdadm (from .../mdadm_3.2.5-3~bpo60+1_i386.deb) ...
+Setting up mdadm (3.2.5-3~bpo60+1) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 75.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (Can't locate Term/ReadLine.pm in @INC (@INC contains: /etc/perl /usr/local/lib/perl/5.10.1 /usr/local/share/perl/5.10.1 /usr/lib/perl5 /usr/share/perl5 /usr/lib/perl/5.10 /usr/share/perl/5.10 /usr/local/lib/site_perl .) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 7.)
+debconf: falling back to frontend: Teletype
+Generating mdadm.conf... done.
+update-initramfs: deferring update (trigger activated)
+Assembling MD arrays...done (no arrays found in config file or automatically).
+Starting MD monitoring service: mdadm --monitor.
+Processing triggers for initramfs-tools ...
+update-initramfs: Generating /boot/initrd.img-3.2.41-rt60-limeroot
+W: mdadm: /etc/mdadm/mdadm.conf defines no arrays.
+W: mdadm: no arrays defined in configuration file.
+Log ended: 2013-04-30  16:15:31
+
+Log started: 2013-04-30  17:10:02
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 7660 files and directories currently installed.)
+Removing lighttpd ...
+dpkg: warning: while removing lighttpd, directory '/usr/local/share/man' not empty so not removed.
+dpkg: warning: while removing lighttpd, directory '/usr/local/share' not empty so not removed.
+Log ended: 2013-04-30  17:10:03
+
+Log started: 2013-04-30  17:24:27
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 7686 files and directories currently installed.)
+Removing lighttpd ...
+dpkg: warning: while removing lighttpd, directory '/usr/local/share/man' not empty so not removed.
+dpkg: warning: while removing lighttpd, directory '/usr/local/share' not empty so not removed.
+Log ended: 2013-04-30  17:24:29
+
+Log started: 2013-04-30  18:54:14
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 7686 files and directories currently installed.)
+Removing php ...
+Log ended: 2013-04-30  18:54:15
+
+Log started: 2013-04-30  18:59:05
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 7729 files and directories currently installed.)
+Removing php ...
+Log ended: 2013-04-30  18:59:06
+
+Log started: 2013-04-30  19:23:51
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 7458 files and directories currently installed.)
+Removing php ...
+Log ended: 2013-04-30  19:23:52
+
+Log started: 2013-04-30  19:31:10
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 7459 files and directories currently installed.)
+Removing lighttpd ...
+dpkg: warning: while removing lighttpd, directory '/usr/local' not empty so not removed.
+Log ended: 2013-04-30  19:31:11
+
+Log started: 2013-04-30  19:36:20
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 7461 files and directories currently installed.)
+Removing lighttpd ...
+dpkg: warning: while removing lighttpd, directory '/usr/local' not empty so not removed.
+Log ended: 2013-04-30  19:36:21
+
+Log started: 2013-04-30  23:05:21
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 7465 files and directories currently installed.)
+Removing mdadm ...
+Stopping MD monitoring service: mdadm --monitor.
+W: mdadm: I'll update the initramfs, but if you need MD to boot
+W: mdadm: with initramfs, your system may be left unbootable!
+update-initramfs: deferring update (trigger activated)
+Processing triggers for initramfs-tools ...
+update-initramfs: Generating /boot/initrd.img-3.2.41-rt60-limeroot
+Log ended: 2013-04-30  23:05:24

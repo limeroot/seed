@@ -1,0 +1,13 @@
+fc7e4310bd76758dd55e28b64c557499  usr/bin/extlinux
+af527ec5f03469a1405199264d8b8aa8  usr/lib/extlinux/chain.c32
+23b571400a29918f5392f6e85eeb756e  usr/lib/extlinux/mbr.bin
+ce4d2b5d9d1d6ff71a51dc5067425be6  usr/lib/extlinux/memdisk
+def81fc7abc413182bc776b6c89cc8f1  usr/sbin/extlinux-install
+6f590f42a37e2686cb2a6deb803fbaa8  usr/sbin/extlinux-update
+f7f14014dd1485e8c3fa5b49a53059e8  usr/share/doc/extlinux/README.Debian
+071e16f7871162e49cdc48e109646985  usr/share/doc/extlinux/changelog.Debian.gz
+36caef35a064a1364824f4814992989b  usr/share/doc/extlinux/changelog.gz
+a4031fd51ed805eb456632e236d00242  usr/share/doc/extlinux/copyright
+3c3b342f92ea467d8e53122daca315c2  usr/share/man/man1/extlinux.1.gz
+f017015ba74b04d85df5d009d5a6cf61  usr/share/man/man8/extlinux-install.8.gz
+174170769311aa41e5f2a41bd12129b5  usr/share/man/man8/extlinux-update.8.gz

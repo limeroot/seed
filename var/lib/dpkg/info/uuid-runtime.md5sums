@@ -1,0 +1,8 @@
+31dd42de1936d4022641f02a2a08aee6  usr/bin/uuidgen
+a1fab8fa5cff6647a6ebd76ac54cfc54  usr/sbin/uuidd
+f8b864dd03e59163b5e1cd1825dc51d6  usr/share/doc/uuid-runtime/changelog.Debian.gz
+647c2b502e019e1d2c15f3e42be7ab94  usr/share/doc/uuid-runtime/changelog.gz
+e83ea606c16ac2e3ac057f245065933d  usr/share/doc/uuid-runtime/copyright
+66edb14822d3ff593003272ed1fb0263  usr/share/lintian/overrides/uuid-runtime
+1531b12f8cc9d6e8b244ce562d28f68c  usr/share/man/man1/uuidgen.1.gz
+b79cfe87de27549e73c83ffeba4e558e  usr/share/man/man8/uuidd.8.gz

@@ -1,0 +1,100 @@
+Package: libdbus-1-3
+Architecture: i386
+Auto-Installed: 1
+
+Package: libexpat1
+Architecture: i386
+Auto-Installed: 1
+
+Package: libgpm2
+Architecture: i386
+Auto-Installed: 1
+
+Package: adduser
+Architecture: i386
+Auto-Installed: 1
+
+Package: libncursesw5
+Architecture: i386
+Auto-Installed: 1
+
+Package: libpci3
+Architecture: i386
+Auto-Installed: 1
+
+Package: libklibc
+Architecture: i386
+Auto-Installed: 1
+
+Package: module-init-tools
+Architecture: i386
+Auto-Installed: 1
+
+Package: klibc-utils
+Architecture: i386
+Auto-Installed: 1
+
+Package: initramfs-tools
+Architecture: i386
+Auto-Installed: 1
+
+Package: udev
+Architecture: i386
+Auto-Installed: 1
+
+Package: cpio
+Architecture: i386
+Auto-Installed: 1
+
+Package: pciutils
+Architecture: i386
+Auto-Installed: 1
+
+Package: libudev0
+Architecture: i386
+Auto-Installed: 1
+
+Package: busybox
+Architecture: i386
+Auto-Installed: 1
+
+Package: dmsetup
+Architecture: i386
+Auto-Installed: 1
+
+Package: libdevmapper1.02.1
+Architecture: i386
+Auto-Installed: 1
+
+Package: uuid-runtime
+Architecture: i386
+Auto-Installed: 1
+
+Package: libssl0.9.8
+Architecture: i386
+Auto-Installed: 1
+
+Package: file
+Architecture: i386
+Auto-Installed: 1
+
+Package: live-boot-initramfs-tools
+Architecture: i386
+Auto-Installed: 1
+
+Package: eject
+Architecture: i386
+Auto-Installed: 1
+
+Package: libmagic1
+Architecture: i386
+Auto-Installed: 1
+
+Package: psmisc
+Architecture: i386
+Auto-Installed: 1
+
+Package: libnfnetlink0
+Architecture: i386
+Auto-Installed: 1
+
