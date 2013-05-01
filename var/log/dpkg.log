@@ -2196,3 +2196,17 @@
 2013-05-01 17:07:53 status half-configured linux-image-3.2.41-rt60-limeroot limeroot.1.7
 2013-05-01 17:07:58 status installed linux-image-3.2.41-rt60-limeroot limeroot.1.7
 2013-05-01 17:26:24 startup packages purge
+2013-05-01 20:22:04 startup packages purge
+2013-05-01 20:47:44 startup archives install
+2013-05-01 20:47:45 install dropbear <none> 2013.56+limeroot1
+2013-05-01 20:47:45 status half-installed dropbear 2013.56+limeroot1
+2013-05-01 20:47:45 status unpacked dropbear 2013.56+limeroot1
+2013-05-01 20:47:45 status unpacked dropbear 2013.56+limeroot1
+2013-05-01 20:47:45 configure dropbear 2013.56+limeroot1 2013.56+limeroot1
+2013-05-01 20:47:45 status unpacked dropbear 2013.56+limeroot1
+2013-05-01 20:47:45 status unpacked dropbear 2013.56+limeroot1
+2013-05-01 20:47:45 status unpacked dropbear 2013.56+limeroot1
+2013-05-01 20:47:45 status unpacked dropbear 2013.56+limeroot1
+2013-05-01 20:47:45 status half-configured dropbear 2013.56+limeroot1
+2013-05-01 20:47:48 status installed dropbear 2013.56+limeroot1
+2013-05-01 20:48:40 startup packages purge

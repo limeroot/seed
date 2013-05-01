@@ -997,6 +997,30 @@ Description: networking and traffic control tools
  legacy net-tools commands 'ifconfig' and 'route'.
 Homepage: http://www.linux-foundation.org/en/Net:Iproute2
 
+Package: dropbear
+Status: install ok installed
+Priority: optional
+Section: net
+Installed-Size: 436
+Maintainer: Carlos Rincon <carlosr@limeroot.org>
+Architecture: i386
+Version: 2013.56+limeroot1
+Provides: ssh-server
+Depends: libc6 (>= 2.7), zlib1g (>= 1:1.1.4)
+Conffiles:
+ /etc/init.d/dropbear 4f3ba7c35a23aa0f33d87eae708d0756
+ /etc/dropbear/run e1844aaafec37a1fb283b794ee2fa0c8
+ /etc/dropbear/log/run 1cfe24efd15e41994615e0244e386e55
+Description: lightweight SSH2 server and client
+ dropbear is a SSH 2 server and client designed to be small enough to
+ be used in small memory environments, while still being functional and
+ secure enough for general use.
+ .
+ It implements most required features of the SSH 2 protocol, and other
+ features such as X11 and authentication agent forwarding.
+ .
+ See http://matt.ucc.asn.au/dropbear/dropbear.html
+
 Package: libdevmapper1.02.1
 Status: install ok installed
 Priority: required
