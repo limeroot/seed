@@ -2467,6 +2467,34 @@ Description: Tools to test the reachability of network hosts
  This package includes a ping6 utility which supports IPv6 network
  connections.
 
+Package: linux-image-3.2.41-rt60-limerootlive
+Priority: optional
+Section: kernel
+Installed-Size: 2560
+Maintainer: Unknown Kernel Package Maintainer <unknown@unconfigured.in.etc.kernel-pkg.conf>
+Architecture: i386
+Source: linux-source-3.2.41-rt60-limerootlive
+Version: limeroot.1.0.live
+Provides: linux-image, linux-image-3.2
+Depends: coreutils (>= 5.96)
+Pre-Depends: debconf (>= 0.2.17) | debconf-2.0
+Suggests: fdutils, linux-doc-3.2.41-rt60-limerootlive | linux-source-3.2.41-rt60-limerootlive, ksymoops, linux-image-3.2.41-rt60-limerootlive-dbg
+Size: 1547384
+Description: Linux kernel binary image for version 3.2.41-rt60-limerootlive
+ This package contains the Linux kernel image for version
+ 3.2.41-rt60-limerootlive.
+ .
+ It also contains the corresponding System.map file, and the modules
+ built by the packager.  It also contains scripts that try to ensure
+ that the system is not left in a unbootable state after an update.
+ .
+ Kernel image packages are generally produced using kernel-package,
+ and it is suggested that you install that package if you wish to
+ create a custom kernel from the sources. Please look at kernel-img.conf(5),
+ and /usr/share/doc/kernel-package/README.gz  from the package kernel-package
+ for details on how to tailor the  installation of this or any other kernel
+ image package
+
 Package: libbz2-1.0
 Priority: important
 Section: libs
@@ -2876,16 +2904,16 @@ Description: Tiny utilities for small and embedded systems
 Package: linux-image-3.2.41-rt60-limeroot
 Priority: optional
 Section: kernel
-Installed-Size: 5168
+Installed-Size: 9960
 Maintainer: Unknown Kernel Package Maintainer <unknown@unconfigured.in.etc.kernel-pkg.conf>
 Architecture: i386
 Source: linux-source-3.2.41-rt60-limeroot
-Version: limeroot.1.6
+Version: limeroot.1.7
 Provides: linux-image, linux-image-3.2
 Depends: coreutils (>= 5.96)
 Pre-Depends: debconf (>= 0.2.17) | debconf-2.0
 Suggests: fdutils, linux-doc-3.2.41-rt60-limeroot | linux-source-3.2.41-rt60-limeroot, ksymoops, linux-image-3.2.41-rt60-limeroot-dbg
-Size: 3171912
+Size: 5101116
 Description: Linux kernel binary image for version 3.2.41-rt60-limeroot
  This package contains the Linux kernel image for version
  3.2.41-rt60-limeroot.

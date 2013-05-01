@@ -208,3 +208,13 @@ Start-Date: 2013-04-30  23:05:21
 Commandline: apt-get remove mdadm
 Remove: mdadm:i386 (3.2.5-3~bpo60+1)
 End-Date: 2013-04-30  23:05:24
+
+Start-Date: 2013-05-01  17:02:40
+Commandline: apt-get remove linux-image-3.2.41-rt60-limeroot
+Remove: linux-image-3.2.41-rt60-limeroot:i386 (limeroot.1.6)
+End-Date: 2013-05-01  17:02:42
+
+Start-Date: 2013-05-01  17:06:17
+Commandline: apt-get remove linux-image-3.2.41-rt60-limerootlive
+Remove: linux-image-3.2.41-rt60-limerootlive:i386 (limeroot.1.0.live)
+End-Date: 2013-05-01  17:06:18

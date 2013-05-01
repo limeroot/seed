@@ -1713,34 +1713,6 @@ Description: Debian package management system
  For Debian package development tools, install dpkg-dev.
 Homepage: http://wiki.debian.org/Teams/Dpkg
 
-Package: mdadm
-Status: purge ok config-files
-Priority: optional
-Section: admin
-Installed-Size: 1128
-Maintainer: Debian mdadm maintainers <pkg-mdadm-devel@lists.alioth.debian.org>
-Architecture: i386
-Version: 3.2.5-3~bpo60+1
-Config-Version: 3.2.5-3~bpo60+1
-Replaces: mdctl
-Depends: libc6 (>= 2.3.6-6~), udev | makedev, debconf (>= 1.4.72), lsb-base (>= 3.1-6)
-Recommends: default-mta | mail-transport-agent, module-init-tools
-Breaks: initramfs-tools (<< 0.65), mdctl (<< 0.7.2), raidtools2 (<< 1.00.3-12.1)
-Conffiles:
- /etc/logcheck/violations.d/mdadm efd87cec251921ce0642171eae5f3b73
- /etc/logcheck/ignore.d.server/mdadm 5eeaf5c5c7dc0291a986e43004dfd495
- /etc/cron.d/mdadm e2384a232bdaaf9ec65173d5282e40fe
- /etc/cron.daily/mdadm 04839987aec89ae101d5e1f47abd2be4
- /etc/init.d/mdadm 941f9571046896a85ccaca8675dd9f83
- /etc/init.d/mdadm-raid 89ed6eda0d63939b9956f992b537c43a
-Description: tool to administer Linux MD arrays (software RAID)
- The mdadm utility can be used to create, manage, and monitor MD
- (multi-disk) arrays for software RAID or multipath I/O.
- .
- This package automatically configures mdadm to assemble arrays during the
- system startup process. If not needed, this functionality can be disabled.
-Homepage: http://neil.brown.name/blog/mdadm
-
 Package: libncursesw5
 Status: install ok installed
 Priority: important
@@ -2197,11 +2169,11 @@ Package: linux-image-3.2.41-rt60-limeroot
 Status: install ok installed
 Priority: optional
 Section: kernel
-Installed-Size: 5168
+Installed-Size: 9960
 Maintainer: Unknown Kernel Package Maintainer <unknown@unconfigured.in.etc.kernel-pkg.conf>
 Architecture: i386
 Source: linux-source-3.2.41-rt60-limeroot
-Version: limeroot.1.6
+Version: limeroot.1.7
 Provides: linux-image, linux-image-3.2
 Depends: coreutils (>= 5.96)
 Pre-Depends: debconf (>= 0.2.17) | debconf-2.0

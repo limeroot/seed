@@ -2144,3 +2144,55 @@
 2013-04-30 23:05:52 status config-files mdadm 3.2.5-3~bpo60+1
 2013-04-30 23:05:52 status config-files mdadm 3.2.5-3~bpo60+1
 2013-04-30 23:05:52 status not-installed mdadm <none>
+2013-05-01 17:02:40 startup packages remove
+2013-05-01 17:02:40 status installed linux-image-3.2.41-rt60-limeroot limeroot.1.6
+2013-05-01 17:02:41 remove linux-image-3.2.41-rt60-limeroot limeroot.1.6 limeroot.1.6
+2013-05-01 17:02:41 status half-configured linux-image-3.2.41-rt60-limeroot limeroot.1.6
+2013-05-01 17:02:41 status half-installed linux-image-3.2.41-rt60-limeroot limeroot.1.6
+2013-05-01 17:02:42 status config-files linux-image-3.2.41-rt60-limeroot limeroot.1.6
+2013-05-01 17:02:42 status config-files linux-image-3.2.41-rt60-limeroot limeroot.1.6
+2013-05-01 17:03:08 startup archives install
+2013-05-01 17:03:09 install linux-image-3.2.41-rt60-limerootlive <none> limeroot.1.0.live
+2013-05-01 17:03:09 status half-installed linux-image-3.2.41-rt60-limerootlive limeroot.1.0.live
+2013-05-01 17:03:09 status unpacked linux-image-3.2.41-rt60-limerootlive limeroot.1.0.live
+2013-05-01 17:03:09 status unpacked linux-image-3.2.41-rt60-limerootlive limeroot.1.0.live
+2013-05-01 17:03:09 configure linux-image-3.2.41-rt60-limerootlive limeroot.1.0.live limeroot.1.0.live
+2013-05-01 17:03:09 status unpacked linux-image-3.2.41-rt60-limerootlive limeroot.1.0.live
+2013-05-01 17:03:10 status half-configured linux-image-3.2.41-rt60-limerootlive limeroot.1.0.live
+2013-05-01 17:03:13 status installed linux-image-3.2.41-rt60-limerootlive limeroot.1.0.live
+2013-05-01 17:06:17 startup packages remove
+2013-05-01 17:06:17 status installed linux-image-3.2.41-rt60-limerootlive limeroot.1.0.live
+2013-05-01 17:06:17 remove linux-image-3.2.41-rt60-limerootlive limeroot.1.0.live limeroot.1.0.live
+2013-05-01 17:06:17 status half-configured linux-image-3.2.41-rt60-limerootlive limeroot.1.0.live
+2013-05-01 17:06:17 status half-installed linux-image-3.2.41-rt60-limerootlive limeroot.1.0.live
+2013-05-01 17:06:18 status config-files linux-image-3.2.41-rt60-limerootlive limeroot.1.0.live
+2013-05-01 17:06:18 status config-files linux-image-3.2.41-rt60-limerootlive limeroot.1.0.live
+2013-05-01 17:07:12 startup packages purge
+2013-05-01 17:07:12 status config-files linux-image-3.2.41-rt60-limerootlive limeroot.1.0.live
+2013-05-01 17:07:12 remove linux-image-3.2.41-rt60-limerootlive limeroot.1.0.live limeroot.1.0.live
+2013-05-01 17:07:12 purge linux-image-3.2.41-rt60-limerootlive limeroot.1.0.live limeroot.1.0.live
+2013-05-01 17:07:12 status config-files linux-image-3.2.41-rt60-limerootlive limeroot.1.0.live
+2013-05-01 17:07:13 status config-files linux-image-3.2.41-rt60-limerootlive limeroot.1.0.live
+2013-05-01 17:07:13 status config-files linux-image-3.2.41-rt60-limerootlive limeroot.1.0.live
+2013-05-01 17:07:13 status config-files linux-image-3.2.41-rt60-limerootlive limeroot.1.0.live
+2013-05-01 17:07:13 status config-files linux-image-3.2.41-rt60-limerootlive limeroot.1.0.live
+2013-05-01 17:07:13 status not-installed linux-image-3.2.41-rt60-limerootlive <none>
+2013-05-01 17:07:13 status config-files linux-image-3.2.41-rt60-limeroot limeroot.1.6
+2013-05-01 17:07:13 remove linux-image-3.2.41-rt60-limeroot limeroot.1.6 limeroot.1.6
+2013-05-01 17:07:13 purge linux-image-3.2.41-rt60-limeroot limeroot.1.6 limeroot.1.6
+2013-05-01 17:07:13 status config-files linux-image-3.2.41-rt60-limeroot limeroot.1.6
+2013-05-01 17:07:14 status config-files linux-image-3.2.41-rt60-limeroot limeroot.1.6
+2013-05-01 17:07:14 status config-files linux-image-3.2.41-rt60-limeroot limeroot.1.6
+2013-05-01 17:07:14 status config-files linux-image-3.2.41-rt60-limeroot limeroot.1.6
+2013-05-01 17:07:14 status config-files linux-image-3.2.41-rt60-limeroot limeroot.1.6
+2013-05-01 17:07:14 status not-installed linux-image-3.2.41-rt60-limeroot <none>
+2013-05-01 17:07:51 startup archives install
+2013-05-01 17:07:52 install linux-image-3.2.41-rt60-limeroot <none> limeroot.1.7
+2013-05-01 17:07:52 status half-installed linux-image-3.2.41-rt60-limeroot limeroot.1.7
+2013-05-01 17:07:53 status unpacked linux-image-3.2.41-rt60-limeroot limeroot.1.7
+2013-05-01 17:07:53 status unpacked linux-image-3.2.41-rt60-limeroot limeroot.1.7
+2013-05-01 17:07:53 configure linux-image-3.2.41-rt60-limeroot limeroot.1.7 limeroot.1.7
+2013-05-01 17:07:53 status unpacked linux-image-3.2.41-rt60-limeroot limeroot.1.7
+2013-05-01 17:07:53 status half-configured linux-image-3.2.41-rt60-limeroot limeroot.1.7
+2013-05-01 17:07:58 status installed linux-image-3.2.41-rt60-limeroot limeroot.1.7
+2013-05-01 17:26:24 startup packages purge

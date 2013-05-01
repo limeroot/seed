@@ -2169,11 +2169,11 @@ Package: linux-image-3.2.41-rt60-limeroot
 Status: install ok installed
 Priority: optional
 Section: kernel
-Installed-Size: 5168
+Installed-Size: 9960
 Maintainer: Unknown Kernel Package Maintainer <unknown@unconfigured.in.etc.kernel-pkg.conf>
 Architecture: i386
 Source: linux-source-3.2.41-rt60-limeroot
-Version: limeroot.1.6
+Version: limeroot.1.7
 Provides: linux-image, linux-image-3.2
 Depends: coreutils (>= 5.96)
 Pre-Depends: debconf (>= 0.2.17) | debconf-2.0
