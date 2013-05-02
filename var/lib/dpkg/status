@@ -406,6 +406,23 @@ Description: Utilities for sensible alternative selection
  The specific utilities included are: sensible-browser sensible-editor
  sensible-pager
 
+Package: sqlite3
+Status: install ok installed
+Priority: optional
+Section: database
+Installed-Size: 179
+Maintainer: Laszlo Boszormenyi (GCS) <gcs@debian.hu>
+Architecture: i386
+Version: 3.7.13-1~bpo60+1
+Depends: libc6 (>= 2.4), libreadline6 (>= 6.0), libsqlite3-0 (= 3.7.13-1~bpo60+1)
+Suggests: sqlite3-doc
+Description: Command line interface for SQLite 3
+ SQLite is a C library that implements an SQL database engine.
+ Programs that link with the SQLite library can have SQL database
+ access without running a separate RDBMS process.
+Multi-Arch: foreign
+Homepage: http://www.sqlite.org/
+
 Package: libssl0.9.8
 Status: install ok installed
 Priority: important
@@ -897,6 +914,23 @@ Suggests: nfs-common (>= 1:1.1.0-13)
 Description: Tools for mounting and manipulating filesystems
  This package provides the mount(8), umount(8), swapon(8),
  swapoff(8), and losetup(8) commands.
+
+Package: libsqlite3-0
+Status: install ok installed
+Priority: standard
+Section: libs
+Installed-Size: 752
+Maintainer: Laszlo Boszormenyi (GCS) <gcs@debian.hu>
+Architecture: i386
+Source: sqlite3
+Version: 3.7.13-1~bpo60+1
+Depends: libc6 (>= 2.4)
+Description: SQLite 3 shared library
+ SQLite is a C library that implements an SQL database engine.
+ Programs that link with the SQLite library can have SQL database
+ access without running a separate RDBMS process.
+Multi-Arch: same
+Homepage: http://www.sqlite.org/
 
 Package: libtext-iconv-perl
 Status: install ok installed

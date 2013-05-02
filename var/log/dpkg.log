@@ -2223,3 +2223,23 @@
 2013-05-02 16:49:18 status not-installed iputils-ping <none>
 2013-05-02 16:49:21 startup packages purge
 2013-05-02 16:49:31 startup packages purge
+2013-05-02 18:02:09 startup packages purge
+2013-05-02 18:07:20 startup archives unpack
+2013-05-02 18:07:21 install libsqlite3-0 <none> 3.7.13-1~bpo60+1
+2013-05-02 18:07:21 status half-installed libsqlite3-0 3.7.13-1~bpo60+1
+2013-05-02 18:07:21 status unpacked libsqlite3-0 3.7.13-1~bpo60+1
+2013-05-02 18:07:21 status unpacked libsqlite3-0 3.7.13-1~bpo60+1
+2013-05-02 18:07:21 install sqlite3 <none> 3.7.13-1~bpo60+1
+2013-05-02 18:07:21 status half-installed sqlite3 3.7.13-1~bpo60+1
+2013-05-02 18:07:21 status unpacked sqlite3 3.7.13-1~bpo60+1
+2013-05-02 18:07:21 status unpacked sqlite3 3.7.13-1~bpo60+1
+2013-05-02 18:07:22 startup packages configure
+2013-05-02 18:07:22 configure libsqlite3-0 3.7.13-1~bpo60+1 3.7.13-1~bpo60+1
+2013-05-02 18:07:22 status unpacked libsqlite3-0 3.7.13-1~bpo60+1
+2013-05-02 18:07:22 status half-configured libsqlite3-0 3.7.13-1~bpo60+1
+2013-05-02 18:07:22 status installed libsqlite3-0 3.7.13-1~bpo60+1
+2013-05-02 18:07:22 configure sqlite3 3.7.13-1~bpo60+1 3.7.13-1~bpo60+1
+2013-05-02 18:07:22 status unpacked sqlite3 3.7.13-1~bpo60+1
+2013-05-02 18:07:23 status half-configured sqlite3 3.7.13-1~bpo60+1
+2013-05-02 18:07:23 status installed sqlite3 3.7.13-1~bpo60+1
+2013-05-02 18:08:21 startup packages purge

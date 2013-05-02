@@ -1,0 +1,14 @@
+/.
+/usr
+/usr/bin
+/usr/bin/sqlite3
+/usr/share
+/usr/share/doc
+/usr/share/doc/sqlite3
+/usr/share/doc/sqlite3/changelog.gz
+/usr/share/doc/sqlite3/changelog.html.gz
+/usr/share/doc/sqlite3/changelog.Debian.gz
+/usr/share/doc/sqlite3/copyright
+/usr/share/man
+/usr/share/man/man1
+/usr/share/man/man1/sqlite3.1.gz

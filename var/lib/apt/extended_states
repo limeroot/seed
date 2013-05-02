@@ -98,3 +98,7 @@ Package: libnfnetlink0
 Architecture: i386
 Auto-Installed: 1
 
+Package: libsqlite3-0
+Architecture: i386
+Auto-Installed: 1
+

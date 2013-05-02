@@ -223,3 +223,8 @@ Start-Date: 2013-05-02  16:49:18
 Commandline: apt-get remove iputils-ping
 Remove: iputils-ping:i386 (20100418-3)
 End-Date: 2013-05-02  16:49:19
+
+Start-Date: 2013-05-02  18:07:20
+Commandline: apt-get install sqlite3
+Install: libsqlite3-0:i386 (3.7.13-1~bpo60+1, automatic), sqlite3:i386 (3.7.13-1~bpo60+1)
+End-Date: 2013-05-02  18:07:23

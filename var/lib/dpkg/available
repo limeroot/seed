@@ -599,6 +599,23 @@ SHA1: fa0f05fa72e2c624bbe29334de2a7dc28e95e7d8
 SHA256: 2b7b00eede39d0e9437f437a8f220302dc6a4e6ae724771c823b484e27868072
 Tag: role::metapackage, suite::debian
 
+Package: sqlite3
+Priority: optional
+Section: database
+Installed-Size: 179
+Maintainer: Laszlo Boszormenyi (GCS) <gcs@debian.hu>
+Architecture: i386
+Version: 3.7.13-1~bpo60+1
+Depends: libc6 (>= 2.4), libreadline6 (>= 6.0), libsqlite3-0 (= 3.7.13-1~bpo60+1)
+Suggests: sqlite3-doc
+Size: 116970
+Description: Command line interface for SQLite 3
+ SQLite is a C library that implements an SQL database engine.
+ Programs that link with the SQLite library can have SQL database
+ access without running a separate RDBMS process.
+Multi-Arch: foreign
+Homepage: http://www.sqlite.org/
+
 Package: libssl0.9.8
 Priority: important
 Section: libs
@@ -1219,6 +1236,23 @@ Description: Tools for mounting and manipulating filesystems
 SHA1: b878d32a1a4655e5567aa9b802421341b057e46f
 SHA256: bf8357bae3064202012154f2bd7dbdd74696cc069ac5ae8a978a4cf86b7354c9
 Tag: admin::filesystem, hardware::storage, interface::commandline, role::program, scope::utility
+
+Package: libsqlite3-0
+Priority: standard
+Section: libs
+Installed-Size: 752
+Maintainer: Laszlo Boszormenyi (GCS) <gcs@debian.hu>
+Architecture: i386
+Source: sqlite3
+Version: 3.7.13-1~bpo60+1
+Depends: libc6 (>= 2.4)
+Size: 440860
+Description: SQLite 3 shared library
+ SQLite is a C library that implements an SQL database engine.
+ Programs that link with the SQLite library can have SQL database
+ access without running a separate RDBMS process.
+Multi-Arch: same
+Homepage: http://www.sqlite.org/
 
 Package: libtext-iconv-perl
 Priority: required
