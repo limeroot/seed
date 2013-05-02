@@ -1815,26 +1815,6 @@ Description: ejects CDs and operates CD-Changers under Linux
  devices like digital cameras or portable music players.
 Homepage: http://www.pobox.com/~tranter/eject.html
 
-Package: iputils-ping
-Status: install ok installed
-Priority: important
-Section: net
-Installed-Size: 128
-Maintainer: Noah Meyerhans <noahm@debian.org>
-Architecture: i386
-Source: iputils
-Version: 3:20100418-3
-Replaces: netbase (<< 4.00)
-Provides: ping
-Depends: libc6 (>= 2.3), libssl0.9.8 (>= 0.9.8m-1)
-Conflicts: ping, suidmanager (<< 0.50)
-Description: Tools to test the reachability of network hosts
- The ping command sends ICMP ECHO_REQUEST packets to a host in order to
- test if the host is reachable via the network.
- .
- This package includes a ping6 utility which supports IPv6 network
- connections.
-
 Package: libbz2-1.0
 Status: install ok installed
 Priority: important

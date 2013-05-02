@@ -218,3 +218,8 @@ Start-Date: 2013-05-01  17:06:17
 Commandline: apt-get remove linux-image-3.2.41-rt60-limerootlive
 Remove: linux-image-3.2.41-rt60-limerootlive:i386 (limeroot.1.0.live)
 End-Date: 2013-05-01  17:06:18
+
+Start-Date: 2013-05-02  16:49:18
+Commandline: apt-get remove iputils-ping
+Remove: iputils-ping:i386 (20100418-3)
+End-Date: 2013-05-02  16:49:19

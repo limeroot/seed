@@ -380,3 +380,8 @@ P: Checking for EXTLINUX directory... found.
 ls: cannot access vmlinuz-*: No such file or directory
 P: Updating /boot/extlinux/linux.cfg...
 Log ended: 2013-05-01  17:06:18
+
+Log started: 2013-05-02  16:49:18
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 7598 files and directories currently installed.)
+Removing iputils-ping ...
+Log ended: 2013-05-02  16:49:19
