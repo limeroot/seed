@@ -2243,3 +2243,86 @@
 2013-05-02 18:07:23 status half-configured sqlite3 3.7.13-1~bpo60+1
 2013-05-02 18:07:23 status installed sqlite3 3.7.13-1~bpo60+1
 2013-05-02 18:08:21 startup packages purge
+2013-05-03 00:30:27 startup packages remove
+2013-05-03 00:30:27 status installed libssl0.9.8 0.9.8o-4squeeze14
+2013-05-03 00:30:27 remove libssl0.9.8 0.9.8o-4squeeze14 0.9.8o-4squeeze14
+2013-05-03 00:30:27 status half-configured libssl0.9.8 0.9.8o-4squeeze14
+2013-05-03 00:30:27 status half-installed libssl0.9.8 0.9.8o-4squeeze14
+2013-05-03 00:30:28 status config-files libssl0.9.8 0.9.8o-4squeeze14
+2013-05-03 00:30:28 status config-files libssl0.9.8 0.9.8o-4squeeze14
+2013-05-03 00:41:07 startup archives unpack
+2013-05-03 00:41:07 upgrade libc-bin 2.11.3-4 2.13-38
+2013-05-03 00:41:07 status half-configured libc-bin 2.11.3-4
+2013-05-03 00:41:07 status unpacked libc-bin 2.11.3-4
+2013-05-03 00:41:07 status half-installed libc-bin 2.11.3-4
+2013-05-03 00:41:07 status half-installed libc-bin 2.11.3-4
+2013-05-03 00:41:08 status unpacked libc-bin 2.13-38
+2013-05-03 00:41:08 status unpacked libc-bin 2.13-38
+2013-05-03 00:41:08 startup packages configure
+2013-05-03 00:41:08 configure libc-bin 2.13-38 2.13-38
+2013-05-03 00:41:08 status unpacked libc-bin 2.13-38
+2013-05-03 00:41:08 status unpacked libc-bin 2.13-38
+2013-05-03 00:41:08 status unpacked libc-bin 2.13-38
+2013-05-03 00:41:08 status unpacked libc-bin 2.13-38
+2013-05-03 00:41:08 status unpacked libc-bin 2.13-38
+2013-05-03 00:41:08 status half-configured libc-bin 2.13-38
+2013-05-03 00:41:09 status installed libc-bin 2.13-38
+2013-05-03 00:41:09 startup archives unpack
+2013-05-03 00:41:10 upgrade libc6 2.11.3-4 2.13-38
+2013-05-03 00:41:10 status half-configured libc6 2.11.3-4
+2013-05-03 00:41:10 status unpacked libc6 2.11.3-4
+2013-05-03 00:41:10 status half-installed libc6 2.11.3-4
+2013-05-03 00:41:11 status half-installed libc6 2.11.3-4
+2013-05-03 00:41:11 status unpacked libc6 2.13-38
+2013-05-03 00:41:12 status unpacked libc6 2.13-38
+2013-05-03 00:41:12 startup packages configure
+2013-05-03 00:41:12 configure libc6 2.13-38 2.13-38
+2013-05-03 00:41:12 status unpacked libc6 2.13-38
+2013-05-03 00:41:12 status unpacked libc6 2.13-38
+2013-05-03 00:41:12 status half-configured libc6 2.13-38
+2013-05-03 00:41:14 status installed libc6 2.13-38
+2013-05-03 00:41:15 startup archives unpack
+2013-05-03 00:41:15 install gcc-4.7-base <none> 4.7.2-5
+2013-05-03 00:41:15 status half-installed gcc-4.7-base 4.7.2-5
+2013-05-03 00:41:15 status unpacked gcc-4.7-base 4.7.2-5
+2013-05-03 00:41:15 status unpacked gcc-4.7-base 4.7.2-5
+2013-05-03 00:41:16 startup packages configure
+2013-05-03 00:41:16 configure gcc-4.7-base 4.7.2-5 4.7.2-5
+2013-05-03 00:41:16 status unpacked gcc-4.7-base 4.7.2-5
+2013-05-03 00:41:16 status half-configured gcc-4.7-base 4.7.2-5
+2013-05-03 00:41:16 status installed gcc-4.7-base 4.7.2-5
+2013-05-03 00:41:16 startup archives unpack
+2013-05-03 00:41:16 install multiarch-support <none> 2.13-38
+2013-05-03 00:41:16 status half-installed multiarch-support 2.13-38
+2013-05-03 00:41:17 status unpacked multiarch-support 2.13-38
+2013-05-03 00:41:17 status unpacked multiarch-support 2.13-38
+2013-05-03 00:41:17 startup packages configure
+2013-05-03 00:41:17 configure multiarch-support 2.13-38 2.13-38
+2013-05-03 00:41:17 status unpacked multiarch-support 2.13-38
+2013-05-03 00:41:17 status half-configured multiarch-support 2.13-38
+2013-05-03 00:41:17 status installed multiarch-support 2.13-38
+2013-05-03 00:41:18 startup archives unpack
+2013-05-03 00:41:18 upgrade libstdc++6 4.4.5-8 4.7.2-5
+2013-05-03 00:41:18 status half-configured libstdc++6 4.4.5-8
+2013-05-03 00:41:18 status unpacked libstdc++6 4.4.5-8
+2013-05-03 00:41:18 status half-installed libstdc++6 4.4.5-8
+2013-05-03 00:41:19 status half-installed libstdc++6 4.4.5-8
+2013-05-03 00:41:19 status unpacked libstdc++6 4.7.2-5
+2013-05-03 00:41:19 status unpacked libstdc++6 4.7.2-5
+2013-05-03 00:41:19 startup packages configure
+2013-05-03 00:41:19 configure libstdc++6 4.7.2-5 4.7.2-5
+2013-05-03 00:41:19 status unpacked libstdc++6 4.7.2-5
+2013-05-03 00:41:20 status half-configured libstdc++6 4.7.2-5
+2013-05-03 00:41:20 status installed libstdc++6 4.7.2-5
+2013-05-03 00:42:12 startup packages purge
+2013-05-03 00:42:12 status config-files libssl0.9.8 0.9.8o-4squeeze14
+2013-05-03 00:42:12 remove libssl0.9.8 0.9.8o-4squeeze14 0.9.8o-4squeeze14
+2013-05-03 00:42:12 purge libssl0.9.8 0.9.8o-4squeeze14 0.9.8o-4squeeze14
+2013-05-03 00:42:12 status config-files libssl0.9.8 0.9.8o-4squeeze14
+2013-05-03 00:42:13 status config-files libssl0.9.8 0.9.8o-4squeeze14
+2013-05-03 00:42:13 status config-files libssl0.9.8 0.9.8o-4squeeze14
+2013-05-03 00:42:13 status config-files libssl0.9.8 0.9.8o-4squeeze14
+2013-05-03 00:42:13 status config-files libssl0.9.8 0.9.8o-4squeeze14
+2013-05-03 00:42:13 status not-installed libssl0.9.8 <none>
+2013-05-03 00:42:30 startup packages purge
+2013-05-03 00:44:51 startup packages purge

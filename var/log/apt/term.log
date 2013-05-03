@@ -395,3 +395,50 @@ Unpacking sqlite3 (from .../sqlite3_3.7.13-1~bpo60+1_i386.deb) ...
 Setting up libsqlite3-0 (3.7.13-1~bpo60+1) ...
 Setting up sqlite3 (3.7.13-1~bpo60+1) ...
 Log ended: 2013-05-02  18:07:23
+
+Log started: 2013-05-03  00:30:27
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 7606 files and directories currently installed.)
+Removing libssl0.9.8 ...
+Log ended: 2013-05-03  00:30:28
+
+Log started: 2013-05-03  00:41:07
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 7578 files and directories currently installed.)
+Preparing to replace libc-bin 2.11.3-4 (using .../libc-bin_2.13-38_i386.deb) ...
+Unpacking replacement libc-bin ...
+Setting up libc-bin (2.13-38) ...
+Installing new version of config file /etc/bindresvport.blacklist ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 7597 files and directories currently installed.)
+Preparing to replace libc6 2.11.3-4 (using .../libc6_2.13-38_i386.deb) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 75.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (Can't locate Term/ReadLine.pm in @INC (@INC contains: /etc/perl /usr/local/lib/perl/5.10.1 /usr/local/share/perl/5.10.1 /usr/lib/perl5 /usr/share/perl5 /usr/lib/perl/5.10 /usr/share/perl/5.10 /usr/local/lib/site_perl .) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 7.)
+debconf: falling back to frontend: Teletype
+Checking for services that may need to be restarted...
+Checking init scripts...
+Unpacking replacement libc6 ...
+Setting up libc6 (2.13-38) ...
+Installing new version of config file /etc/ld.so.conf.d/i486-linux-gnu.conf ...
+debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 75.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (Can't locate Term/ReadLine.pm in @INC (@INC contains: /etc/perl /usr/local/lib/perl/5.10.1 /usr/local/share/perl/5.10.1 /usr/lib/perl5 /usr/share/perl5 /usr/lib/perl/5.10 /usr/share/perl/5.10 /usr/local/lib/site_perl .) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 7.)
+debconf: falling back to frontend: Teletype
+Checking for services that may need to be restarted...
+Checking init scripts...
+Nothing to restart.
+Selecting previously deselected package gcc-4.7-base.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 7600 files and directories currently installed.)
+Unpacking gcc-4.7-base (from .../gcc-4.7-base_4.7.2-5_i386.deb) ...
+Setting up gcc-4.7-base (4.7.2-5) ...
+Selecting previously deselected package multiarch-support.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 7607 files and directories currently installed.)
+Unpacking multiarch-support (from .../multiarch-support_2.13-38_i386.deb) ...
+Setting up multiarch-support (2.13-38) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 7611 files and directories currently installed.)
+Preparing to replace libstdc++6 4.4.5-8 (using .../libstdc++6_4.7.2-5_i386.deb) ...
+Unpacking replacement libstdc++6 ...
+Setting up libstdc++6 (4.7.2-5) ...
+Log ended: 2013-05-03  00:41:20

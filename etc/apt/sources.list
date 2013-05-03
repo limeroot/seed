@@ -1,2 +1,7 @@
 deb http://ftp.us.debian.org/debian squeeze main
 deb http://backports.debian.org/debian-backports squeeze-backports main
+#deb http://mirrors.kernel.org/debian/ wheezy main
+#deb-src http://mirrors.kernel.org/debian/ wheezy main
+
+#deb http://security.debian.org/ wheezy/updates main
+#deb-src http://security.debian.org/ wheezy/updates main

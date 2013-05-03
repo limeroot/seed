@@ -7,7 +7,11 @@ preversion=$2
 
 package_name()
 {
-    echo libc6
+    if dpkg --assert-multi-arch 2>/dev/null; then
+        echo libc6:${DPKG_MAINTSCRIPT_ARCH}
+    else
+        echo libc6
+    fi
 }
 
 # element() is a helper function for file-rc:
@@ -98,6 +102,9 @@ then
         kfreebsd-i386)
             hwcappkgs="libc0.1-i686"
             ;;
+        mipsel)
+	    hwcappkgs="libc6-loongson2f"
+	    ;;
         sparc)
             hwcappkgs="libc6-sparcv9 libc6-sparcv9b"
             ;;
@@ -110,7 +117,7 @@ then
     if [ -n "$hwcappkgs" ]; then
         for pkg in $hwcappkgs ; do
             ver=$(dpkg-query -l $pkg 2>/dev/null | sed -e '/^[a-z][a-z]\s/!d;/^.[nc]/d;' -e "s/^..\s\+$pkg\s\+//;s/\s.*//g")
-            if [ -n "$ver" ] && [ "$ver" != "2.11.3-4" ]; then
+            if [ -n "$ver" ] && [ "$ver" != "2.13-38" ]; then
                 all_upgraded=no
             fi
         done
@@ -132,7 +139,7 @@ then
 	if [ ! -d /var/mail ] && [ ! -L /var/mail ]; then
 	    ln -sf spool/mail /var/mail
 	fi
-	if dpkg --compare-versions "$preversion" lt 2.11-1; then
+	if dpkg --compare-versions "$preversion" lt 2.13; then
 	    check="apache2.2-common apache apache-ssl apache-perl autofs at"
 	    check="$check boa cucipop courier-authdaemon cron cups exim"
 	    check="$check exim4-base dovecot-common cucipop incron lprng lpr"
@@ -182,16 +189,21 @@ then
 
 	        if [ -f /usr/share/debconf/confmodule ] ; then
 		    db_version 2.0
-		    db_reset glibc/restart-services
-		    db_set glibc/restart-services "$services"
-		    db_input critical glibc/restart-services || true
+		    db_input critical libraries/restart-without-asking || true
 		    db_go || true
-		    db_get glibc/restart-services
-		    if [ "x$RET" != "x" ]
-		    then
-		        services="$RET"
-		    else
-		    	services=""
+		    db_get libraries/restart-without-asking
+		    if [ "$RET" != true ]; then
+			db_reset glibc/restart-services
+			db_set glibc/restart-services "$services"
+			db_input critical glibc/restart-services || true
+			db_go || true
+			db_get glibc/restart-services
+			if [ "x$RET" != "x" ]
+			then
+			    services="$RET"
+			else
+			    services=""
+			fi
 		    fi
 		else
 		    echo
@@ -287,7 +299,7 @@ then
 	    else
 		echo "Nothing to restart."
 	    fi
-	fi # end upgrading and $preversion lt 2.11-1
+	fi # end upgrading and $preversion lt 2.13
     fi # Upgrading
 
     # Restart init. If it fails, there is nothing we can do, so 

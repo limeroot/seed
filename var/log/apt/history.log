@@ -228,3 +228,14 @@ Start-Date: 2013-05-02  18:07:20
 Commandline: apt-get install sqlite3
 Install: libsqlite3-0:i386 (3.7.13-1~bpo60+1, automatic), sqlite3:i386 (3.7.13-1~bpo60+1)
 End-Date: 2013-05-02  18:07:23
+
+Start-Date: 2013-05-03  00:30:27
+Commandline: apt-get autoremove
+Remove: libssl0.9.8:i386 (0.9.8o-4squeeze14)
+End-Date: 2013-05-03  00:30:28
+
+Start-Date: 2013-05-03  00:41:07
+Commandline: apt-get install libstdc++6
+Install: gcc-4.7-base:i386 (4.7.2-5, automatic), multiarch-support:i386 (2.13-38, automatic)
+Upgrade: libstdc++6:i386 (4.4.5-8, 4.7.2-5), libc-bin:i386 (2.11.3-4, 2.13-38), libc6:i386 (2.11.3-4, 2.13-38)
+End-Date: 2013-05-03  00:41:20

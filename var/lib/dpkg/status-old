@@ -423,23 +423,6 @@ Description: Command line interface for SQLite 3
 Multi-Arch: foreign
 Homepage: http://www.sqlite.org/
 
-Package: libssl0.9.8
-Status: install ok installed
-Priority: important
-Section: libs
-Installed-Size: 6984
-Maintainer: Debian OpenSSL Team <pkg-openssl-devel@lists.alioth.debian.org>
-Architecture: i386
-Source: openssl
-Version: 0.9.8o-4squeeze14
-Depends: libc6 (>= 2.7), zlib1g (>= 1:1.1.4), debconf (>= 0.5) | debconf-2.0
-Conflicts: libssl, libssl096-dev (<< 0.9.6-2), openssl (<< 0.9.6-2), ssleay (<< 0.9.2b)
-Description: SSL shared libraries
- libssl and libcrypto shared libraries needed by programs like
- apache-ssl, telnet-ssl and openssh.
- .
- It is part of the OpenSSL implementation of SSL.
-
 Package: extlinux
 Status: install ok installed
 Priority: optional
@@ -1888,19 +1871,37 @@ Version: 5.3.24-1
 Provides: php
 Description: LimeRoot's PHP5 special compilation.
 
-Package: libc-bin
+Package: gcc-4.7-base
 Status: install ok installed
 Priority: required
 Section: libs
-Installed-Size: 1520
+Installed-Size: 197
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Architecture: i386
+Source: gcc-4.7
+Version: 4.7.2-5
+Breaks: dehydra (<= 0.9.hg20110609-2), gcj-4.4-base (<< 4.4.6-9~), gcj-4.6-base (<< 4.6.1-4~), gnat-4.4-base (<< 4.4.6-3~), gnat-4.6 (<< 4.6.1-5~)
+Description: GCC, the GNU Compiler Collection (base package)
+ This package contains files common to all languages and libraries
+ contained in the GNU Compiler Collection (GCC).
+Multi-Arch: same
+Homepage: http://gcc.gnu.org/
+
+Package: libc-bin
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: libs
+Installed-Size: 3091
 Maintainer: GNU Libc Maintainers <debian-glibc@lists.debian.org>
 Architecture: i386
 Source: eglibc
-Version: 2.11.3-4
+Version: 2.13-38
 Replaces: libc0.1, libc0.3, libc6, libc6.1
 Breaks: libc0.1 (<< 2.10), libc0.3 (<< 2.10), libc6 (<< 2.10), libc6.1 (<< 2.10)
 Conffiles:
- /etc/bindresvport.blacklist 154db0e55fa99051ff1bd99e5b2c0584
+ /etc/default/nss d6d5d6f621fb3ead2548076ce81e309c
+ /etc/bindresvport.blacklist d2d1b996add35b65f64a22e9c8413632
  /etc/gai.conf bef7187bc7be3830f50ac50727897840
  /etc/ld.so.conf.d/libc.conf d4d833fd095fb7b90e1bb4a547f16de6
 Description: Embedded GNU C Library: Binaries
@@ -1914,6 +1915,7 @@ Description: Embedded GNU C Library: Binaries
   * locale, localedef: show/generate locale definitions
   * rpcinfo: report RPC information
   * tzselect, zdump, zic: select/dump/compile time zones
+Multi-Arch: foreign
 Homepage: http://www.eglibc.org
 
 Package: sysvinit-utils
@@ -1936,6 +1938,23 @@ Description: System-V-like utilities
  Specifically, this package includes:
  killall5, last, lastb, mesg, pidof, service, sulogin
 Homepage: http://savannah.nongnu.org/projects/sysvinit
+
+Package: multiarch-support
+Status: install ok installed
+Priority: required
+Section: libs
+Installed-Size: 179
+Maintainer: GNU Libc Maintainers <debian-glibc@lists.debian.org>
+Architecture: i386
+Source: eglibc
+Version: 2.13-38
+Depends: libc6 (>= 2.13-5)
+Description: Transitional package to ensure multiarch compatibility
+ This is a transitional package used to ensure multiarch support is present
+ in ld.so before unpacking libraries to the multiarch directories.  It can
+ be removed once nothing on the system depends on it.
+Multi-Arch: foreign
+Homepage: http://www.eglibc.org
 
 Package: nano
 Status: install ok installed
@@ -2001,23 +2020,25 @@ Package: libc6
 Status: install ok installed
 Priority: required
 Section: libs
-Installed-Size: 9360
+Installed-Size: 8546
 Maintainer: GNU Libc Maintainers <debian-glibc@lists.debian.org>
 Architecture: i386
 Source: eglibc
-Version: 2.11.3-4
-Provides: glibc-2.11-1
-Depends: libc-bin (= 2.11.3-4), libgcc1
+Version: 2.13-38
+Replaces: libc6-i386
+Provides: glibc-2.13-1
+Depends: libc-bin (= 2.13-38), libgcc1
 Recommends: libc6-i686
 Suggests: glibc-doc, debconf | debconf-2.0, locales
-Breaks: locales (<< 2.11), locales-all (<< 2.11), nscd (<< 2.11)
+Breaks: locales (<< 2.13), locales-all (<< 2.13), nscd (<< 2.13)
 Conflicts: prelink (<= 0.0.20090311-1), tzdata (<< 2007k-1), tzdata-etch
 Conffiles:
- /etc/ld.so.conf.d/i486-linux-gnu.conf 36f09aeeab18f6af453d0a1db0a0942c
+ /etc/ld.so.conf.d/i486-linux-gnu.conf de72af11e0f4e741c2cca3e0e87b7af4
 Description: Embedded GNU C Library: Shared libraries
  Contains the standard libraries that are used by nearly all programs on
  the system. This package includes shared versions of the standard C library
  and the standard math library, as well as many others.
+Multi-Arch: same
 Homepage: http://www.eglibc.org
 
 Package: udev
@@ -2160,22 +2181,25 @@ Description: GNU cpio -- a program to manage archives of files
 
 Package: libstdc++6
 Status: install ok installed
-Priority: required
+Priority: important
 Section: libs
-Installed-Size: 1196
+Installed-Size: 1168
 Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
 Architecture: i386
-Source: gcc-4.4
-Version: 4.4.5-8
-Depends: gcc-4.4-base (= 4.4.5-8), libc6 (>= 2.3.2), libgcc1 (>= 1:4.1.1)
+Source: gcc-4.7
+Version: 4.7.2-5
+Depends: gcc-4.7-base (= 4.7.2-5), libc6 (>= 2.11), libgcc1 (>= 1:4.1.1)
+Pre-Depends: multiarch-support
+Breaks: gcc-4.1, gcc-4.3 (<< 4.3.6-1), gcc-4.4 (<< 4.4.6-4), gcc-4.5 (<< 4.5.3-2)
 Conflicts: scim (<< 1.4.2-1)
-Description: The GNU Standard C++ Library v3
+Description: GNU Standard C++ Library v3
  This package contains an additional runtime library for C++ programs
  built with the GNU compiler.
  .
  libstdc++-v3 is a complete rewrite from the previous libstdc++-v2, which
  was included up to g++-2.95. The first version of libstdc++-v3 appeared
  in g++-3.0.
+Multi-Arch: same
 Homepage: http://gcc.gnu.org/
 
 Package: busybox

@@ -2593,18 +2593,35 @@ Provides: php
 Size: 1964686
 Description: LimeRoot's PHP5 special compilation.
 
-Package: libc-bin
+Package: gcc-4.7-base
 Priority: required
 Section: libs
-Installed-Size: 1520
+Installed-Size: 197
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Architecture: i386
+Source: gcc-4.7
+Version: 4.7.2-5
+Breaks: dehydra (<= 0.9.hg20110609-2), gcj-4.4-base (<< 4.4.6-9~), gcj-4.6-base (<< 4.6.1-4~), gnat-4.4-base (<< 4.4.6-3~), gnat-4.6 (<< 4.6.1-5~)
+Size: 143294
+Description: GCC, the GNU Compiler Collection (base package)
+ This package contains files common to all languages and libraries
+ contained in the GNU Compiler Collection (GCC).
+Multi-Arch: same
+Homepage: http://gcc.gnu.org/
+
+Package: libc-bin
+Essential: yes
+Priority: required
+Section: libs
+Installed-Size: 3091
 Maintainer: GNU Libc Maintainers <debian-glibc@lists.debian.org>
 Architecture: i386
 Source: eglibc
-Version: 2.11.3-4
+Version: 2.13-38
 Replaces: libc0.1, libc0.3, libc6, libc6.1
 Breaks: libc0.1 (<< 2.10), libc0.3 (<< 2.10), libc6 (<< 2.10), libc6.1 (<< 2.10)
 Filename: pool/main/e/eglibc/libc-bin_2.11.3-4_i386.deb
-Size: 709166
+Size: 1211036
 MD5sum: 776e485695244ff82daf904e8140d4eb
 Description: Embedded GNU C Library: Binaries
  This package contains utility programs related to the GNU C Library.
@@ -2617,10 +2634,8 @@ Description: Embedded GNU C Library: Binaries
   * locale, localedef: show/generate locale definitions
   * rpcinfo: report RPC information
   * tzselect, zdump, zic: select/dump/compile time zones
-SHA1: 1716ee7331d532176b03e0bbfccad231b4f71e3b
-SHA256: 2dcc9c71bb8aed7bd6fcbcff7933494f47aa13a79c63307d4744b667d91789c3
+Multi-Arch: foreign
 Homepage: http://www.eglibc.org
-Tag: devel::lang:c, devel::packaging, implemented-in::c, interface::commandline, role::program, scope::utility, special::auto-inst-parts, suite::gnu, works-with::text, works-with::unicode
 
 Package: mime-support
 Priority: standard
@@ -2669,6 +2684,23 @@ SHA1: f72b277e5168168ceffada33c5d7e8e56bedf151
 SHA256: 1b462c5b5faa084867324bed0a102436b8bd85a2fb24f31b462e8616da5f1d22
 Homepage: http://savannah.nongnu.org/projects/sysvinit
 Tag: admin::login, implemented-in::c, interface::commandline, role::program, scope::utility, works-with::software:running
+
+Package: multiarch-support
+Priority: required
+Section: libs
+Installed-Size: 179
+Maintainer: GNU Libc Maintainers <debian-glibc@lists.debian.org>
+Architecture: i386
+Source: eglibc
+Version: 2.13-38
+Depends: libc6 (>= 2.13-5)
+Size: 149558
+Description: Transitional package to ensure multiarch compatibility
+ This is a transitional package used to ensure multiarch support is present
+ in ld.so before unpacking libraries to the multiarch directories.  It can
+ be removed once nothing on the system depends on it.
+Multi-Arch: foreign
+Homepage: http://www.eglibc.org
 
 Package: nano
 Priority: important
@@ -2736,28 +2768,27 @@ Tag: role::shared-lib, security::authentication, security::ids
 Package: libc6
 Priority: required
 Section: libs
-Installed-Size: 9360
+Installed-Size: 8546
 Maintainer: GNU Libc Maintainers <debian-glibc@lists.debian.org>
 Architecture: i386
 Source: eglibc
-Version: 2.11.3-4
-Provides: glibc-2.11-1
-Depends: libc-bin (= 2.11.3-4), libgcc1
+Version: 2.13-38
+Replaces: libc6-i386
+Provides: glibc-2.13-1
+Depends: libc-bin (= 2.13-38), libgcc1
 Recommends: libc6-i686
 Suggests: glibc-doc, debconf | debconf-2.0, locales
-Breaks: locales (<< 2.11), locales-all (<< 2.11), nscd (<< 2.11)
+Breaks: locales (<< 2.13), locales-all (<< 2.13), nscd (<< 2.13)
 Conflicts: prelink (<= 0.0.20090311-1), tzdata (<< 2007k-1), tzdata-etch
 Filename: pool/main/e/eglibc/libc6_2.11.3-4_i386.deb
-Size: 3884448
+Size: 3939074
 MD5sum: ff0355216ac37b347a7e9e1b08c457a8
 Description: Embedded GNU C Library: Shared libraries
  Contains the standard libraries that are used by nearly all programs on
  the system. This package includes shared versions of the standard C library
  and the standard math library, as well as many others.
-SHA1: 02f68bab87dc2db2dacf1d2dc65cdd297ac63fc6
-SHA256: 8aaa36c64b5e33166d8317cc6f4bf93d64d742babafd2bae9f6ddb561a0b420d
+Multi-Arch: same
 Homepage: http://www.eglibc.org
-Tag: devel::lang:c, devel::library, implemented-in::c, protocol::ipv6, role::shared-lib, suite::gnu
 
 Package: udev
 Priority: important
@@ -2906,29 +2937,29 @@ Description: GNU cpio -- a program to manage archives of files
  as well as reading and writing tar files.
 
 Package: libstdc++6
-Priority: required
+Priority: important
 Section: libs
-Installed-Size: 1196
+Installed-Size: 1168
 Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
 Architecture: i386
-Source: gcc-4.4
-Version: 4.4.5-8
-Depends: gcc-4.4-base (= 4.4.5-8), libc6 (>= 2.3.2), libgcc1 (>= 1:4.1.1)
+Source: gcc-4.7
+Version: 4.7.2-5
+Depends: gcc-4.7-base (= 4.7.2-5), libc6 (>= 2.11), libgcc1 (>= 1:4.1.1)
+Pre-Depends: multiarch-support
+Breaks: gcc-4.1, gcc-4.3 (<< 4.3.6-1), gcc-4.4 (<< 4.4.6-4), gcc-4.5 (<< 4.5.3-2)
 Conflicts: scim (<< 1.4.2-1)
 Filename: pool/main/g/gcc-4.4/libstdc++6_4.4.5-8_i386.deb
-Size: 347242
+Size: 346330
 MD5sum: cf7baf7a7269c3bff14cecc676289c32
-Description: The GNU Standard C++ Library v3
+Description: GNU Standard C++ Library v3
  This package contains an additional runtime library for C++ programs
  built with the GNU compiler.
  .
  libstdc++-v3 is a complete rewrite from the previous libstdc++-v2, which
  was included up to g++-2.95. The first version of libstdc++-v3 appeared
  in g++-3.0.
-SHA1: eedc4731ce5317b5ddc7f91ae8201aeec8e9ca02
-SHA256: 32b0a18a5eba3bca1af52931ac91e647823725d07d721b28a3339d8c70256573
+Multi-Arch: same
 Homepage: http://gcc.gnu.org/
-Tag: implemented-in::c++, role::shared-lib, suite::gnu
 
 Package: busybox
 Priority: optional

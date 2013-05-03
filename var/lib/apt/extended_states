@@ -70,10 +70,6 @@ Package: uuid-runtime
 Architecture: i386
 Auto-Installed: 1
 
-Package: libssl0.9.8
-Architecture: i386
-Auto-Installed: 1
-
 Package: file
 Architecture: i386
 Auto-Installed: 1
@@ -99,6 +95,14 @@ Architecture: i386
 Auto-Installed: 1
 
 Package: libsqlite3-0
+Architecture: i386
+Auto-Installed: 1
+
+Package: gcc-4.7-base
+Architecture: i386
+Auto-Installed: 1
+
+Package: multiarch-support
 Architecture: i386
 Auto-Installed: 1
 
