@@ -2,13 +2,11 @@
 /usr
 /usr/share
 /usr/share/man
-/usr/share/man/man8
 /usr/share/man/man8/zic.8.gz
 /usr/share/man/man8/rpcinfo.8.gz
 /usr/share/man/man8/iconvconfig.8.gz
 /usr/share/man/man8/ldconfig.8.gz
 /usr/share/man/man8/ld.so.8.gz
-/usr/share/man/man1
 /usr/share/man/man1/tzselect.1.gz
 /usr/share/man/man1/iconv.1.gz
 /usr/share/man/man1/localedef.1.gz
@@ -17,7 +15,6 @@
 /usr/share/man/man1/locale.1.gz
 /usr/share/man/man1/ldd.1.gz
 /usr/share/man/man1/catchsegv.1.gz
-/usr/share/man/man5
 /usr/share/man/man5/gai.conf.5.gz
 /usr/share/libc-bin
 /usr/share/libc-bin/nsswitch.conf

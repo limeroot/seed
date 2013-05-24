@@ -1,0 +1,1 @@
+update-rc.d syslog-ng defaults 10 90

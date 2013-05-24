@@ -1,0 +1,7 @@
+/etc/logrotate.d/syslog-ng
+/etc/syslog-ng/syslog-ng.conf
+/etc/logcheck/violations.ignore.d/syslog-ng
+/etc/logcheck/ignore.d.server/syslog-ng
+/etc/logcheck/ignore.d.paranoid/syslog-ng
+/etc/init.d/syslog-ng
+/etc/default/syslog-ng

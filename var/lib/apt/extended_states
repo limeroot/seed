@@ -106,3 +106,47 @@ Package: multiarch-support
 Architecture: i386
 Auto-Installed: 1
 
+Package: libwrap0
+Architecture: i386
+Auto-Installed: 1
+
+Package: libcap2
+Architecture: i386
+Auto-Installed: 1
+
+Package: libdbi0
+Architecture: i386
+Auto-Installed: 1
+
+Package: libpcre3
+Architecture: i386
+Auto-Installed: 1
+
+Package: libglib2.0-0
+Architecture: i386
+Auto-Installed: 1
+
+Package: libssl0.9.8
+Architecture: i386
+Auto-Installed: 1
+
+Package: libevtlog0
+Architecture: i386
+Auto-Installed: 1
+
+Package: libnet1
+Architecture: i386
+Auto-Installed: 1
+
+Package: procps
+Architecture: i386
+Auto-Installed: 1
+
+Package: libpcap0.8
+Architecture: i386
+Auto-Installed: 1
+
+Package: ppp
+Architecture: i386
+Auto-Installed: 1
+

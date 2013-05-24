@@ -1,0 +1,8 @@
+May 23 21:59:09 danybox syslog-ng[14380]: syslog-ng starting up; version='3.1.3'
+May 23 22:08:19 danybox kernel: [22870.872053] device eth0 entered promiscuous mode
+May 23 22:08:19 danybox kernel: [22870.872203] device eth1 entered promiscuous mode
+May 23 22:10:40 danybox kernel: [23011.537179] device eth0 entered promiscuous mode
+May 23 22:10:40 danybox kernel: [23011.537328] device eth1 entered promiscuous mode
+May 23 22:37:01 danybox -- MARK --
+May 23 22:59:02 danybox -- MARK --
+May 23 23:37:01 danybox -- MARK --

@@ -101,6 +101,14 @@ Name: libraries/restart-without-asking
 Template: libraries/restart-without-asking
 Owners: libc6
 
+Name: libssl0.9.8/restart-failed
+Template: libssl0.9.8/restart-failed
+Owners: libssl0.9.8
+
+Name: libssl0.9.8/restart-services
+Template: libssl0.9.8/restart-services
+Owners: libssl0.9.8
+
 Name: linux-image-3.2.41-rt60-limeroot/postinst/depmod-error-3.2.41-rt60-limeroot
 Template: linux-image-3.2.41-rt60-limeroot/postinst/depmod-error-3.2.41-rt60-limeroot
 Owners: linux-image-3.2.41-rt60-limeroot

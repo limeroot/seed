@@ -1,6 +1,9 @@
-TARGETS = lighttpd iflive bootlogs killprocs dbus dropbear single rc.local rmnologin stop-bootlogd
+TARGETS = syslog-ng bootlogs killprocs lighttpd dropbear single dbus rc.local stop-bootlogd rmnologin
 INTERACTIVE =
+lighttpd: syslog-ng
+dropbear: syslog-ng
 single: killprocs bootlogs
-rc.local: lighttpd iflive bootlogs dbus dropbear
-rmnologin: lighttpd iflive bootlogs dbus dropbear
-stop-bootlogd: lighttpd iflive bootlogs dbus dropbear
+dbus: syslog-ng
+rc.local: syslog-ng lighttpd dropbear bootlogs dbus
+stop-bootlogd: lighttpd syslog-ng dropbear bootlogs dbus
+rmnologin: lighttpd syslog-ng dropbear bootlogs dbus

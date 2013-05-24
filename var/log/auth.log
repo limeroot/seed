@@ -1,0 +1,74 @@
+May 23 15:00:29 danybox sudo:     root : TTY=pts/0 ; PWD=/home/daniel/limeroot ; USER=root ; COMMAND=/bin/umount -lf seed/dev
+May 23 15:00:29 danybox sudo: pam_unix(sudo:session): session opened for user root by daniel(uid=0)
+May 23 15:00:29 danybox sudo: pam_unix(sudo:session): session closed for user root
+May 23 15:00:34 danybox sudo:   daniel : TTY=pts/0 ; PWD=/home/daniel/limeroot ; USER=root ; COMMAND=./makeiso.sh
+May 23 15:00:34 danybox sudo: pam_unix(sudo:session): session opened for user root by daniel(uid=0)
+May 23 15:00:43 danybox sudo:     root : TTY=pts/0 ; PWD=/home/daniel/limeroot/image ; USER=root ; COMMAND=/usr/bin/mkisofs -r -V LimeRoot -cache-inodes -J -l -b isolinux/isolinux.bin -c isolinux/boot.cat -no-emul-boot -boot-load-size 4 -boot-info-table -o ../limeroot.iso .
+May 23 15:00:43 danybox sudo: pam_unix(sudo:session): session opened for user root by daniel(uid=0)
+May 23 15:00:43 danybox sudo: pam_unix(sudo:session): session closed for user root
+May 23 15:00:43 danybox sudo: pam_unix(sudo:session): session closed for user root
+May 23 15:04:47 danybox sudo:   daniel : TTY=pts/0 ; PWD=/home/daniel/limeroot ; USER=root ; COMMAND=/bin/rm seed/etc/init.d/pppd-dns
+May 23 15:04:47 danybox sudo: pam_unix(sudo:session): session opened for user root by daniel(uid=0)
+May 23 15:04:47 danybox sudo: pam_unix(sudo:session): session closed for user root
+May 23 15:04:51 danybox sudo:   daniel : TTY=pts/0 ; PWD=/home/daniel/limeroot ; USER=root ; COMMAND=./makeiso.sh
+May 23 15:04:51 danybox sudo: pam_unix(sudo:session): session opened for user root by daniel(uid=0)
+May 23 15:05:01 danybox sudo:     root : TTY=pts/0 ; PWD=/home/daniel/limeroot/image ; USER=root ; COMMAND=/usr/bin/mkisofs -r -V LimeRoot -cache-inodes -J -l -b isolinux/isolinux.bin -c isolinux/boot.cat -no-emul-boot -boot-load-size 4 -boot-info-table -o ../limeroot.iso .
+May 23 15:05:01 danybox sudo: pam_unix(sudo:session): session opened for user root by daniel(uid=0)
+May 23 15:05:01 danybox sudo: pam_unix(sudo:session): session closed for user root
+May 23 15:05:01 danybox sudo: pam_unix(sudo:session): session closed for user root
+May 23 15:06:30 danybox sudo:   daniel : TTY=pts/0 ; PWD=/home/daniel/limeroot/installer ; USER=root ; COMMAND=/usr/bin/git pull origin master
+May 23 15:06:30 danybox sudo: pam_unix(sudo:session): session opened for user root by daniel(uid=0)
+May 23 15:06:32 danybox sudo: pam_unix(sudo:session): session closed for user root
+May 23 15:07:08 danybox sudo:   daniel : TTY=pts/0 ; PWD=/home/daniel/limeroot ; USER=root ; COMMAND=/bin/cp installer/limeinst /seed/
+May 23 15:07:08 danybox sudo: pam_unix(sudo:session): session opened for user root by daniel(uid=0)
+May 23 15:07:08 danybox sudo: pam_unix(sudo:session): session closed for user root
+May 23 15:07:11 danybox sudo:   daniel : TTY=pts/0 ; PWD=/home/daniel/limeroot ; USER=root ; COMMAND=/bin/cp installer/limeinst seed/
+May 23 15:07:11 danybox sudo: pam_unix(sudo:session): session opened for user root by daniel(uid=0)
+May 23 15:07:11 danybox sudo: pam_unix(sudo:session): session closed for user root
+May 23 15:07:16 danybox sudo:   daniel : TTY=pts/0 ; PWD=/home/daniel/limeroot ; USER=root ; COMMAND=./makeiso.sh
+May 23 15:07:16 danybox sudo: pam_unix(sudo:session): session opened for user root by daniel(uid=0)
+May 23 15:07:27 danybox sudo:     root : TTY=pts/0 ; PWD=/home/daniel/limeroot/image ; USER=root ; COMMAND=/usr/bin/mkisofs -r -V LimeRoot -cache-inodes -J -l -b isolinux/isolinux.bin -c isolinux/boot.cat -no-emul-boot -boot-load-size 4 -boot-info-table -o ../limeroot.iso .
+May 23 15:07:27 danybox sudo: pam_unix(sudo:session): session opened for user root by daniel(uid=0)
+May 23 15:07:27 danybox sudo: pam_unix(sudo:session): session closed for user root
+May 23 15:07:27 danybox sudo: pam_unix(sudo:session): session closed for user root
+May 23 15:09:01 danybox CRON[14873]: pam_unix(cron:session): session opened for user root by (uid=0)
+May 23 15:09:01 danybox CRON[14873]: pam_unix(cron:session): session closed for user root
+May 23 15:09:54 danybox sudo:   daniel : TTY=pts/0 ; PWD=/home/daniel/limeroot ; USER=root ; COMMAND=/bin/rm seed/etc/rcS.d/S12pppd-dns
+May 23 15:09:54 danybox sudo: pam_unix(sudo:session): session opened for user root by daniel(uid=0)
+May 23 15:09:54 danybox sudo: pam_unix(sudo:session): session closed for user root
+May 23 15:09:56 danybox sudo:   daniel : TTY=pts/0 ; PWD=/home/daniel/limeroot ; USER=root ; COMMAND=./makeiso.sh
+May 23 15:09:56 danybox sudo: pam_unix(sudo:session): session opened for user root by daniel(uid=0)
+May 23 15:10:06 danybox sudo:     root : TTY=pts/0 ; PWD=/home/daniel/limeroot/image ; USER=root ; COMMAND=/usr/bin/mkisofs -r -V LimeRoot -cache-inodes -J -l -b isolinux/isolinux.bin -c isolinux/boot.cat -no-emul-boot -boot-load-size 4 -boot-info-table -o ../limeroot.iso .
+May 23 15:10:06 danybox sudo: pam_unix(sudo:session): session opened for user root by daniel(uid=0)
+May 23 15:10:06 danybox sudo: pam_unix(sudo:session): session closed for user root
+May 23 15:10:06 danybox sudo: pam_unix(sudo:session): session closed for user root
+May 23 15:17:01 danybox CRON[15125]: pam_unix(cron:session): session opened for user root by (uid=0)
+May 23 15:17:01 danybox CRON[15125]: pam_unix(cron:session): session closed for user root
+May 23 15:39:01 danybox CRON[15494]: pam_unix(cron:session): session opened for user root by (uid=0)
+May 23 15:39:01 danybox CRON[15494]: pam_unix(cron:session): session closed for user root
+May 23 16:09:01 danybox CRON[15703]: pam_unix(cron:session): session opened for user root by (uid=0)
+May 23 16:09:02 danybox CRON[15703]: pam_unix(cron:session): session closed for user root
+May 23 16:17:01 danybox CRON[15859]: pam_unix(cron:session): session opened for user root by (uid=0)
+May 23 16:17:01 danybox CRON[15859]: pam_unix(cron:session): session closed for user root
+May 23 16:39:01 danybox CRON[16097]: pam_unix(cron:session): session opened for user root by (uid=0)
+May 23 16:39:01 danybox CRON[16097]: pam_unix(cron:session): session closed for user root
+May 23 16:58:34 danybox sudo:   daniel : TTY=pts/0 ; PWD=/home/daniel/limeroot ; USER=root ; COMMAND=./enter.sh
+May 23 16:58:34 danybox sudo: pam_unix(sudo:session): session opened for user root by daniel(uid=0)
+May 23 17:01:04 danybox sudo:     root : TTY=pts/0 ; PWD=/home/daniel/limeroot ; USER=root ; COMMAND=/bin/umount -lf seed/dev
+May 23 17:01:04 danybox sudo: pam_unix(sudo:session): session opened for user root by daniel(uid=0)
+May 23 17:01:04 danybox sudo: pam_unix(sudo:session): session closed for user root
+May 23 17:01:04 danybox sudo: pam_unix(sudo:session): session closed for user root
+May 23 17:01:23 danybox sudo:   daniel : TTY=pts/0 ; PWD=/home/daniel/limeroot ; USER=root ; COMMAND=./makeiso.sh
+May 23 17:01:23 danybox sudo: pam_unix(sudo:session): session opened for user root by daniel(uid=0)
+May 23 17:01:33 danybox sudo:     root : TTY=pts/0 ; PWD=/home/daniel/limeroot/image ; USER=root ; COMMAND=/usr/bin/mkisofs -r -V LimeRoot -cache-inodes -J -l -b isolinux/isolinux.bin -c isolinux/boot.cat -no-emul-boot -boot-load-size 4 -boot-info-table -o ../limeroot.iso .
+May 23 17:01:33 danybox sudo: pam_unix(sudo:session): session opened for user root by daniel(uid=0)
+May 23 17:01:33 danybox sudo: pam_unix(sudo:session): session closed for user root
+May 23 17:01:33 danybox sudo: pam_unix(sudo:session): session closed for user root
+May 23 17:02:14 danybox sudo:   daniel : TTY=pts/0 ; PWD=/home/daniel/limeroot/seed ; USER=root ; COMMAND=/bin/rm limeinst
+May 23 17:02:14 danybox sudo: pam_unix(sudo:session): session opened for user root by daniel(uid=0)
+May 23 17:02:14 danybox sudo: pam_unix(sudo:session): session closed for user root
+May 23 17:02:24 danybox sudo:   daniel : TTY=pts/0 ; PWD=/home/daniel/limeroot/seed ; USER=root ; COMMAND=/usr/bin/git add .
+May 23 17:02:24 danybox sudo: pam_unix(sudo:session): session opened for user root by daniel(uid=0)
+May 23 17:02:25 danybox sudo: pam_unix(sudo:session): session closed for user root
+May 23 17:02:31 danybox sudo:   daniel : TTY=pts/0 ; PWD=/home/daniel/limeroot/seed ; USER=root ; COMMAND=/usr/bin/git commit -a
+May 23 17:02:31 danybox sudo: pam_unix(sudo:session): session opened for user root by daniel(uid=0)

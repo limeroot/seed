@@ -34,3 +34,5 @@
 2013-04-30 15:40:21 update-alternatives: link group php-cgi-bin fully removed
 2013-04-30 15:40:34 update-alternatives: run with --remove view /usr/bin/see
 2013-04-30 15:40:34 update-alternatives: link group view fully removed
+2013-05-23 22:00:01 update-alternatives: run with --install /usr/bin/w w /usr/bin/w.procps 50 --slave /usr/share/man/man1/w.1.gz w.1.gz /usr/share/man/man1/w.procps.1.gz
+2013-05-23 22:00:01 update-alternatives: link group w updated to point to /usr/bin/w.procps

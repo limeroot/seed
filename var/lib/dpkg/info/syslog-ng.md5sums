@@ -1,0 +1,13 @@
+8d5cf99713ec1ac8789441ea238a78cf  usr/bin/loggen
+4360b8661f8a8e70c4b78ac481268bbf  usr/bin/pdbtool
+5c72a7e8bb42c6d0cdde4b559cfea964  usr/bin/update-patterndb
+1dd2311e144d38c5658d6cbdc29e0687  usr/sbin/syslog-ng
+ff7c8eb095fda5ba019d28edd4230d78  usr/sbin/syslog-ng-ctl
+1a61ee85a9e29e324caaa29a22e51cb9  usr/share/doc/syslog-ng/NEWS.gz
+67bcdb0a84860167c78992ec8700103c  usr/share/doc/syslog-ng/README.Debian
+685266c633de9711f9de1d8617be25bf  usr/share/doc/syslog-ng/changelog.Debian.gz
+e4b037ba3c0c9653cad46761c915f04c  usr/share/doc/syslog-ng/changelog.gz
+210778e25e81a726c6a4fe564ea3fd67  usr/share/doc/syslog-ng/copyright
+9127c5fb50f35bc15331d52ea0e7b782  usr/share/man/man1/pdbtool.1.gz
+1a3cdacdecbbbbafe8f6d210ba40d1b7  usr/share/man/man5/syslog-ng.conf.5.gz
+83066a01ac7557a96e7a40f6d16667cf  usr/share/man/man8/syslog-ng.8.gz

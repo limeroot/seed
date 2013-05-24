@@ -1,0 +1,17 @@
+#!/bin/sh
+
+set -e
+
+if [ "$1" = "remove" ]; then
+    if [ -x "/etc/init.d/syslog-ng" ]; then
+        if [ -x "`which invoke-rc.d 2>/dev/null`" ]; then
+            invoke-rc.d syslog-ng stop || true
+        else
+            /etc/init.d/syslog-ng stop || true
+        fi
+    fi
+fi
+
+
+
+exit 0

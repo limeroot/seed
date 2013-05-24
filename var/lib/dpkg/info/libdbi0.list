@@ -1,0 +1,14 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/libdbi0
+/usr/share/doc/libdbi0/changelog.Debian.gz
+/usr/share/doc/libdbi0/copyright
+/usr/share/doc/libdbi0/NEWS.gz
+/usr/share/doc/libdbi0/changelog.gz
+/usr/lib
+/usr/lib/libdbi.la
+/usr/lib/libdbi.so.0.0.5
+/usr/lib/libdbi.a
+/usr/lib/libdbi.so.0

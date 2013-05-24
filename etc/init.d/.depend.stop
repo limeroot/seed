@@ -1,8 +1,10 @@
-TARGETS = lighttpd iflive dropbear urandom hwclock.sh sendsigs umountnfs.sh umountfs umountroot live-boot halt reboot
-sendsigs: lighttpd iflive dropbear
-umountnfs.sh: lighttpd sendsigs iflive dropbear
-umountfs: lighttpd urandom hwclock.sh umountnfs.sh iflive dropbear
+TARGETS = lighttpd dropbear urandom syslog-ng sendsigs hwclock.sh umountnfs.sh umountfs umountroot live-boot halt reboot
+syslog-ng: lighttpd dropbear
+sendsigs: lighttpd syslog-ng dropbear
+hwclock.sh: syslog-ng
+umountnfs.sh: lighttpd syslog-ng dropbear sendsigs
+umountfs: lighttpd syslog-ng urandom hwclock.sh dropbear umountnfs.sh
 umountroot: umountfs
 live-boot: umountroot
-halt: live-boot umountroot
-reboot: live-boot umountroot
+halt: umountroot live-boot
+reboot: umountroot live-boot
