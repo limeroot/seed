@@ -136,6 +136,28 @@ Description: tools for generating an initramfs
  NFS is also supported.
  Any boot loader with initrd support is able to load an initramfs archive.
 
+Package: libxml2
+Status: install ok installed
+Priority: standard
+Section: libs
+Installed-Size: 1588
+Maintainer: Debian XML/SGML Group <debian-xml-sgml-pkgs@lists.alioth.debian.org>
+Architecture: i386
+Version: 2.7.8.dfsg-2+squeeze6
+Depends: libc6 (>= 2.7), zlib1g (>= 1:1.2.3.3.dfsg)
+Recommends: xml-core
+Description: GNOME XML library
+ XML is a metalanguage to let you design your own markup language.
+ A regular markup language defines a way to describe information in
+ a certain class of documents (eg HTML). XML lets you define your
+ own customized markup languages for many classes of document. It
+ can do this because it's written in SGML, the international standard
+ metalanguage for markup languages.
+ .
+ This package provides a library providing an extensive API to handle
+ such XML data files.
+Homepage: http://xmlsoft.org/
+
 Package: login
 Essential: yes
 Status: install ok installed
@@ -576,6 +598,32 @@ Description: Advanced front-end for dpkg
  .
  APT features complete installation ordering, multiple source capability
  and several other unique features, see the Users Guide in apt-doc.
+
+Package: rrdtool
+Status: install ok installed
+Priority: optional
+Section: utils
+Installed-Size: 254
+Maintainer: LimeRoot Team <devel@limeroot.org>
+Architecture: i386
+Version: 1.4.8
+Depends: libglib2.0-0 (>= 2.12.0), libxml2 (>= 2.6.27)
+Description: time-series data storage.
+ The Round Robin Database Tool (RRDtool) is a system to store and display
+ time-series data (e.g. network bandwidth, machine-room temperature,
+ server load average). It stores the data in Round Robin Databases (RRDs),
+ a very compact way that will not expand over time. RRDtool processes the
+ extracted data to enforce a certain data density, allowing for useful
+ graphical representation of data values.
+ .
+ RRDtool is often used via various wrappers that can poll data from devices
+ and feed data into RRDs, as well as provide a friendlier user interface and
+ customized graphs.
+ .
+ This package contains command-line programs used to access and manipulate
+ RRDs.
+ .
+Homepage: http://oss.oetiker.ch/rrdtool/
 
 Package: pciutils
 Status: install ok installed
