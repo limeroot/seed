@@ -2733,3 +2733,20 @@
 2013-05-24 00:44:28 startup packages purge
 2013-05-24 00:45:12 startup packages purge
 >>>>>>> d7cb0cbed7f727d42c52eecd3d7153d25d8e5383
+2013-06-15 17:54:17 startup packages remove
+2013-06-15 17:54:17 status installed linux-image-3.3.6-limeroot 1.2.3
+2013-06-15 17:54:17 remove linux-image-3.3.6-limeroot 1.2.3 1.2.3
+2013-06-15 17:54:17 status half-configured linux-image-3.3.6-limeroot 1.2.3
+2013-06-15 17:54:17 status half-installed linux-image-3.3.6-limeroot 1.2.3
+2013-06-15 17:54:18 status config-files linux-image-3.3.6-limeroot 1.2.3
+2013-06-15 17:54:18 status config-files linux-image-3.3.6-limeroot 1.2.3
+2013-06-15 17:54:32 startup archives install
+2013-06-15 17:54:32 install linux-image-3.3.6-limeroot 1.2.3 1.2.4
+2013-06-15 17:54:32 status half-installed linux-image-3.3.6-limeroot 1.2.3
+2013-06-15 17:54:33 status unpacked linux-image-3.3.6-limeroot 1.2.4
+2013-06-15 17:54:33 status unpacked linux-image-3.3.6-limeroot 1.2.4
+2013-06-15 17:54:33 configure linux-image-3.3.6-limeroot 1.2.4 1.2.4
+2013-06-15 17:54:33 status unpacked linux-image-3.3.6-limeroot 1.2.4
+2013-06-15 17:54:33 status half-configured linux-image-3.3.6-limeroot 1.2.4
+2013-06-15 17:54:35 status installed linux-image-3.3.6-limeroot 1.2.4
+2013-06-15 17:54:40 startup packages purge

@@ -291,3 +291,8 @@ Commandline: apt-get install libxml2 --no-install-recommends
 Install: libxml2:i386 (2.7.8.dfsg-2+squeeze6)
 End-Date: 2013-05-24  00:36:58
 >>>>>>> d7cb0cbed7f727d42c52eecd3d7153d25d8e5383
+
+Start-Date: 2013-06-15  17:54:17
+Commandline: apt-get remove linux-image-3.3.6-limeroot
+Remove: linux-image-3.3.6-limeroot:i386 (1.2.3)
+End-Date: 2013-06-15  17:54:18

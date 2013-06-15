@@ -2363,11 +2363,11 @@ Package: linux-image-3.3.6-limeroot
 Status: install ok installed
 Priority: optional
 Section: kernel
-Installed-Size: 4796
+Installed-Size: 7304
 Maintainer: Unknown Kernel Package Maintainer <unknown@unconfigured.in.etc.kernel-pkg.conf>
 Architecture: i386
 Source: linux-source-3.3.6-limeroot
-Version: 1.2.3
+Version: 1.2.4
 Provides: linux-image, linux-image-3.3
 Depends: coreutils (>= 5.96)
 Pre-Depends: debconf (>= 0.2.17) | debconf-2.0
