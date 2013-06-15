@@ -2460,6 +2460,7 @@
 2013-05-23 22:00:02 status installed pppoe 3.8-3
 2013-05-23 22:00:29 startup packages purge
 2013-05-24 00:01:03 startup packages purge
+<<<<<<< HEAD
 2013-06-01 22:50:23 startup packages remove
 2013-06-01 22:50:23 status installed linux-image-3.2.41-rt60-limeroot limeroot.1.7
 2013-06-01 22:50:23 remove linux-image-3.2.41-rt60-limeroot limeroot.1.7 limeroot.1.7
@@ -2708,3 +2709,27 @@
 2013-06-14 16:01:35 status installed dnsmasq 2.55-2
 2013-06-14 16:01:42 startup packages purge
 2013-06-14 21:03:47 startup packages purge
+=======
+2013-05-24 00:36:56 startup archives unpack
+2013-05-24 00:36:56 install libxml2 <none> 2.7.8.dfsg-2+squeeze6
+2013-05-24 00:36:56 status half-installed libxml2 2.7.8.dfsg-2+squeeze6
+2013-05-24 00:36:57 status unpacked libxml2 2.7.8.dfsg-2+squeeze6
+2013-05-24 00:36:57 status unpacked libxml2 2.7.8.dfsg-2+squeeze6
+2013-05-24 00:36:57 startup packages configure
+2013-05-24 00:36:57 configure libxml2 2.7.8.dfsg-2+squeeze6 2.7.8.dfsg-2+squeeze6
+2013-05-24 00:36:57 status unpacked libxml2 2.7.8.dfsg-2+squeeze6
+2013-05-24 00:36:57 status half-configured libxml2 2.7.8.dfsg-2+squeeze6
+2013-05-24 00:36:58 status installed libxml2 2.7.8.dfsg-2+squeeze6
+2013-05-24 00:37:51 startup archives install
+2013-05-24 00:37:51 install rrdtool <none> 1.4.8
+2013-05-24 00:37:51 status half-installed rrdtool 1.4.8
+2013-05-24 00:37:51 status unpacked rrdtool 1.4.8
+2013-05-24 00:37:51 status unpacked rrdtool 1.4.8
+2013-05-24 00:37:51 configure rrdtool 1.4.8 1.4.8
+2013-05-24 00:37:51 status unpacked rrdtool 1.4.8
+2013-05-24 00:37:51 status half-configured rrdtool 1.4.8
+2013-05-24 00:37:51 status installed rrdtool 1.4.8
+2013-05-24 00:38:06 startup packages purge
+2013-05-24 00:44:28 startup packages purge
+2013-05-24 00:45:12 startup packages purge
+>>>>>>> d7cb0cbed7f727d42c52eecd3d7153d25d8e5383

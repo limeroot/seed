@@ -124,7 +124,7 @@ Auto-Installed: 1
 
 Package: libglib2.0-0
 Architecture: i386
-Auto-Installed: 1
+Auto-Installed: 0
 
 Package: libssl0.9.8
 Architecture: i386
