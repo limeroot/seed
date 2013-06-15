@@ -26,7 +26,7 @@ SYSLOGNG_OPTS=""
 [ -r /etc/default/syslog-ng ] && . /etc/default/syslog-ng
 
 # stop syslog-ng before changing its PID file!
-PIDFILE="/var/run/syslog-ng.pid"
+PIDFILE="/var/run/syslog-ng/syslog-ng.pid"
 
 SYSLOGNG="/usr/sbin/syslog-ng"
 NAME="syslog-ng"
