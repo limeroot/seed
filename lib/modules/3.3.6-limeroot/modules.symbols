@@ -1,0 +1,5 @@
+# Aliases for symbols, used by symbol_request().
+alias symbol:backlight_force_update backlight
+alias symbol:genericbl_limit_intensity generic_bl
+alias symbol:backlight_device_register backlight
+alias symbol:backlight_device_unregister backlight

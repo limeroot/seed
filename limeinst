@@ -1,0 +1,262 @@
+#!/bin/bash
+
+#  Copyright 2013 LimeRoot <devel@limeroot.org>
+#  
+#  This program is free software; you can redistribute it and/or modify
+#  it under the terms of the GNU General Public License as published by
+#  the Free Software Foundation; either version 2 of the License, or
+#  (at your option) any later version.
+#  
+#  This program is distributed in the hope that it will be useful,
+#  but WITHOUT ANY WARRANTY; without even the implied warranty of
+#  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#  GNU General Public License for more details.
+#  
+#  You should have received a copy of the GNU General Public License
+#  along with this program; if not, write to the Free Software
+#  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
+#  MA 02110-1301, USA.
+
+#SQLITE="/usr/bin/sqlite3"
+LIMEBOX="/usr/sbin/limebox"
+LAN="lan1"
+CONFIG_DIR="/var/db/limeroot/"
+CONFIG_FILE="/var/db/limeroot/limeconfig.db"
+bold=$(tput bold)
+normal=$(tput sgr0)
+
+createConfigDB(){
+
+    mkdir  -p $CONFIG_DIR
+    #$SQLITE $CONFIG_FILE "CREATE TABLE ip (name TEXT, address TEXT);" >/dev/null 2>&1
+}
+
+getDrive(){
+    drives=$(grep -E 'sd[a-z]$|hd[a-z]$' "/proc/partitions" | awk '{print $4":"$3/1024}')
+    
+    for hdd in $drives; do
+        ((count++))
+        hdd_real_list="${hdd_real_list}${hdd} "
+        hdd_size="${hdd##*:}"
+        hdd="${hdd%%:*}"
+        hdd_list="${hdd_list}[${hdd}]: ${hdd_size}MB " 
+        hdd_name_list="${hdd_name_list}${hdd} "
+    done
+    
+    if [[ $count > 1 ]]; then
+        while [ "${found}" != "yes" ]; do
+            echo -e "Please select one disk to install LimeRoot:\n${hdd_list}"
+            read shdd
+                
+            for hdd in ${hdd_name_list}; do
+                if [ "${hdd}" == "${shdd}" ]; then                
+                    found="yes"
+    
+                    for hdd_ in ${hdd_real_list}; do
+                        hdd_size="${hdd_##*:}"
+                        hdd_="${hdd_%%:*}"
+                        if [ "${hdd_}" == "${shdd}" ]; then
+                            break
+                        fi
+                    done
+                    
+                    break
+                fi
+            done
+        done
+    fi
+    
+    hdd="/dev/${hdd}"
+}
+
+getLAN(){
+    while [ "${found}" != "yes" ]; do
+
+        echo -e "Please type the first LAN name you want to set to LimeRoot:"
+        read LAN
+        found="yes"
+        #prefix=$(busybox ipcalc -p ${ip_address} -s)
+        #prefix=${prefix##*=}
+        #if [ "${prefix}" == "24" ]; then
+        #    found="yes"
+        #else
+        #    found="no"
+        #    echo "Error: ${bold}\"${ip_address}\"${normal} is not a valid IP Address"
+        #fi
+    done
+}
+
+getIP(){
+    found="no"
+    while [ "${found}" != "yes" ]; do
+
+        echo -e "Please type the LAN IP Address you want to set to LimeRoot:"
+        read ip_address
+        prefix=$(busybox ipcalc -p ${ip_address} -s)
+        prefix=${prefix##*=}
+        if [ "${prefix}" == "24" ]; then
+            found="yes"
+        else
+            found="no"
+            echo "Error: ${bold}\"${ip_address}\"${normal} is not a valid IP Address"
+        fi
+    done
+}
+
+bbLinks(){
+	#Relative links are usted to prevent some errors if sysadmin need move/copy this links via scp, ssh, sftp:
+	ln -s busybox /mnt/bin/ping
+	ln -s busybox /mnt/bin/nc
+	ln -s busybox /mnt/bin/netstat
+	ln -s ../bin/busybox /mnt/sbin/ifconfig
+	ln -s ../bin/busybox /mnt/sbin/route
+	ln -s ../../bin/busybox /mnt/usr/sbin/brctl
+	ln -s ../../bin/busybox /mnt/usr/bin/arping
+	ln -s ../../bin/busybox /mnt/usr/bin/wget
+	ln -s ../../bin/busybox /mnt/usr/bin/traceroute
+	ln -s ../../bin/busybox /mnt/usr/bin/ipcalc
+	ln -s ../../bin/busybox /mnt/usr/bin/nslookup
+    ln -s ../../bin/busybox /mnt/usr/bin/free
+}
+
+mkPartitions(){
+	#$1 is hdd
+	#$2 is size
+    echo "Creating Partitions ..."
+	if [ -z "$2" ]; then
+		echo -e ",,L,*\n" | sfdisk -uM $1 >/dev/null 2>&1
+	else
+		echo -e ",$2,L,*\n,,S" | sfdisk -uM $1 >/dev/null 2>&1
+    fi
+}
+
+mkFilesystem(){
+	#$1 is [ root | swap ]
+	#$2 is hdd
+    echo "Creating Filesystem ..."
+	[ "$1" = "root" ] && mke2fs -t ext4 -m 0 -jqF ${2}1 >/dev/null 2>&1
+	[ "$1" = "swap" ] && mkswap ${2}2 >/dev/null 2>&1
+}
+
+kernelName(){
+    kname="$(ls /boot/config*)"
+    echo "${kname#*-}"
+}
+
+mkFstab(){
+    #$1 is hdd
+    #$2 is swap
+    echo -e "# /etc/fstab: static file system information." > /mnt/etc/fstab
+    echo -e "# <file system> <mount point>   <type>  <options>       <dump>  <pass>" >> /mnt/etc/fstab
+    echo -e "proc            /proc           proc    defaults        0       0" >> /mnt/etc/fstab
+    echo -e "${1}1           /               ext4    defaults,noatime,errors=remount-ro  0   1" >> /mnt/etc/fstab
+    [ $2 -ne 0 ] && echo -e "${1}2           none            swap    sw              0       0" >> /mnt/etc/fstab
+}
+
+fakeBoot(){
+    #$1 is hdd
+    echo "label l0
+    menu label Debian GNU/Linux, kernel $(kernelName)
+    linux /boot/vmlinuz-$(kernelName)
+    append initrd=/boot/initrd.img-$(kernelName) root=${1}1 ro quiet
+
+label l0r
+    menu label Debian GNU/Linux, kernel $(kernelName) (recovery mode)
+    linux /boot/vmlinuz-$(kernelName)
+    append initrd=/boot/initrd.img-$(kernelName) root=${1}1 ro single
+    text help
+   This option boots the system into recovery mode (single-user)
+    endtext
+" > /mnt/boot/extlinux/linux.cfg
+}
+
+uninstallUnneeded(){
+    
+    echo "Uninistalling unneeded files"
+    
+    chroot /mnt /bin/bash -c "
+    #Preserve this
+    apt-get install busybox -q=2 >/dev/null 2>&1
+    apt-get install udev -q=2 >/dev/null 2>&1
+    apt-get install module-init-tools -q=2 >/dev/null 2>&1
+    
+    #Uninistalling live files -q=2 >/dev/null 2>&1
+    apt-get remove live-boot -q=2 >/dev/null 2>&1
+    apt-get autoremove -q=2 >/dev/null 2>&1
+    dpkg --get-selections | grep deinstall | sed 's/deinstall/\lpurge/' | dpkg --set-selections; dpkg -Pa >/dev/null 2>&1
+    "
+}
+
+limeDump(){
+    #$1 is hdd
+    #$2 is swap
+    echo "Installing Limeroot Base System ..."
+    mount ${hdd}1 /mnt
+    cp -aR /bin /boot /etc /home /lib /opt /root /sbin /selinux /srv /tmp /usr /var /mnt
+    cp -av /dev /mnt >/dev/null 2>&1
+    chown root /mnt/dev/*
+    mkdir -p /mnt/{proc,mnt,sys,media}
+    cp /live/image/live/vmlinuz /mnt/boot/vmlinuz-$(kernelName)
+    cp /live/image/live/initrd.img /mnt/boot/initrd.img-$(kernelName)
+    echo "Installing Soft Links ..."
+    bbLinks
+    mkFstab "$hdd" "$2"
+    echo "Installing Boot Manager ..."
+    sed -i 's/EXTLINUX_TIMEOUT="50"/EXTLINUX_TIMEOUT="01"/g' /mnt/etc/default/extlinux
+    sed -i 's/timeout 50/timeout 01/g' /mnt/boot/extlinux/extlinux.conf
+    fakeBoot "$hdd"
+    extlinux --install /mnt/boot/extlinux >/dev/null 2>&1
+    
+    uninstallUnneeded
+    
+    umount /mnt
+
+    echo "Done, now you can type reboot to reboot system, dont forget eject the CD"
+}
+
+# Main Script
+quickInst(){
+    
+    getDrive
+    
+    getLAN
+    
+    getIP
+    
+    createConfigDB
+    
+    #$SQLITE $CONFIG_FILE "INSERT INTO ip(name,address) VALUES('lan','${ip_address}');"
+    
+    $LIMEBOX lan ${LAN} use eth0 ${ip_address} 
+    
+    echo "Installing MBR..."
+    
+    #dd if=/dev/zero of=/dev/sda bs=446 count=1 >/dev/null 2>&1
+    cat /usr/lib/extlinux/mbr.bin >$hdd
+    
+    #Calculate if hdd size is enough for swap:
+    [ $hdd_size -le 2000 ] && swap=0 || swap=1024
+    [ "$1" = "noswap" ] && swap=0
+
+    #Calculate size for root and swap partitions
+    # create partitions
+    # make filesystem (ext4) and make swap if swap != 0.
+    if [ $swap -ne 0 ]; then
+            mkPartitions "$hdd" "$(( $hdd_size - $swap ))"
+            mkFilesystem "root" "$hdd"
+            mkFilesystem "swap" "$hdd"
+    else
+            mkPartitions "$hdd"
+            mkFilesystem "root" "$hdd"
+    fi
+    limeDump "$hdd" "$swap"
+}
+
+clear
+
+echo -e "${bold}Installing LimeRoot${normal}\n"
+
+case $1 in
+	auto) [ "$2" = "--no-swap" ] && quickInst "noswap" || quickInst;;
+	*) echo "Usage: $0 { auto | guided | manual }";;
+esac

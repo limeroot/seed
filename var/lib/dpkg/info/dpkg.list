@@ -38,8 +38,6 @@
 /usr/share/man/man1/dpkg-deb.1.gz
 /usr/share/man/man1/dpkg-maintscript-helper.1.gz
 /usr/share/man/man1/dpkg-trigger.1.gz
-/usr/share/man/es
-/usr/share/man/es/man8
 /usr/share/man/es/man8/dpkg-statoverride.8.gz
 /usr/share/man/es/man8/start-stop-daemon.8.gz
 /usr/share/man/es/man8/dpkg-divert.8.gz
@@ -53,13 +51,10 @@
 /usr/share/man/es/man1/dpkg-deb.1.gz
 /usr/share/man/es/man1/dpkg-maintscript-helper.1.gz
 /usr/share/man/es/man1/dpkg-trigger.1.gz
-/usr/share/man/fr
-/usr/share/man/fr/man8
 /usr/share/man/fr/man8/dpkg-statoverride.8.gz
 /usr/share/man/fr/man8/start-stop-daemon.8.gz
 /usr/share/man/fr/man8/dpkg-divert.8.gz
 /usr/share/man/fr/man8/update-alternatives.8.gz
-/usr/share/man/fr/man5
 /usr/share/man/fr/man5/dpkg.cfg.5.gz
 /usr/share/man/fr/man1
 /usr/share/man/fr/man1/dpkg-query.1.gz
@@ -83,12 +78,10 @@
 /usr/share/man/sv/man1/dpkg-deb.1.gz
 /usr/share/man/sv/man1/dpkg-maintscript-helper.1.gz
 /usr/share/man/sv/man1/dpkg-trigger.1.gz
-/usr/share/man/de/man8
 /usr/share/man/de/man8/dpkg-statoverride.8.gz
 /usr/share/man/de/man8/start-stop-daemon.8.gz
 /usr/share/man/de/man8/dpkg-divert.8.gz
 /usr/share/man/de/man8/update-alternatives.8.gz
-/usr/share/man/de/man5
 /usr/share/man/de/man5/dpkg.cfg.5.gz
 /usr/share/man/de/man1/dpkg-query.1.gz
 /usr/share/man/de/man1/dpkg.1.gz

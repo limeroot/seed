@@ -1,0 +1,9 @@
+May 23 19:46:00 danybox gnome-session[1496]: CRITICAL: gsm_manager_set_phase: assertion `GSM_IS_MANAGER (manager)' failed
+May 23 19:46:00 danybox gnome-session[1496]: Gtk-CRITICAL: gtk_main_quit: assertion `main_loops != NULL' failed
+May 23 19:46:00 danybox gdm-simple-slave[1145]: GLib-GObject-CRITICAL: g_object_ref: assertion `object->ref_count > 0' failed
+May 23 19:46:01 danybox gdm-simple-slave[1145]: WARNING: Child process 1386 was already dead.
+May 23 19:46:01 danybox gdm-simple-slave[1145]: WARNING: Unable to kill session worker process
+May 23 19:46:01 danybox gdm-simple-slave[1145]: GLib-GObject-CRITICAL: g_object_unref: assertion `object->ref_count > 0' failed
+May 23 19:46:03 danybox dnsmasq[1221]: exiting on receipt of SIGTERM
+May 23 19:46:03 danybox NetworkManager[980]: <warn> dnsmasq disappeared from the bus.
+May 23 19:46:03 danybox NetworkManager[980]: <info> Writing DNS information to /sbin/resolvconf

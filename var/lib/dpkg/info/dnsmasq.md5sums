@@ -1,0 +1,6 @@
+4da2f005c39ee591bb1a71c264947898  etc/default/dnsmasq
+5a7e3e2c9f6a57880086d342f0b28f98  etc/dnsmasq.d/README
+d5ffbe82978229b3a3b402ed9752a04c  etc/dbus-1/system.d/dnsmasq.conf
+72cc940a81d7206acd68acebfd1ee805  etc/init.d/dnsmasq
+c818eac9fb342dc95bdb0c5f6367e122  etc/dnsmasq.conf
+309b723e48c57a0a0a1219f420d3b78c  etc/resolvconf/update.d/dnsmasq

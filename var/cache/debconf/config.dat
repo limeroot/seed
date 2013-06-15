@@ -109,45 +109,63 @@ Name: libssl0.9.8/restart-services
 Template: libssl0.9.8/restart-services
 Owners: libssl0.9.8
 
-Name: linux-image-3.2.41-rt60-limeroot/postinst/depmod-error-3.2.41-rt60-limeroot
-Template: linux-image-3.2.41-rt60-limeroot/postinst/depmod-error-3.2.41-rt60-limeroot
-Owners: linux-image-3.2.41-rt60-limeroot
+Name: linux-image-3.3.6-limeroot/postinst/depmod-error-3.3.6-limeroot
+Template: linux-image-3.3.6-limeroot/postinst/depmod-error-3.3.6-limeroot
+Owners: linux-image-3.3.6-limeroot
 
-Name: linux-image-3.2.41-rt60-limeroot/postinst/depmod-error-initrd-3.2.41-rt60-limeroot
-Template: linux-image-3.2.41-rt60-limeroot/postinst/depmod-error-initrd-3.2.41-rt60-limeroot
-Owners: linux-image-3.2.41-rt60-limeroot
+Name: linux-image-3.3.6-limeroot/postinst/depmod-error-initrd-3.3.6-limeroot
+Template: linux-image-3.3.6-limeroot/postinst/depmod-error-initrd-3.3.6-limeroot
+Owners: linux-image-3.3.6-limeroot
 
-Name: linux-image-3.2.41-rt60-limeroot/postinst/kimage-is-a-directory
-Template: linux-image-3.2.41-rt60-limeroot/postinst/kimage-is-a-directory
-Owners: linux-image-3.2.41-rt60-limeroot
+Name: linux-image-3.3.6-limeroot/postinst/kimage-is-a-directory
+Template: linux-image-3.3.6-limeroot/postinst/kimage-is-a-directory
+Owners: linux-image-3.3.6-limeroot
 
-Name: linux-image-3.2.41-rt60-limeroot/postinst/old-dir-initrd-link-3.2.41-rt60-limeroot
-Template: linux-image-3.2.41-rt60-limeroot/postinst/old-dir-initrd-link-3.2.41-rt60-limeroot
-Owners: linux-image-3.2.41-rt60-limeroot
+Name: linux-image-3.3.6-limeroot/postinst/old-dir-initrd-link-3.3.6-limeroot
+Template: linux-image-3.3.6-limeroot/postinst/old-dir-initrd-link-3.3.6-limeroot
+Owners: linux-image-3.3.6-limeroot
 
-Name: linux-image-3.2.41-rt60-limeroot/postinst/old-system-map-link-3.2.41-rt60-limeroot
-Template: linux-image-3.2.41-rt60-limeroot/postinst/old-system-map-link-3.2.41-rt60-limeroot
-Owners: linux-image-3.2.41-rt60-limeroot
+Name: linux-image-3.3.6-limeroot/postinst/old-system-map-link-3.3.6-limeroot
+Template: linux-image-3.3.6-limeroot/postinst/old-system-map-link-3.3.6-limeroot
+Owners: linux-image-3.3.6-limeroot
 
-Name: linux-image-3.2.41-rt60-limeroot/preinst/abort-overwrite-3.2.41-rt60-limeroot
-Template: linux-image-3.2.41-rt60-limeroot/preinst/abort-overwrite-3.2.41-rt60-limeroot
-Owners: linux-image-3.2.41-rt60-limeroot
+Name: linux-image-3.3.6-limeroot/preinst/abort-overwrite-3.3.6-limeroot
+Template: linux-image-3.3.6-limeroot/preinst/abort-overwrite-3.3.6-limeroot
+Owners: linux-image-3.3.6-limeroot
 
-Name: linux-image-3.2.41-rt60-limeroot/preinst/already-running-this-3.2.41-rt60-limeroot
-Template: linux-image-3.2.41-rt60-limeroot/preinst/already-running-this-3.2.41-rt60-limeroot
-Owners: linux-image-3.2.41-rt60-limeroot
+Name: linux-image-3.3.6-limeroot/preinst/already-running-this-3.3.6-limeroot
+Template: linux-image-3.3.6-limeroot/preinst/already-running-this-3.3.6-limeroot
+Owners: linux-image-3.3.6-limeroot
 
-Name: linux-image-3.2.41-rt60-limeroot/preinst/failed-to-move-modules-3.2.41-rt60-limeroot
-Template: linux-image-3.2.41-rt60-limeroot/preinst/failed-to-move-modules-3.2.41-rt60-limeroot
-Owners: linux-image-3.2.41-rt60-limeroot
+Name: linux-image-3.3.6-limeroot/preinst/failed-to-move-modules-3.3.6-limeroot
+Template: linux-image-3.3.6-limeroot/preinst/failed-to-move-modules-3.3.6-limeroot
+Owners: linux-image-3.3.6-limeroot
 
-Name: linux-image-3.2.41-rt60-limeroot/preinst/overwriting-modules-3.2.41-rt60-limeroot
-Template: linux-image-3.2.41-rt60-limeroot/preinst/overwriting-modules-3.2.41-rt60-limeroot
-Owners: linux-image-3.2.41-rt60-limeroot
+Name: linux-image-3.3.6-limeroot/preinst/overwriting-modules-3.3.6-limeroot
+Template: linux-image-3.3.6-limeroot/preinst/overwriting-modules-3.3.6-limeroot
+Owners: linux-image-3.3.6-limeroot
 
-Name: linux-image-3.2.41-rt60-limeroot/prerm/removing-running-kernel-3.2.41-rt60-limeroot
-Template: linux-image-3.2.41-rt60-limeroot/prerm/removing-running-kernel-3.2.41-rt60-limeroot
-Owners: linux-image-3.2.41-rt60-limeroot
+Name: linux-image-3.3.6-limeroot/prerm/removing-running-kernel-3.3.6-limeroot
+Template: linux-image-3.3.6-limeroot/prerm/removing-running-kernel-3.3.6-limeroot
+Owners: linux-image-3.3.6-limeroot
+
+Name: ssh/disable_cr_auth
+Template: ssh/disable_cr_auth
+Owners: openssh-server
+
+Name: ssh/encrypted_host_key_but_no_keygen
+Template: ssh/encrypted_host_key_but_no_keygen
+Owners: openssh-server
+
+Name: ssh/use_old_init_script
+Template: ssh/use_old_init_script
+Value: true
+Owners: openssh-server
+Flags: seen
+
+Name: ssh/vulnerable_host_keys
+Template: ssh/vulnerable_host_keys
+Owners: openssh-server
 
 Name: sysv-rc/convert-legacy
 Template: sysv-rc/convert-legacy

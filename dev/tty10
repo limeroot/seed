@@ -1,0 +1,18 @@
+May 24 02:36:18 danybox kernel: [38949.637430] nouveau E[   PFIFO][0000:02:00.0] DMA_PUSHER - Ch 2 Get 0x002003824c Put 0x002003ad0c IbGet 0x000000b1 IbPut 0x000000b2 State 0x80004861 (err: INVALID_CMD) Push 0x00400040
+May 23 19:46:00 danybox gnome-session[1496]: CRITICAL: gsm_manager_set_phase: assertion `GSM_IS_MANAGER (manager)' failed
+May 23 19:46:00 danybox gnome-session[1496]: Gtk-CRITICAL: gtk_main_quit: assertion `main_loops != NULL' failed
+May 23 19:46:00 danybox gdm-simple-slave[1145]: GLib-GObject-CRITICAL: g_object_ref: assertion `object->ref_count > 0' failed
+May 24 02:46:00 danybox [39531.987800] init: tty4 main process (1057) killed by TERM signal
+May 24 02:46:00 danybox [39531.989415] init: tty5 main process (1062) killed by TERM signal
+May 24 02:46:00 danybox [39531.989837] init: tty2 main process (1067) killed by TERM signal
+May 24 02:46:00 danybox [39531.990201] init: tty3 main process (1068) killed by TERM signal
+May 24 02:46:00 danybox [39531.990574] init: tty6 main process (1071) killed by TERM signal
+May 24 02:46:00 danybox [39531.994204] init: cron main process (1124) killed by TERM signal
+May 24 02:46:00 danybox [39531.994695] init: irqbalance main process (1136) killed by TERM signal
+May 24 02:46:00 danybox [39531.995819] init: tty1 main process (1373) killed by TERM signal
+May 23 19:46:01 danybox gdm-simple-slave[1145]: WARNING: Child process 1386 was already dead.
+May 23 19:46:01 danybox gdm-simple-slave[1145]: WARNING: Unable to kill session worker process
+May 24 02:46:01 danybox [39532.248114] init: plymouth-upstart-bridge main process (19079) terminated with status 1
+May 24 02:46:01 danybox [39532.353575] init: smbd main process (994) killed by TERM signal
+May 23 19:46:01 danybox gdm-simple-slave[1145]: GLib-GObject-CRITICAL: g_object_unref: assertion `object->ref_count > 0' failed
+May 23 19:46:03 danybox NetworkManager[980]: <warn> dnsmasq disappeared from the bus.

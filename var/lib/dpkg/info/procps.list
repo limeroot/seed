@@ -21,12 +21,9 @@
 /usr/bin/pwdx
 /usr/share
 /usr/share/man
-/usr/share/man/man8
 /usr/share/man/man8/vmstat.8.gz
 /usr/share/man/man8/sysctl.8.gz
-/usr/share/man/man5
 /usr/share/man/man5/sysctl.conf.5.gz
-/usr/share/man/man1
 /usr/share/man/man1/w.procps.1.gz
 /usr/share/man/man1/ps.1.gz
 /usr/share/man/man1/free.1.gz
@@ -40,7 +37,6 @@
 /usr/share/man/man1/top.1.gz
 /usr/share/man/man1/pwdx.1.gz
 /usr/share/man/man1/kill.1.gz
-/usr/share/man/de
 /usr/share/man/de/man1
 /usr/share/man/de/man1/w.1.gz
 /usr/share/menu

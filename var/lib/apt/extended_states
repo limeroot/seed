@@ -150,3 +150,59 @@ Package: ppp
 Architecture: i386
 Auto-Installed: 1
 
+Package: libkeyutils1
+Architecture: i386
+Auto-Installed: 1
+
+Package: libedit2
+Architecture: i386
+Auto-Installed: 1
+
+Package: libkrb5-3
+Architecture: i386
+Auto-Installed: 1
+
+Package: libkrb5support0
+Architecture: i386
+Auto-Installed: 1
+
+Package: libbsd0
+Architecture: i386
+Auto-Installed: 1
+
+Package: libk5crypto3
+Architecture: i386
+Auto-Installed: 1
+
+Package: openssh-client
+Architecture: i386
+Auto-Installed: 1
+
+Package: openssh-blacklist
+Architecture: i386
+Auto-Installed: 1
+
+Package: libgssapi-krb5-2
+Architecture: i386
+Auto-Installed: 1
+
+Package: libidn11
+Architecture: i386
+Auto-Installed: 1
+
+Package: dnsmasq-base
+Architecture: i386
+Auto-Installed: 1
+
+Package: netbase
+Architecture: i386
+Auto-Installed: 1
+
+Package: ifupdown
+Architecture: i386
+Auto-Installed: 1
+
+Package: net-tools
+Architecture: i386
+Auto-Installed: 1
+

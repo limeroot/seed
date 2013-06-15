@@ -299,6 +299,31 @@ Description: /proc file system utilities
  snice, sysctl, tload, top, uptime, vmstat, w, and watch.
 Homepage: http://procps.sf.net/
 
+Package: libgssapi-krb5-2
+Status: install ok installed
+Priority: standard
+Section: libs
+Installed-Size: 288
+Maintainer: Sam Hartman <hartmans@debian.org>
+Architecture: i386
+Source: krb5
+Version: 1.8.3+dfsg-4squeeze6
+Replaces: libkrb53 (<< 1.6.dfsg.4~beta1-7)
+Depends: libc6 (>= 2.7), libcomerr2 (>= 1.34), libk5crypto3 (>= 1.8+dfsg), libkeyutils1, libkrb5-3 (= 1.8.3+dfsg-4squeeze6), libkrb5support0 (>= 1.7dfsg~beta2)
+Suggests: krb5-doc, krb5-user
+Breaks: libkrb53 (<< 1.8)
+Description: MIT Kerberos runtime libraries - krb5 GSS-API Mechanism
+ Kerberos is a system for authenticating users and services on a network.
+ Kerberos is a trusted third-party service.  That means that there is a
+ third party (the Kerberos server) that is trusted by all the entities on
+ the network (users and services, usually called "principals").
+ .
+ This is the MIT reference implementation of Kerberos V5.
+ .
+ This package contains the runtime library for the MIT Kerberos
+ implementation of GSS-API used by applications and Kerberos clients.
+Homepage: http://web.mit.edu/kerberos/
+
 Package: ncurses-base
 Essential: yes
 Status: install ok installed
@@ -592,6 +617,47 @@ Description: Linux PCI Utilities
  devices connected to the PCI bus.
 Homepage: http://atrey.karlin.mff.cuni.cz/~mj/pciutils.shtml
 
+Package: libk5crypto3
+Status: install ok installed
+Priority: standard
+Section: libs
+Installed-Size: 240
+Maintainer: Sam Hartman <hartmans@debian.org>
+Architecture: i386
+Source: krb5
+Version: 1.8.3+dfsg-4squeeze6
+Replaces: libkrb53 (<< 1.6.dfsg.4~beta1-7)
+Depends: libc6 (>= 2.4), libkeyutils1, libkrb5support0 (>= 1.7dfsg~beta2)
+Suggests: krb5-doc, krb5-user
+Breaks: libgssapi-krb5-2 (<= 1.8~aa), libkrb5-3 (<= 1.8~aa), libkrb53 (<< 1.6.dfsg.4~beta1-9)
+Description: MIT Kerberos runtime libraries - Crypto Library
+ Kerberos is a system for authenticating users and services on a network.
+ Kerberos is a trusted third-party service.  That means that there is a
+ third party (the Kerberos server) that is trusted by all the entities on
+ the network (users and services, usually called "principals").
+ .
+ This is the MIT reference implementation of Kerberos V5.
+ .
+ This package contains the runtime cryptography libraries used by
+ applications and Kerberos clients.
+Homepage: http://web.mit.edu/kerberos/
+
+Package: dnsmasq-base
+Status: install ok installed
+Priority: optional
+Section: net
+Installed-Size: 728
+Maintainer: Simon Kelley <simon@thekelleys.org.uk>
+Architecture: i386
+Source: dnsmasq (2.55-2)
+Version: 2.55-2+b1
+Depends: libc6 (>= 2.3.6-6~), libdbus-1-3 (>= 1.1.1), libidn11 (>= 1.13)
+Conflicts: dnsmasq (<< 2.41)
+Description: A small caching DNS proxy and DHCP/TFTP server
+ This package contains the dnsmasq executable and documentation, but
+ not the infrastructure required to run it as a system daemon. For
+ that, install the dnsmasq package.
+
 Package: live-boot-initramfs-tools
 Status: install ok installed
 Priority: optional
@@ -611,6 +677,26 @@ Description: Debian Live - System Boot Scripts (initramfs-tools backend)
  .
  This package contains the initramfs-tools backend.
 Homepage: http://live.debian.net/devel/live-boot/
+
+Package: netbase
+Status: install ok installed
+Priority: important
+Section: admin
+Installed-Size: 96
+Maintainer: Marco d'Itri <md@linux.it>
+Architecture: all
+Version: 4.45
+Depends: lsb-base (>= 3.0-6), initscripts
+Recommends: ifupdown
+Conflicts: inetutils-inetd (<< 2:1.4.3+20060719-3), openbsd-inetd (<< 0.20050402-3)
+Conffiles:
+ /etc/services b6ec213b4f91e6ba36985df7800b08a6
+ /etc/protocols 614078773aae00739c147a3bef5bb0e9
+ /etc/rpc f0b6f6352bf886623adc04183120f83b
+ /etc/init.d/networking 3bb6d34b6a295bb01142d9a667de4b0d
+Description: Basic TCP/IP networking system
+ This package provides the necessary infrastructure for basic TCP/IP based
+ networking.
 
 Package: libmagic1
 Status: install ok installed
@@ -715,6 +801,27 @@ Version: 164-3
 Depends: libc6 (>= 2.8)
 Description: libudev shared library
  This library provides access to udev device information.
+
+Package: ifupdown
+Status: install ok installed
+Priority: important
+Section: admin
+Installed-Size: 224
+Maintainer: Anthony Towns <ajt@debian.org>
+Architecture: i386
+Version: 0.6.10
+Replaces: netbase (<< 4.00)
+Depends: net-tools, libc6 (>= 2.3), lsb-base
+Suggests: iproute, dhcp3-client | dhcp-client, ppp
+Conflicts: dhcp-client (<< 3.0)
+Conffiles:
+ /etc/init.d/ifupdown 346208729633adf45e2fa3f2bd3b19c6
+ /etc/init.d/ifupdown-clean c6fffaae03271f1641920105ce68796b
+ /etc/default/ifupdown fab851ca87c5deb9d6f665e610184648
+Description: high level tools to configure network interfaces
+ This package provides the tools ifup and ifdown which may be used to
+ configure (or, respectively, deconfigure) network interfaces based on
+ interface definitions in the file /etc/network/interfaces.
 
 Package: dbus
 Status: install ok installed
@@ -1090,6 +1197,27 @@ Description: Point-to-Point Protocol (PPP) - daemon
  This package is most commonly used to manage a modem for dial-up or
  certain kinds of broadband connections.
 
+Package: libkeyutils1
+Status: install ok installed
+Priority: standard
+Section: libs
+Installed-Size: 60
+Maintainer: Daniel Baumann <daniel.baumann@progress-technologies.net>
+Architecture: i386
+Source: keyutils
+Version: 1.5.2-2~bpo60+1
+Depends: libc6 (>= 2.7)
+Description: Linux Key Management Utilities (library)
+ Keyutils is a set of utilities for managing the key retention facility in the
+ kernel, which can be used by filesystems, block devices and more to gain and
+ retain the authorization and encryption keys required to perform secure
+ operations.
+ .
+ This package provides a wrapper library for the key management facility system
+ calls.
+Multi-Arch: same
+Homepage: http://people.redhat.com/~dhowells/keyutils/
+
 Package: libexpat1
 Status: install ok installed
 Priority: optional
@@ -1136,30 +1264,6 @@ Description: networking and traffic control tools
  interface, providing advanced features not available through the
  legacy net-tools commands 'ifconfig' and 'route'.
 Homepage: http://www.linux-foundation.org/en/Net:Iproute2
-
-Package: dropbear
-Status: install ok installed
-Priority: optional
-Section: net
-Installed-Size: 436
-Maintainer: Carlos Rincon <carlosr@limeroot.org>
-Architecture: i386
-Version: 2013.56+limeroot1
-Provides: ssh-server
-Depends: libc6 (>= 2.7), zlib1g (>= 1:1.1.4)
-Conffiles:
- /etc/init.d/dropbear 4f3ba7c35a23aa0f33d87eae708d0756
- /etc/dropbear/run e1844aaafec37a1fb283b794ee2fa0c8
- /etc/dropbear/log/run 1cfe24efd15e41994615e0244e386e55
-Description: lightweight SSH2 server and client
- dropbear is a SSH 2 server and client designed to be small enough to
- be used in small memory environments, while still being functional and
- secure enough for general use.
- .
- It implements most required features of the SSH 2 protocol, and other
- features such as X11 and authentication agent forwarding.
- .
- See http://matt.ucc.asn.au/dropbear/dropbear.html
 
 Package: libdevmapper1.02.1
 Status: install ok installed
@@ -1254,6 +1358,27 @@ Description: The GNU sed stream editor
  output.
 Homepage: http://www.gnu.org/software/sed/
 
+Package: libidn11
+Status: install ok installed
+Priority: standard
+Section: libs
+Installed-Size: 356
+Maintainer: Anibal Monsalve Salazar <anibal@debian.org>
+Architecture: i386
+Source: libidn
+Version: 1.15-2
+Replaces: libidn11-dev
+Depends: libc6 (>= 2.1.3)
+Conflicts: libidn9-dev
+Description: GNU Libidn library, implementation of IETF IDN specifications
+ GNU Libidn is a fully documented implementation of the Stringprep,
+ Punycode and IDNA specifications.  Libidn's purpose is to encode and
+ decode internationalized domain names.  The Nameprep, XMPP, SASLprep,
+ and iSCSI profiles are supported.
+ .
+ This package contains the shared library.
+Homepage: http://www.gnu.org/software/libidn/
+
 Package: klibc-utils
 Status: install ok installed
 Priority: optional
@@ -1293,6 +1418,31 @@ Description: ext2/ext3/ext4 file system libraries
  include e2fsck, mke2fs, and tune2fs. Programs that use libe2p include
  dumpe2fs, chattr, and lsattr.
 Homepage: http://e2fsprogs.sourceforge.net
+
+Package: libkrb5support0
+Status: install ok installed
+Priority: standard
+Section: libs
+Installed-Size: 120
+Maintainer: Sam Hartman <hartmans@debian.org>
+Architecture: i386
+Source: krb5
+Version: 1.8.3+dfsg-4squeeze6
+Replaces: libkrb53 (<< 1.6.dfsg.4~beta1-7)
+Depends: libc6 (>= 2.3.4), libkeyutils1
+Suggests: krb5-doc, krb5-user
+Breaks: libkrb53 (<< 1.6.dfsg.4~beta1-9)
+Description: MIT Kerberos runtime libraries - Support library
+ Kerberos is a system for authenticating users and services on a network.
+ Kerberos is a trusted third-party service.  That means that there is a
+ third party (the Kerberos server) that is trusted by all the entities on
+ the network (users and services, usually called "principals").
+ .
+ This is the MIT reference implementation of Kerberos V5.
+ .
+ This package contains an internal runtime support library used by other
+ Kerberos libraries.
+Homepage: http://web.mit.edu/kerberos/
 
 Package: base-passwd
 Essential: yes
@@ -1428,6 +1578,27 @@ Description: Berkeley v4.8 Database Libraries [runtime]
  This is the runtime package for programs that use the v4.8 Berkeley
  database library.
 Homepage: http://www.oracle.com/technology/software/products/berkeley-db/index.html
+
+Package: net-tools
+Status: install ok installed
+Priority: important
+Section: net
+Installed-Size: 948
+Maintainer: net-tools Team <pkg-net-tools-maintainers@lists.alioth.debian.org>
+Architecture: i386
+Version: 1.60-23
+Replaces: ja-trans (<= 0.8-2), netbase (<< 4.00)
+Depends: libc6 (>= 2.3)
+Conflicts: ja-trans (<= 0.8-2)
+Description: The NET-3 networking toolkit
+ This package includes the important tools for controlling the network
+ subsystem of the Linux kernel.  This includes arp, ifconfig, netstat,
+ rarp, nameif and route.  Additionally, this package contains utilities
+ relating to particular network hardware types (plipconfig, slattach,
+ mii-tool) and advanced aspects of IP configuration (iptunnel, ipmaddr).
+ .
+ In the upstream package 'hostname' and friends are included. Those are
+ not installed by this package, since there is a special "hostname*.deb".
 
 Package: pppoe
 Status: install ok installed
@@ -1721,6 +1892,21 @@ Description: utilities for finding files--find, xargs
  been split off into a separate package.
 Homepage: http://savannah.gnu.org/projects/findutils/
 
+Package: libbsd0
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 124
+Maintainer: Debian GNU/kFreeBSD <debian-bsd@lists.debian.org>
+Architecture: i386
+Source: libbsd
+Version: 0.2.0-1
+Depends: libc6 (>= 2.3)
+Description: utility functions from BSD systems - shared library
+ This library provides some functions commonly available on BSD systems
+ but not on others like GNU systems.
+Homepage: http://libbsd.freedesktop.org/
+
 Package: xz-utils
 Status: install ok installed
 Priority: required
@@ -1793,6 +1979,76 @@ Description: ext2/ext3/ext4 file system utilities
  This package contains programs for creating, checking, and maintaining
  ext2/3/4-based file systems.
 Homepage: http://e2fsprogs.sourceforge.net
+
+Package: openssh-server
+Status: install ok installed
+Priority: optional
+Section: net
+Installed-Size: 756
+Maintainer: Debian OpenSSH Maintainers <debian-ssh@lists.debian.org>
+Architecture: i386
+Source: openssh
+Version: 1:5.5p1-6+squeeze3
+Replaces: openssh-client (<< 1:3.8.1p1-11), ssh, ssh-krb5
+Provides: ssh-server
+Depends: libc6 (>= 2.8), libcomerr2 (>= 1.01), libgssapi-krb5-2 (>= 1.8+dfsg), libkrb5-3 (>= 1.6.dfsg.2), libpam0g (>= 0.99.7.1), libselinux1 (>= 1.32), libssl0.9.8 (>= 0.9.8m-1), libwrap0 (>= 7.6-4~), zlib1g (>= 1:1.1.4), debconf (>= 1.2.0) | debconf-2.0, openssh-client (= 1:5.5p1-6+squeeze3), libpam-runtime (>= 0.76-14), libpam-modules (>= 0.72-9), adduser (>= 3.9), dpkg (>= 1.9.0), lsb-base (>= 3.2-13), openssh-blacklist, procps
+Recommends: xauth, openssh-blacklist-extra
+Suggests: ssh-askpass, rssh, molly-guard, ufw
+Conflicts: rsh-client (<< 0.16.1-1), sftp, ssh (<< 1:3.8.1p1-9), ssh-krb5 (<< 1:4.3p2-7), ssh-nonfree (<< 2), ssh-socks, ssh2
+Conffiles:
+ /etc/ufw/applications.d/openssh-server 486b78d54b93cc9fdc950c1d52ff479e
+ /etc/network/if-up.d/openssh-server f9d5bc239ec0720cb8ad6e1455fbf21e
+ /etc/default/ssh 500e3cf069fe9a7b9936108eb9d9c035
+ /etc/init.d/ssh c58053693a734cd3cb3ca5098c76befa
+ /etc/pam.d/sshd 5ad89e19556206e750f3b096fbe9c6b3
+Description: secure shell (SSH) server, for secure access from remote machines
+ This is the portable version of OpenSSH, a free implementation of
+ the Secure Shell protocol as specified by the IETF secsh working
+ group.
+ .
+ Ssh (Secure Shell) is a program for logging into a remote machine
+ and for executing commands on a remote machine.
+ It provides secure encrypted communications between two untrusted
+ hosts over an insecure network. X11 connections and arbitrary TCP/IP
+ ports can also be forwarded over the secure channel.
+ It can be used to provide applications with a secure communication
+ channel.
+ .
+ This package provides the sshd server.
+ .
+ In some countries it may be illegal to use any encryption at all
+ without a special permit.
+ .
+ sshd replaces the insecure rshd program, which is obsolete for most
+ purposes.
+Homepage: http://www.openssh.org/
+
+Package: dnsmasq
+Status: install ok installed
+Priority: optional
+Section: net
+Installed-Size: 120
+Maintainer: Simon Kelley <simon@thekelleys.org.uk>
+Architecture: all
+Version: 2.55-2
+Depends: netbase, adduser, dnsmasq-base (>= 2.55-2)
+Suggests: resolvconf
+Conflicts: resolvconf (<< 1.15)
+Conffiles:
+ /etc/init.d/dnsmasq 72cc940a81d7206acd68acebfd1ee805
+ /etc/default/dnsmasq 4da2f005c39ee591bb1a71c264947898
+ /etc/dnsmasq.conf c818eac9fb342dc95bdb0c5f6367e122
+ /etc/resolvconf/update.d/dnsmasq 309b723e48c57a0a0a1219f420d3b78c
+ /etc/dbus-1/system.d/dnsmasq.conf d5ffbe82978229b3a3b402ed9752a04c
+Description: A small caching DNS proxy and DHCP/TFTP server
+ Dnsmasq is a lightweight, easy to configure, DNS forwarder and DHCP
+ server. It is designed to provide DNS and optionally, DHCP, to a
+ small network. It can serve the names of local machines which are
+ not in the global DNS. The DHCP server integrates with the DNS
+ server and allows machines with DHCP-allocated addresses
+ to appear in the DNS with names configured either in each host or
+ in a central configuration file. Dnsmasq supports static and dynamic
+ DHCP leases and BOOTP/TFTP for network booting of diskless machines.
 
 Package: liblzma2
 Status: install ok installed
@@ -1971,6 +2227,20 @@ Description: Using libc functions for internationalization in Perl
  and dngettext().
 Homepage: http://search.cpan.org/dist/gettext/gettext.pm
 
+Package: openssh-blacklist
+Status: install ok installed
+Priority: optional
+Section: net
+Installed-Size: 4092
+Maintainer: Kees Cook <kees@outflux.net>
+Architecture: all
+Version: 0.4.1
+Pre-Depends: dpkg (>= 1.10.24)
+Recommends: openssh-client
+Description: list of default blacklisted OpenSSH RSA and DSA keys
+ Contains the list of known-bad default OpenSSH keys, for ssh-vulnkeys to
+ use when examining suspect keys: DSA-1024, RSA-2048
+
 Package: dmsetup
 Status: install ok installed
 Priority: optional
@@ -2040,6 +2310,34 @@ Description: high-quality block-sorting file compressor library - runtime
  The archive file format of bzip2 (.bz2) is incompatible with that of its
  predecessor, bzip (.bz).
 Homepage: http://www.bzip.org/
+
+Package: linux-image-3.3.6-limeroot
+Status: install ok installed
+Priority: optional
+Section: kernel
+Installed-Size: 4796
+Maintainer: Unknown Kernel Package Maintainer <unknown@unconfigured.in.etc.kernel-pkg.conf>
+Architecture: i386
+Source: linux-source-3.3.6-limeroot
+Version: 1.2.3
+Provides: linux-image, linux-image-3.3
+Depends: coreutils (>= 5.96)
+Pre-Depends: debconf (>= 0.2.17) | debconf-2.0
+Suggests: fdutils, linux-doc-3.3.6-limeroot | linux-source-3.3.6-limeroot, ksymoops, linux-image-3.3.6-limeroot-dbg
+Description: Linux kernel binary image for version 3.3.6-limeroot
+ This package contains the Linux kernel image for version
+ 3.3.6-limeroot.
+ .
+ It also contains the corresponding System.map file, and the modules
+ built by the packager.  It also contains scripts that try to ensure
+ that the system is not left in a unbootable state after an update.
+ .
+ Kernel image packages are generally produced using kernel-package,
+ and it is suggested that you install that package if you wish to
+ create a custom kernel from the sources. Please look at kernel-img.conf(5),
+ and /usr/share/doc/kernel-package/README.gz  from the package kernel-package
+ for details on how to tailor the  installation of this or any other kernel
+ image package
 
 Package: libevtlog0
 Status: install ok installed
@@ -2158,6 +2456,23 @@ Description: Transitional package to ensure multiarch compatibility
 Multi-Arch: foreign
 Homepage: http://www.eglibc.org
 
+Package: libedit2
+Status: install ok installed
+Priority: standard
+Section: libs
+Installed-Size: 168
+Maintainer: Anibal Monsalve Salazar <anibal@debian.org>
+Architecture: i386
+Source: libedit
+Version: 2.11-20080614-2
+Depends: libbsd0 (>= 0.0), libc6 (>= 2.3.4), libncurses5 (>= 5.7+20100313)
+Description: BSD editline and history libraries
+ The editline library provides generic line editing and
+ history functions.
+ .
+ It slightly resembles GNU readline
+Homepage: http://ftp.netbsd.org/pub/NetBSD/NetBSD-release-5-0/src/lib/libedit/
+
 Package: nano
 Status: install ok installed
 Priority: important
@@ -2217,6 +2532,48 @@ Description: SELinux runtime shared libraries
  API. libselinux may use the shared libsepol to manipulate the binary
  policy if necessary (e.g. to downgrade the policy format to an older
  version supported by the kernel) when loading policy.
+
+Package: openssh-client
+Status: install ok installed
+Priority: standard
+Section: net
+Installed-Size: 2044
+Maintainer: Debian OpenSSH Maintainers <debian-ssh@lists.debian.org>
+Architecture: i386
+Source: openssh
+Version: 1:5.5p1-6+squeeze3
+Replaces: ssh, ssh-krb5
+Provides: rsh-client, ssh-client
+Depends: libc6 (>= 2.11), libedit2 (>= 2.11-20080614-1), libgssapi-krb5-2 (>= 1.7+dfsg), libssl0.9.8 (>= 0.9.8m-1), zlib1g (>= 1:1.1.4), debconf (>= 1.2.0) | debconf-2.0, adduser (>= 3.10), dpkg (>= 1.7.0), passwd
+Recommends: xauth, openssh-blacklist, openssh-blacklist-extra
+Suggests: ssh-askpass, libpam-ssh, keychain
+Conflicts: rsh-client (<< 0.16.1-1), sftp, ssh (<< 1:3.8.1p1-9), ssh-krb5 (<< 1:4.3p2-7)
+Conffiles:
+ /etc/ssh/moduli b1c007bf229d5d1707a2aebe9732f13c
+ /etc/ssh/ssh_config a7a6e6ef00bcd077b9b5e3e1b744fd30
+Description: secure shell (SSH) client, for secure access to remote machines
+ This is the portable version of OpenSSH, a free implementation of
+ the Secure Shell protocol as specified by the IETF secsh working
+ group.
+ .
+ Ssh (Secure Shell) is a program for logging into a remote machine
+ and for executing commands on a remote machine.
+ It provides secure encrypted communications between two untrusted
+ hosts over an insecure network. X11 connections and arbitrary TCP/IP
+ ports can also be forwarded over the secure channel.
+ It can be used to provide applications with a secure communication
+ channel.
+ .
+ This package provides the ssh, scp and sftp clients, the ssh-agent
+ and ssh-add programs to make public key authentication more convenient,
+ and the ssh-keygen, ssh-keyscan, ssh-copy-id and ssh-argv0 utilities.
+ .
+ In some countries it may be illegal to use any encryption at all
+ without a special permit.
+ .
+ ssh replaces the insecure rsh, rcp and rlogin programs, which are
+ obsolete for most purposes.
+Homepage: http://www.openssh.org/
 
 Package: libc6
 Status: install ok installed
@@ -2429,34 +2786,6 @@ Description: Tiny utilities for small and embedded systems
  can be used in the system by installing the busybox-syslogd,
  busybox-udhcpc or busybox-udhcpd packages.
 
-Package: linux-image-3.2.41-rt60-limeroot
-Status: install ok installed
-Priority: optional
-Section: kernel
-Installed-Size: 9960
-Maintainer: Unknown Kernel Package Maintainer <unknown@unconfigured.in.etc.kernel-pkg.conf>
-Architecture: i386
-Source: linux-source-3.2.41-rt60-limeroot
-Version: limeroot.1.7
-Provides: linux-image, linux-image-3.2
-Depends: coreutils (>= 5.96)
-Pre-Depends: debconf (>= 0.2.17) | debconf-2.0
-Suggests: fdutils, linux-doc-3.2.41-rt60-limeroot | linux-source-3.2.41-rt60-limeroot, ksymoops, linux-image-3.2.41-rt60-limeroot-dbg
-Description: Linux kernel binary image for version 3.2.41-rt60-limeroot
- This package contains the Linux kernel image for version
- 3.2.41-rt60-limeroot.
- .
- It also contains the corresponding System.map file, and the modules
- built by the packager.  It also contains scripts that try to ensure
- that the system is not left in a unbootable state after an update.
- .
- Kernel image packages are generally produced using kernel-package,
- and it is suggested that you install that package if you wish to
- create a custom kernel from the sources. Please look at kernel-img.conf(5),
- and /usr/share/doc/kernel-package/README.gz  from the package kernel-package
- for details on how to tailor the  installation of this or any other kernel
- image package
-
 Package: libnet1
 Status: install ok installed
 Priority: optional
@@ -2607,4 +2936,30 @@ Description: Wietse Venema's TCP wrappers library
   - access control per host, domain and/or service;
   - detection of host name spoofing or host address spoofing;
   - booby traps to implement an early-warning system.
+
+Package: libkrb5-3
+Status: install ok installed
+Priority: standard
+Section: libs
+Installed-Size: 888
+Maintainer: Sam Hartman <hartmans@debian.org>
+Architecture: i386
+Source: krb5
+Version: 1.8.3+dfsg-4squeeze6
+Replaces: libkrb53 (<< 1.6.dfsg.4~beta1-7)
+Depends: libc6 (>= 2.9), libcomerr2 (>= 1.34), libk5crypto3 (>= 1.8+dfsg), libkeyutils1, libkrb5support0 (= 1.8.3+dfsg-4squeeze6)
+Suggests: krb5-doc, krb5-user
+Breaks: libkrb53 (<< 1.6.dfsg.4~beta1-9)
+Conflicts: libapache-mod-auth-kerb (<= 4.996-5.0-rc6-2), libapache2-mod-auth-kerb (<= 4.996-5.0-rc6-2), ssh-krb5 (<< 3.8.1p1-10)
+Description: MIT Kerberos runtime libraries
+ Kerberos is a system for authenticating users and services on a network.
+ Kerberos is a trusted third-party service.  That means that there is a
+ third party (the Kerberos server) that is trusted by all the entities on
+ the network (users and services, usually called "principals").
+ .
+ This is the MIT reference implementation of Kerberos V5.
+ .
+ This package contains the runtime library for the main Kerberos v5 API
+ used by applications and Kerberos clients.
+Homepage: http://web.mit.edu/kerberos/
 

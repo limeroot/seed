@@ -249,3 +249,38 @@ Start-Date: 2013-05-23  21:59:57
 Commandline: apt-get install pppoe --no-install-recommends
 Install: procps:i386 (3.2.8-9squeeze1, automatic), libpcap0.8:i386 (1.1.1-2+squeeze1, automatic), ppp:i386 (2.4.5-4, automatic), pppoe:i386 (3.8-3)
 End-Date: 2013-05-23  22:00:03
+
+Start-Date: 2013-06-01  22:50:23
+Commandline: apt-get remove linux-image-3.2.41-rt60-limeroot
+Remove: linux-image-3.2.41-rt60-limeroot:i386 (limeroot.1.7)
+End-Date: 2013-06-01  22:50:25
+
+Start-Date: 2013-06-01  23:13:15
+Commandline: apt-get remove linux-image-3.3.6-limeroot
+Remove: linux-image-3.3.6-limeroot:i386 (limeroot.1.8)
+End-Date: 2013-06-01  23:13:16
+
+Start-Date: 2013-06-01  23:36:58
+Commandline: apt-get remove linux-image-3.3.6-limeroot
+Remove: linux-image-3.3.6-limeroot:i386 (1.9)
+End-Date: 2013-06-01  23:36:59
+
+Start-Date: 2013-06-10  16:34:56
+Commandline: apt-get remove linux-image-3.3.6-limeroot
+Remove: linux-image-3.3.6-limeroot:i386 (1.2.0)
+End-Date: 2013-06-10  16:34:59
+
+Start-Date: 2013-06-10  16:42:24
+Commandline: apt-get remove dropbear
+Remove: dropbear:i386 (2013.56+limeroot1)
+End-Date: 2013-06-10  16:42:25
+
+Start-Date: 2013-06-10  16:42:48
+Commandline: apt-get install openssh-server --no-install-recommends
+Install: libkeyutils1:i386 (1.5.2-2~bpo60+1, automatic), libedit2:i386 (2.11-20080614-2, automatic), libkrb5-3:i386 (1.8.3+dfsg-4squeeze6, automatic), libkrb5support0:i386 (1.8.3+dfsg-4squeeze6, automatic), libbsd0:i386 (0.2.0-1, automatic), libk5crypto3:i386 (1.8.3+dfsg-4squeeze6, automatic), openssh-client:i386 (5.5p1-6+squeeze3, automatic), openssh-blacklist:i386 (0.4.1, automatic), libgssapi-krb5-2:i386 (1.8.3+dfsg-4squeeze6, automatic), openssh-server:i386 (5.5p1-6+squeeze3)
+End-Date: 2013-06-10  16:43:03
+
+Start-Date: 2013-06-14  16:01:26
+Commandline: apt-get install dnsmasq
+Install: libidn11:i386 (1.15-2, automatic), dnsmasq-base:i386 (2.55-2+b1, automatic), netbase:i386 (4.45, automatic), ifupdown:i386 (0.6.10, automatic), net-tools:i386 (1.60-23, automatic), dnsmasq:i386 (2.55-2)
+End-Date: 2013-06-14  16:01:36

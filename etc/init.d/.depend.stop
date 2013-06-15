@@ -1,9 +1,11 @@
-TARGETS = lighttpd dropbear urandom syslog-ng sendsigs hwclock.sh umountnfs.sh umountfs umountroot live-boot halt reboot
-syslog-ng: lighttpd dropbear
-sendsigs: lighttpd syslog-ng dropbear
+TARGETS = zlinet dnsmasq urandom lighttpd syslog-ng sendsigs hwclock.sh umountnfs.sh networking ifupdown umountfs umountroot live-boot halt reboot
+syslog-ng: zlinet lighttpd dnsmasq
+sendsigs: syslog-ng zlinet lighttpd
 hwclock.sh: syslog-ng
-umountnfs.sh: lighttpd syslog-ng dropbear sendsigs
-umountfs: lighttpd syslog-ng urandom hwclock.sh dropbear umountnfs.sh
+umountnfs.sh: syslog-ng zlinet sendsigs lighttpd
+networking: syslog-ng umountnfs.sh lighttpd
+ifupdown: syslog-ng umountnfs.sh networking lighttpd
+umountfs: hwclock.sh syslog-ng urandom umountnfs.sh ifupdown zlinet networking lighttpd
 umountroot: umountfs
 live-boot: umountroot
 halt: umountroot live-boot

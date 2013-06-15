@@ -142,7 +142,6 @@
 /usr/share/locale/sl/LC_MESSAGES/debconf.mo
 /usr/share/doc
 /usr/share/man
-/usr/share/man/fr
 /usr/share/man/fr/man1
 /usr/share/man/fr/man1/debconf-escape.1.gz
 /usr/share/man/fr/man1/debconf.1.gz
@@ -151,13 +150,10 @@
 /usr/share/man/fr/man1/debconf-apt-progress.1.gz
 /usr/share/man/fr/man1/debconf-set-selections.1.gz
 /usr/share/man/fr/man1/debconf-communicate.1.gz
-/usr/share/man/fr/man8
 /usr/share/man/fr/man8/dpkg-reconfigure.8.gz
 /usr/share/man/fr/man8/dpkg-preconfigure.8.gz
-/usr/share/man/pt_BR
 /usr/share/man/pt_BR/man1
 /usr/share/man/pt_BR/man1/debconf-communicate.1.gz
-/usr/share/man/pt_BR/man8
 /usr/share/man/pt_BR/man8/dpkg-preconfigure.8.gz
 /usr/share/man/ru
 /usr/share/man/ru/man1
@@ -190,7 +186,6 @@
 /usr/share/man/de/man1/debconf-apt-progress.1.gz
 /usr/share/man/de/man1/debconf-set-selections.1.gz
 /usr/share/man/de/man1/debconf-communicate.1.gz
-/usr/share/man/de/man8
 /usr/share/man/de/man8/dpkg-reconfigure.8.gz
 /usr/share/man/de/man8/dpkg-preconfigure.8.gz
 /usr/share/doc/debconf-i18n

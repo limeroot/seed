@@ -26,7 +26,6 @@
 /usr/share/doc/pppoe/README.Debian.gz
 /usr/share/doc/pppoe/changelog.Debian.gz
 /usr/share/man
-/usr/share/man/man8
 /usr/share/man/man8/pppoe-sniff.8.gz
 /usr/share/man/man8/pppoe-relay.8.gz
 /usr/share/man/man8/pppoe-start.8.gz

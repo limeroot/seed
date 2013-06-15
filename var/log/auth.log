@@ -72,3 +72,26 @@ May 23 17:02:24 danybox sudo: pam_unix(sudo:session): session opened for user ro
 May 23 17:02:25 danybox sudo: pam_unix(sudo:session): session closed for user root
 May 23 17:02:31 danybox sudo:   daniel : TTY=pts/0 ; PWD=/home/daniel/limeroot/seed ; USER=root ; COMMAND=/usr/bin/git commit -a
 May 23 17:02:31 danybox sudo: pam_unix(sudo:session): session opened for user root by daniel(uid=0)
+May 23 17:02:57 danybox sudo: pam_unix(sudo:session): session closed for user root
+May 23 17:06:17 danybox sudo:   daniel : TTY=pts/0 ; PWD=/home/daniel/limeroot/seed ; USER=root ; COMMAND=/usr/bin/git push origin master
+May 23 17:06:17 danybox sudo: pam_unix(sudo:session): session opened for user root by daniel(uid=0)
+May 23 17:06:19 danybox sudo: pam_unix(sudo:session): session closed for user root
+May 23 17:09:01 danybox CRON[16583]: pam_unix(cron:session): session opened for user root by (uid=0)
+May 23 17:09:01 danybox CRON[16583]: pam_unix(cron:session): session closed for user root
+May 23 17:17:01 danybox CRON[16738]: pam_unix(cron:session): session opened for user root by (uid=0)
+May 23 17:17:01 danybox CRON[16738]: pam_unix(cron:session): session closed for user root
+May 23 17:39:01 danybox CRON[17019]: pam_unix(cron:session): session opened for user root by (uid=0)
+May 23 17:39:02 danybox CRON[17019]: pam_unix(cron:session): session closed for user root
+May 23 18:09:01 danybox CRON[17875]: pam_unix(cron:session): session opened for user root by (uid=0)
+May 23 18:09:01 danybox CRON[17875]: pam_unix(cron:session): session closed for user root
+May 23 18:17:01 danybox CRON[17924]: pam_unix(cron:session): session opened for user root by (uid=0)
+May 23 18:17:01 danybox CRON[17924]: pam_unix(cron:session): session closed for user root
+May 23 18:39:01 danybox CRON[18166]: pam_unix(cron:session): session opened for user root by (uid=0)
+May 23 18:39:01 danybox CRON[18166]: pam_unix(cron:session): session closed for user root
+May 23 19:09:01 danybox CRON[18693]: pam_unix(cron:session): session opened for user root by (uid=0)
+May 23 19:09:02 danybox CRON[18693]: pam_unix(cron:session): session closed for user root
+May 23 19:17:01 danybox CRON[18808]: pam_unix(cron:session): session opened for user root by (uid=0)
+May 23 19:17:01 danybox CRON[18808]: pam_unix(cron:session): session closed for user root
+May 23 19:39:01 danybox CRON[18956]: pam_unix(cron:session): session opened for user root by (uid=0)
+May 23 19:39:01 danybox CRON[18956]: pam_unix(cron:session): session closed for user root
+May 23 19:46:01 danybox polkitd(authority=local): Unregistered Authentication Agent for unix-session:/org/freedesktop/ConsoleKit/Session1 (system bus name :1.37, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8) (disconnected from bus)

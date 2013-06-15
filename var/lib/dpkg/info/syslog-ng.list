@@ -22,11 +22,8 @@
 /usr/bin/pdbtool
 /usr/share
 /usr/share/man
-/usr/share/man/man8
 /usr/share/man/man8/syslog-ng.8.gz
-/usr/share/man/man5
 /usr/share/man/man5/syslog-ng.conf.5.gz
-/usr/share/man/man1
 /usr/share/man/man1/pdbtool.1.gz
 /usr/share/doc
 /usr/share/doc/syslog-ng

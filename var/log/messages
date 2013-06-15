@@ -6,3 +6,23 @@ May 23 22:10:40 danybox kernel: [23011.537328] device eth1 entered promiscuous m
 May 23 22:37:01 danybox -- MARK --
 May 23 22:59:02 danybox -- MARK --
 May 23 23:37:01 danybox -- MARK --
+May 24 00:37:01 danybox -- MARK --
+May 24 00:59:02 danybox -- MARK --
+May 24 01:06:11 danybox kernel: [33542.360140] chrome[12935]: segfault at 39 ip 00007faf4f0392b0 sp 00007fff0ace9018 error 6 in chrome[7faf4e8dc000+519e000]
+May 24 01:16:48 danybox kernel: [34179.819284] chrome[17867]: segfault at ffffc5229b756dff ip 00007f77a0825fba sp 00007fffe48a3680 error 7 in libdrm_nouveau.so.2.0.0[7f77a0823000+5000]
+May 24 01:37:01 danybox -- MARK --
+May 24 01:59:01 danybox -- MARK --
+May 24 02:45:20 danybox kernel: [39491.402152] device eth0 left promiscuous mode
+May 24 02:45:20 danybox kernel: [39491.402304] device eth1 left promiscuous mode
+May 24 02:46:00 danybox [39531.987800] init: tty4 main process (1057) killed by TERM signal
+May 24 02:46:00 danybox [39531.989415] init: tty5 main process (1062) killed by TERM signal
+May 24 02:46:00 danybox [39531.989837] init: tty2 main process (1067) killed by TERM signal
+May 24 02:46:00 danybox [39531.990201] init: tty3 main process (1068) killed by TERM signal
+May 24 02:46:00 danybox [39531.990574] init: tty6 main process (1071) killed by TERM signal
+May 24 02:46:00 danybox [39531.994204] init: cron main process (1124) killed by TERM signal
+May 24 02:46:00 danybox [39531.994695] init: irqbalance main process (1136) killed by TERM signal
+May 24 02:46:00 danybox [39531.995819] init: tty1 main process (1373) killed by TERM signal
+May 24 02:46:01 danybox [39532.248114] init: plymouth-upstart-bridge main process (19079) terminated with status 1
+May 24 02:46:01 danybox [39532.353575] init: smbd main process (994) killed by TERM signal
+May 24 02:46:03 danybox syslog-ng[14380]: Termination requested via signal, terminating;
+May 24 02:46:03 danybox syslog-ng[14380]: syslog-ng shutting down; version='3.1.3'

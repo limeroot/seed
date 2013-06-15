@@ -1,9 +1,11 @@
-TARGETS = syslog-ng bootlogs killprocs lighttpd dropbear single dbus rc.local stop-bootlogd rmnologin
+TARGETS = syslog-ng bootlogs killprocs zlinet lighttpd single ssh dbus dnsmasq rc.local stop-bootlogd rmnologin
 INTERACTIVE =
+zlinet: syslog-ng
 lighttpd: syslog-ng
-dropbear: syslog-ng
 single: killprocs bootlogs
+ssh: syslog-ng
 dbus: syslog-ng
-rc.local: syslog-ng lighttpd dropbear bootlogs dbus
-stop-bootlogd: lighttpd syslog-ng dropbear bootlogs dbus
-rmnologin: lighttpd syslog-ng dropbear bootlogs dbus
+dnsmasq: syslog-ng
+rc.local: syslog-ng zlinet lighttpd bootlogs ssh dbus dnsmasq
+stop-bootlogd: syslog-ng zlinet lighttpd bootlogs ssh dbus dnsmasq
+rmnologin: syslog-ng zlinet lighttpd bootlogs ssh dbus dnsmasq

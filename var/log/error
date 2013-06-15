@@ -1,0 +1,5 @@
+May 24 02:36:18 danybox kernel: [38949.637430] nouveau E[   PFIFO][0000:02:00.0] DMA_PUSHER - Ch 2 Get 0x002003824c Put 0x002003ad0c IbGet 0x000000b1 IbPut 0x000000b2 State 0x80004861 (err: INVALID_CMD) Push 0x00400040
+May 23 19:46:00 danybox gnome-session[1496]: CRITICAL: gsm_manager_set_phase: assertion `GSM_IS_MANAGER (manager)' failed
+May 23 19:46:00 danybox gnome-session[1496]: Gtk-CRITICAL: gtk_main_quit: assertion `main_loops != NULL' failed
+May 23 19:46:00 danybox gdm-simple-slave[1145]: GLib-GObject-CRITICAL: g_object_ref: assertion `object->ref_count > 0' failed
+May 23 19:46:01 danybox gdm-simple-slave[1145]: GLib-GObject-CRITICAL: g_object_unref: assertion `object->ref_count > 0' failed

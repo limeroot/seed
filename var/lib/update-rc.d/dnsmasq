@@ -1,0 +1,1 @@
+update-rc.d dnsmasq start 15 2 3 4 5 . stop 85 1 .

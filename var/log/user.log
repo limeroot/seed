@@ -1,0 +1,10 @@
+May 24 02:46:00 danybox [39531.987800] init: tty4 main process (1057) killed by TERM signal
+May 24 02:46:00 danybox [39531.989415] init: tty5 main process (1062) killed by TERM signal
+May 24 02:46:00 danybox [39531.989837] init: tty2 main process (1067) killed by TERM signal
+May 24 02:46:00 danybox [39531.990201] init: tty3 main process (1068) killed by TERM signal
+May 24 02:46:00 danybox [39531.990574] init: tty6 main process (1071) killed by TERM signal
+May 24 02:46:00 danybox [39531.994204] init: cron main process (1124) killed by TERM signal
+May 24 02:46:00 danybox [39531.994695] init: irqbalance main process (1136) killed by TERM signal
+May 24 02:46:00 danybox [39531.995819] init: tty1 main process (1373) killed by TERM signal
+May 24 02:46:01 danybox [39532.248114] init: plymouth-upstart-bridge main process (19079) terminated with status 1
+May 24 02:46:01 danybox [39532.353575] init: smbd main process (994) killed by TERM signal

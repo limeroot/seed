@@ -1,0 +1,26 @@
+#! /bin/sh
+# /etc/init.d/zlinet
+#
+
+# Some things that run always
+#touch /var/lock/zlinet
+
+# Carry out specific functions when asked to by the system
+case "$1" in
+  start)
+    echo "Starting daemon linet "
+    /usr/sbin/linet &
+    ;;
+  stop)
+    echo "Stopping daemon linet"
+    kill -SIGINT $(pidof linet) >/dev/null 2>&1
+    kill -15 $(pidof dnsmasq) >/dev/null 2>&1
+    ;;
+  *)
+    echo "Usage: /etc/init.d/zlinet {start|stop}"
+    exit 1
+    ;;
+esac
+
+exit 0
+

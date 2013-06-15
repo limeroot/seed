@@ -499,3 +499,202 @@ Setting up libpcap0.8 (1.1.1-2+squeeze1) ...
 Setting up ppp (2.4.5-4) ...
 Setting up pppoe (3.8-3) ...
 Log ended: 2013-05-23  22:00:03
+
+Log started: 2013-06-01  22:50:23
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 7954 files and directories currently installed.)
+Removing linux-image-3.2.41-rt60-limeroot ...
+debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 75.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (Can't locate Term/ReadLine.pm in @INC (@INC contains: /etc/perl /usr/local/lib/perl/5.10.1 /usr/local/share/perl/5.10.1 /usr/lib/perl5 /usr/share/perl5 /usr/lib/perl/5.10 /usr/share/perl/5.10 /usr/local/lib/site_perl .) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 7.)
+debconf: falling back to frontend: Teletype
+Examining /etc/kernel/prerm.d.
+debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 75.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (Can't locate Term/ReadLine.pm in @INC (@INC contains: /etc/perl /usr/local/lib/perl/5.10.1 /usr/local/share/perl/5.10.1 /usr/lib/perl5 /usr/share/perl5 /usr/lib/perl/5.10 /usr/share/perl/5.10 /usr/local/lib/site_perl .) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 7.)
+debconf: falling back to frontend: Teletype
+Examining /etc/kernel/postrm.d .
+run-parts: executing /etc/kernel/postrm.d/initramfs-tools 3.2.41-rt60-limeroot /boot/vmlinuz-3.2.41-rt60-limeroot
+update-initramfs: Deleting /boot/initrd.img-3.2.41-rt60-limeroot
+run-parts: executing /etc/kernel/postrm.d/zz-extlinux 3.2.41-rt60-limeroot /boot/vmlinuz-3.2.41-rt60-limeroot
+P: Checking for EXTLINUX directory... found.
+ls: cannot access vmlinuz-*: No such file or directory
+P: Updating /boot/extlinux/linux.cfg...
+Log ended: 2013-06-01  22:50:25
+
+Log started: 2013-06-01  23:13:15
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 7751 files and directories currently installed.)
+Removing linux-image-3.3.6-limeroot ...
+debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 75.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (Can't locate Term/ReadLine.pm in @INC (@INC contains: /etc/perl /usr/local/lib/perl/5.10.1 /usr/local/share/perl/5.10.1 /usr/lib/perl5 /usr/share/perl5 /usr/lib/perl/5.10 /usr/share/perl/5.10 /usr/local/lib/site_perl .) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 7.)
+debconf: falling back to frontend: Teletype
+Examining /etc/kernel/prerm.d.
+debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 75.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (Can't locate Term/ReadLine.pm in @INC (@INC contains: /etc/perl /usr/local/lib/perl/5.10.1 /usr/local/share/perl/5.10.1 /usr/lib/perl5 /usr/share/perl5 /usr/lib/perl/5.10 /usr/share/perl/5.10 /usr/local/lib/site_perl .) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 7.)
+debconf: falling back to frontend: Teletype
+Examining /etc/kernel/postrm.d .
+run-parts: executing /etc/kernel/postrm.d/initramfs-tools 3.3.6-limeroot /boot/vmlinuz-3.3.6-limeroot
+update-initramfs: Deleting /boot/initrd.img-3.3.6-limeroot
+run-parts: executing /etc/kernel/postrm.d/zz-extlinux 3.3.6-limeroot /boot/vmlinuz-3.3.6-limeroot
+P: Checking for EXTLINUX directory... found.
+ls: cannot access vmlinuz-*: No such file or directory
+P: Updating /boot/extlinux/linux.cfg...
+Log ended: 2013-06-01  23:13:16
+
+Log started: 2013-06-01  23:36:58
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 7751 files and directories currently installed.)
+Removing linux-image-3.3.6-limeroot ...
+debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 75.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (Can't locate Term/ReadLine.pm in @INC (@INC contains: /etc/perl /usr/local/lib/perl/5.10.1 /usr/local/share/perl/5.10.1 /usr/lib/perl5 /usr/share/perl5 /usr/lib/perl/5.10 /usr/share/perl/5.10 /usr/local/lib/site_perl .) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 7.)
+debconf: falling back to frontend: Teletype
+Examining /etc/kernel/prerm.d.
+debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 75.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (Can't locate Term/ReadLine.pm in @INC (@INC contains: /etc/perl /usr/local/lib/perl/5.10.1 /usr/local/share/perl/5.10.1 /usr/lib/perl5 /usr/share/perl5 /usr/lib/perl/5.10 /usr/share/perl/5.10 /usr/local/lib/site_perl .) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 7.)
+debconf: falling back to frontend: Teletype
+Examining /etc/kernel/postrm.d .
+run-parts: executing /etc/kernel/postrm.d/initramfs-tools 3.3.6-limeroot /boot/vmlinuz-3.3.6-limeroot
+update-initramfs: Deleting /boot/initrd.img-3.3.6-limeroot
+run-parts: executing /etc/kernel/postrm.d/zz-extlinux 3.3.6-limeroot /boot/vmlinuz-3.3.6-limeroot
+P: Checking for EXTLINUX directory... found.
+ls: cannot access vmlinuz-*: No such file or directory
+P: Updating /boot/extlinux/linux.cfg...
+Log ended: 2013-06-01  23:36:59
+
+Log started: 2013-06-10  16:34:56
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 7751 files and directories currently installed.)
+Removing linux-image-3.3.6-limeroot ...
+debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 75.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (Can't locate Term/ReadLine.pm in @INC (@INC contains: /etc/perl /usr/local/lib/perl/5.10.1 /usr/local/share/perl/5.10.1 /usr/lib/perl5 /usr/share/perl5 /usr/lib/perl/5.10 /usr/share/perl/5.10 /usr/local/lib/site_perl .) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 7.)
+debconf: falling back to frontend: Teletype
+Examining /etc/kernel/prerm.d.
+debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 75.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (Can't locate Term/ReadLine.pm in @INC (@INC contains: /etc/perl /usr/local/lib/perl/5.10.1 /usr/local/share/perl/5.10.1 /usr/lib/perl5 /usr/share/perl5 /usr/lib/perl/5.10 /usr/share/perl/5.10 /usr/local/lib/site_perl .) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 7.)
+debconf: falling back to frontend: Teletype
+Examining /etc/kernel/postrm.d .
+run-parts: executing /etc/kernel/postrm.d/initramfs-tools 3.3.6-limeroot /boot/vmlinuz-3.3.6-limeroot
+update-initramfs: Deleting /boot/initrd.img-3.3.6-limeroot
+run-parts: executing /etc/kernel/postrm.d/zz-extlinux 3.3.6-limeroot /boot/vmlinuz-3.3.6-limeroot
+P: Checking for EXTLINUX directory... found.
+ls: cannot access vmlinuz-*: No such file or directory
+P: Updating /boot/extlinux/linux.cfg...
+Log ended: 2013-06-10  16:34:59
+
+Log started: 2013-06-10  16:42:24
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 7740 files and directories currently installed.)
+Removing dropbear ...
+Stopping Dropbear SSH server: dropbear.
+Log ended: 2013-06-10  16:42:25
+
+Log started: 2013-06-10  16:42:48
+Selecting previously deselected package openssh-blacklist.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 7726 files and directories currently installed.)
+Unpacking openssh-blacklist (from .../openssh-blacklist_0.4.1_all.deb) ...
+Selecting previously deselected package libbsd0.
+Unpacking libbsd0 (from .../libbsd0_0.2.0-1_i386.deb) ...
+Selecting previously deselected package libedit2.
+Unpacking libedit2 (from .../libedit2_2.11-20080614-2_i386.deb) ...
+Selecting previously deselected package libkeyutils1.
+Unpacking libkeyutils1 (from .../libkeyutils1_1.5.2-2~bpo60+1_i386.deb) ...
+Selecting previously deselected package libkrb5support0.
+Unpacking libkrb5support0 (from .../libkrb5support0_1.8.3+dfsg-4squeeze6_i386.deb) ...
+Selecting previously deselected package libk5crypto3.
+Unpacking libk5crypto3 (from .../libk5crypto3_1.8.3+dfsg-4squeeze6_i386.deb) ...
+Selecting previously deselected package libkrb5-3.
+Unpacking libkrb5-3 (from .../libkrb5-3_1.8.3+dfsg-4squeeze6_i386.deb) ...
+Selecting previously deselected package libgssapi-krb5-2.
+Unpacking libgssapi-krb5-2 (from .../libgssapi-krb5-2_1.8.3+dfsg-4squeeze6_i386.deb) ...
+Selecting previously deselected package openssh-client.
+Unpacking openssh-client (from .../openssh-client_1%3a5.5p1-6+squeeze3_i386.deb) ...
+Selecting previously deselected package openssh-server.
+Unpacking openssh-server (from .../openssh-server_1%3a5.5p1-6+squeeze3_i386.deb) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 75.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (Can't locate Term/ReadLine.pm in @INC (@INC contains: /etc/perl /usr/local/lib/perl/5.10.1 /usr/local/share/perl/5.10.1 /usr/lib/perl5 /usr/share/perl5 /usr/lib/perl/5.10 /usr/share/perl/5.10 /usr/local/lib/site_perl .) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 7.)
+debconf: falling back to frontend: Teletype
+Setting up openssh-blacklist (0.4.1) ...
+Setting up libbsd0 (0.2.0-1) ...
+Setting up libedit2 (2.11-20080614-2) ...
+Setting up libkeyutils1 (1.5.2-2~bpo60+1) ...
+Setting up libkrb5support0 (1.8.3+dfsg-4squeeze6) ...
+Setting up libk5crypto3 (1.8.3+dfsg-4squeeze6) ...
+Setting up libkrb5-3 (1.8.3+dfsg-4squeeze6) ...
+Setting up libgssapi-krb5-2 (1.8.3+dfsg-4squeeze6) ...
+Setting up openssh-client (1:5.5p1-6+squeeze3) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 75.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (Can't locate Term/ReadLine.pm in @INC (@INC contains: /etc/perl /usr/local/lib/perl/5.10.1 /usr/local/share/perl/5.10.1 /usr/lib/perl5 /usr/share/perl5 /usr/lib/perl/5.10 /usr/share/perl/5.10 /usr/local/lib/site_perl .) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 7.)
+debconf: falling back to frontend: Teletype
+Setting up openssh-server (1:5.5p1-6+squeeze3) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 75.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (Can't locate Term/ReadLine.pm in @INC (@INC contains: /etc/perl /usr/local/lib/perl/5.10.1 /usr/local/share/perl/5.10.1 /usr/lib/perl5 /usr/share/perl5 /usr/lib/perl/5.10 /usr/share/perl/5.10 /usr/local/lib/site_perl .) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 7.)
+debconf: falling back to frontend: Teletype
+Creating SSH2 RSA key; this may take some time ...
+Creating SSH2 DSA key; this may take some time ...
+Restarting OpenBSD Secure Shell server: sshd.
+Log ended: 2013-06-10  16:43:03
+
+Log started: 2013-06-14  16:01:26
+Selecting previously deselected package net-tools.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 7840 files and directories currently installed.)
+Unpacking net-tools (from .../net-tools_1.60-23_i386.deb) ...
+Selecting previously deselected package ifupdown.
+Unpacking ifupdown (from .../ifupdown_0.6.10_i386.deb) ...
+Selecting previously deselected package netbase.
+Unpacking netbase (from .../archives/netbase_4.45_all.deb) ...
+Selecting previously deselected package libidn11.
+Unpacking libidn11 (from .../libidn11_1.15-2_i386.deb) ...
+Selecting previously deselected package dnsmasq-base.
+Unpacking dnsmasq-base (from .../dnsmasq-base_2.55-2+b1_i386.deb) ...
+Selecting previously deselected package dnsmasq.
+Unpacking dnsmasq (from .../dnsmasq_2.55-2_all.deb) ...
+Setting up net-tools (1.60-23) ...
+Setting up ifupdown (0.6.10) ...
+ifupdown.postinst: Warning: No 'iface lo' definition found in /etc/network/interfaces
+ifupdown.postinst: Warning: No 'auto lo' statement found in /etc/network/interfaces
+insserv: warning: script 'K01zlinet' missing LSB tags and overrides
+insserv: warning: script 'zlinet' missing LSB tags and overrides
+insserv: warning: script 'K01zlinet' missing LSB tags and overrides
+insserv: warning: script 'zlinet' missing LSB tags and overrides
+Setting up netbase (4.45) ...
+insserv: warning: script 'K01zlinet' missing LSB tags and overrides
+insserv: warning: script 'zlinet' missing LSB tags and overrides
+Setting up libidn11 (1.15-2) ...
+ldconfig: /usr/lib/liblimedb.so.1 is not a symbolic link
+
+Setting up dnsmasq-base (2.55-2+b1) ...
+Setting up dnsmasq (2.55-2) ...
+insserv: warning: script 'K01zlinet' missing LSB tags and overrides
+insserv: warning: script 'zlinet' missing LSB tags and overrides
+Starting DNS forwarder and DHCP server: dnsmasq
+dnsmasq: failed to create listening socket: Address already in use
+ [31mfailed![39;49m
+invoke-rc.d: initscript dnsmasq, action "start" failed.
+Log ended: 2013-06-14  16:01:36

@@ -56,8 +56,6 @@
 /usr/share/man/man5/apt_preferences.5.gz
 /usr/share/man/man5/apt.conf.5.gz
 /usr/share/man/man5/sources.list.5.gz
-/usr/share/man/es
-/usr/share/man/es/man8
 /usr/share/man/es/man8/apt-cdrom.8.gz
 /usr/share/man/es/man8/apt-config.8.gz
 /usr/share/man/es/man8/apt-key.8.gz
@@ -70,8 +68,6 @@
 /usr/share/man/es/man5/apt_preferences.5.gz
 /usr/share/man/es/man5/apt.conf.5.gz
 /usr/share/man/es/man5/sources.list.5.gz
-/usr/share/man/fr
-/usr/share/man/fr/man8
 /usr/share/man/fr/man8/apt-cdrom.8.gz
 /usr/share/man/fr/man8/apt-config.8.gz
 /usr/share/man/fr/man8/apt-key.8.gz
@@ -80,11 +76,9 @@
 /usr/share/man/fr/man8/apt-secure.8.gz
 /usr/share/man/fr/man8/apt-cache.8.gz
 /usr/share/man/fr/man8/apt-mark.8.gz
-/usr/share/man/fr/man5
 /usr/share/man/fr/man5/apt_preferences.5.gz
 /usr/share/man/fr/man5/apt.conf.5.gz
 /usr/share/man/fr/man5/sources.list.5.gz
-/usr/share/man/de/man8
 /usr/share/man/de/man8/apt-cdrom.8.gz
 /usr/share/man/de/man8/apt-config.8.gz
 /usr/share/man/de/man8/apt-key.8.gz
@@ -93,7 +87,6 @@
 /usr/share/man/de/man8/apt-secure.8.gz
 /usr/share/man/de/man8/apt-cache.8.gz
 /usr/share/man/de/man8/apt-mark.8.gz
-/usr/share/man/de/man5
 /usr/share/man/de/man5/apt_preferences.5.gz
 /usr/share/man/de/man5/apt.conf.5.gz
 /usr/share/man/de/man5/sources.list.5.gz

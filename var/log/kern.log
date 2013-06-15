@@ -2,3 +2,8 @@ May 23 22:08:19 danybox kernel: [22870.872053] device eth0 entered promiscuous m
 May 23 22:08:19 danybox kernel: [22870.872203] device eth1 entered promiscuous mode
 May 23 22:10:40 danybox kernel: [23011.537179] device eth0 entered promiscuous mode
 May 23 22:10:40 danybox kernel: [23011.537328] device eth1 entered promiscuous mode
+May 24 01:06:11 danybox kernel: [33542.360140] chrome[12935]: segfault at 39 ip 00007faf4f0392b0 sp 00007fff0ace9018 error 6 in chrome[7faf4e8dc000+519e000]
+May 24 01:16:48 danybox kernel: [34179.819284] chrome[17867]: segfault at ffffc5229b756dff ip 00007f77a0825fba sp 00007fffe48a3680 error 7 in libdrm_nouveau.so.2.0.0[7f77a0823000+5000]
+May 24 02:36:18 danybox kernel: [38949.637430] nouveau E[   PFIFO][0000:02:00.0] DMA_PUSHER - Ch 2 Get 0x002003824c Put 0x002003ad0c IbGet 0x000000b1 IbPut 0x000000b2 State 0x80004861 (err: INVALID_CMD) Push 0x00400040
+May 24 02:45:20 danybox kernel: [39491.402152] device eth0 left promiscuous mode
+May 24 02:45:20 danybox kernel: [39491.402304] device eth1 left promiscuous mode

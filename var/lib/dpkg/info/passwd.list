@@ -125,8 +125,6 @@
 /usr/share/man/ru/man1/expiry.1.gz
 /usr/share/man/ru/man1/passwd.1.gz
 /usr/share/man/ru/man1/chage.1.gz
-/usr/share/man/pt_BR
-/usr/share/man/pt_BR/man8
 /usr/share/man/pt_BR/man8/groupdel.8.gz
 /usr/share/man/pt_BR/man8/groupadd.8.gz
 /usr/share/man/pt_BR/man8/groupmod.8.gz
@@ -135,8 +133,6 @@
 /usr/share/man/pt_BR/man5/passwd.5.gz
 /usr/share/man/pt_BR/man1
 /usr/share/man/pt_BR/man1/gpasswd.1.gz
-/usr/share/man/fr
-/usr/share/man/fr/man8
 /usr/share/man/fr/man8/grpunconv.8.gz
 /usr/share/man/fr/man8/pwconv.8.gz
 /usr/share/man/fr/man8/groupdel.8.gz
@@ -154,7 +150,6 @@
 /usr/share/man/fr/man8/userdel.8.gz
 /usr/share/man/fr/man8/vigr.8.gz
 /usr/share/man/fr/man8/shadowconfig.8.gz
-/usr/share/man/fr/man5
 /usr/share/man/fr/man5/shadow.5.gz
 /usr/share/man/fr/man5/gshadow.5.gz
 /usr/share/man/fr/man5/passwd.5.gz
@@ -208,10 +203,8 @@
 /usr/share/man/sv/man1/expiry.1.gz
 /usr/share/man/sv/man1/passwd.1.gz
 /usr/share/man/sv/man1/chage.1.gz
-/usr/share/man/de/man8
 /usr/share/man/de/man8/vipw.8.gz
 /usr/share/man/de/man8/vigr.8.gz
-/usr/share/man/de/man5
 /usr/share/man/de/man5/passwd.5.gz
 /usr/share/man/de/man1/chfn.1.gz
 /usr/share/man/de/man1/chsh.1.gz

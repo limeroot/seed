@@ -793,6 +793,22 @@ Description: MIT Kerberos runtime libraries - Crypto Library
  applications and Kerberos clients.
 Homepage: http://web.mit.edu/kerberos/
 
+Package: dnsmasq-base
+Priority: optional
+Section: net
+Installed-Size: 728
+Maintainer: Simon Kelley <simon@thekelleys.org.uk>
+Architecture: i386
+Source: dnsmasq (2.55-2)
+Version: 2.55-2+b1
+Depends: libc6 (>= 2.3.6-6~), libdbus-1-3 (>= 1.1.1), libidn11 (>= 1.13)
+Conflicts: dnsmasq (<< 2.41)
+Size: 307614
+Description: A small caching DNS proxy and DHCP/TFTP server
+ This package contains the dnsmasq executable and documentation, but
+ not the infrastructure required to run it as a system daemon. For
+ that, install the dnsmasq package.
+
 Package: live-boot-initramfs-tools
 Priority: optional
 Section: misc
@@ -812,6 +828,21 @@ Description: Debian Live - System Boot Scripts (initramfs-tools backend)
  .
  This package contains the initramfs-tools backend.
 Homepage: http://live.debian.net/devel/live-boot/
+
+Package: netbase
+Priority: important
+Section: admin
+Installed-Size: 96
+Maintainer: Marco d'Itri <md@linux.it>
+Architecture: all
+Version: 4.45
+Depends: lsb-base (>= 3.0-6), initscripts
+Recommends: ifupdown
+Conflicts: inetutils-inetd (<< 2:1.4.3+20060719-3), openbsd-inetd (<< 0.20050402-3)
+Size: 20740
+Description: Basic TCP/IP networking system
+ This package provides the necessary infrastructure for basic TCP/IP based
+ networking.
 
 Package: libmagic1
 Priority: standard
@@ -919,6 +950,23 @@ Depends: libc6 (>= 2.8)
 Size: 114744
 Description: libudev shared library
  This library provides access to udev device information.
+
+Package: ifupdown
+Priority: important
+Section: admin
+Installed-Size: 224
+Maintainer: Anthony Towns <ajt@debian.org>
+Architecture: i386
+Version: 0.6.10
+Replaces: netbase (<< 4.00)
+Depends: net-tools, libc6 (>= 2.3), lsb-base
+Suggests: iproute, dhcp3-client | dhcp-client, ppp
+Conflicts: dhcp-client (<< 3.0)
+Size: 47684
+Description: high level tools to configure network interfaces
+ This package provides the tools ifup and ifdown which may be used to
+ configure (or, respectively, deconfigure) network interfaces based on
+ interface definitions in the file /etc/network/interfaces.
 
 Package: dbus
 Priority: optional
@@ -1614,6 +1662,27 @@ SHA256: f1724cb9ccd910984d68cd290f8a7b43d6a3b81d4d280d7f11134ec0661ad963
 Homepage: http://www.gnu.org/software/sed/
 Tag: implemented-in::c, interface::commandline, role::program, scope::utility, suite::gnu, works-with::text
 
+Package: libidn11
+Priority: standard
+Section: libs
+Installed-Size: 356
+Maintainer: Anibal Monsalve Salazar <anibal@debian.org>
+Architecture: i386
+Source: libidn
+Version: 1.15-2
+Replaces: libidn11-dev
+Depends: libc6 (>= 2.1.3)
+Conflicts: libidn9-dev
+Size: 156658
+Description: GNU Libidn library, implementation of IETF IDN specifications
+ GNU Libidn is a fully documented implementation of the Stringprep,
+ Punycode and IDNA specifications.  Libidn's purpose is to encode and
+ decode internationalized domain names.  The Nameprep, XMPP, SASLprep,
+ and iSCSI profiles are supported.
+ .
+ This package contains the shared library.
+Homepage: http://www.gnu.org/software/libidn/
+
 Package: libatm1
 Priority: optional
 Section: libs
@@ -1855,6 +1924,27 @@ SHA1: fbd71971e771d009967867f0515448ec1790a88c
 SHA256: 946b80301f5100e05b157f72f682defb3632c3e939eb91d9e3c44d72e153318b
 Homepage: http://www.oracle.com/technology/software/products/berkeley-db/index.html
 Tag: role::shared-lib
+
+Package: net-tools
+Priority: important
+Section: net
+Installed-Size: 948
+Maintainer: net-tools Team <pkg-net-tools-maintainers@lists.alioth.debian.org>
+Architecture: i386
+Version: 1.60-23
+Replaces: ja-trans (<= 0.8-2), netbase (<< 4.00)
+Depends: libc6 (>= 2.3)
+Conflicts: ja-trans (<= 0.8-2)
+Size: 313164
+Description: The NET-3 networking toolkit
+ This package includes the important tools for controlling the network
+ subsystem of the Linux kernel.  This includes arp, ifconfig, netstat,
+ rarp, nameif and route.  Additionally, this package contains utilities
+ relating to particular network hardware types (plipconfig, slattach,
+ mii-tool) and advanced aspects of IP configuration (iptunnel, ipmaddr).
+ .
+ In the upstream package 'hostname' and friends are included. Those are
+ not installed by this package, since there is a special "hostname*.deb".
 
 Package: pppoe
 Priority: optional
@@ -2214,6 +2304,21 @@ SHA256: cadff6372473add99ae33d8b53f30b2430fd33ab6a9071259eedc86732b15ffc
 Homepage: http://savannah.gnu.org/projects/findutils/
 Tag: implemented-in::c, interface::commandline, role::program, scope::utility, use::searching, works-with::file
 
+Package: libbsd0
+Priority: optional
+Section: libs
+Installed-Size: 124
+Maintainer: Debian GNU/kFreeBSD <debian-bsd@lists.debian.org>
+Architecture: i386
+Source: libbsd
+Version: 0.2.0-1
+Depends: libc6 (>= 2.3)
+Size: 41394
+Description: utility functions from BSD systems - shared library
+ This library provides some functions commonly available on BSD systems
+ but not on others like GNU systems.
+Homepage: http://libbsd.freedesktop.org/
+
 Package: xz-utils
 Priority: required
 Section: utils
@@ -2294,6 +2399,64 @@ SHA1: 4bb9ce6237687e77f67deb9d939e1abd1f9b5c7f
 SHA256: cf119fa56cd17382b141bc7632bf7bd9b157dbfff72155a7dd6e55356b04270d
 Homepage: http://e2fsprogs.sourceforge.net
 Tag: admin::configuring, admin::filesystem, hardware::storage, interface::commandline, role::program, scope::utility, security::integrity, use::checking
+
+Package: openssh-server
+Priority: optional
+Section: net
+Installed-Size: 756
+Maintainer: Debian OpenSSH Maintainers <debian-ssh@lists.debian.org>
+Architecture: i386
+Source: openssh
+Version: 1:5.5p1-6+squeeze3
+Replaces: openssh-client (<< 1:3.8.1p1-11), ssh, ssh-krb5
+Provides: ssh-server
+Depends: libc6 (>= 2.8), libcomerr2 (>= 1.01), libgssapi-krb5-2 (>= 1.8+dfsg), libkrb5-3 (>= 1.6.dfsg.2), libpam0g (>= 0.99.7.1), libselinux1 (>= 1.32), libssl0.9.8 (>= 0.9.8m-1), libwrap0 (>= 7.6-4~), zlib1g (>= 1:1.1.4), debconf (>= 1.2.0) | debconf-2.0, openssh-client (= 1:5.5p1-6+squeeze3), libpam-runtime (>= 0.76-14), libpam-modules (>= 0.72-9), adduser (>= 3.9), dpkg (>= 1.9.0), lsb-base (>= 3.2-13), openssh-blacklist, procps
+Recommends: xauth, openssh-blacklist-extra
+Suggests: ssh-askpass, rssh, molly-guard, ufw
+Conflicts: rsh-client (<< 0.16.1-1), sftp, ssh (<< 1:3.8.1p1-9), ssh-krb5 (<< 1:4.3p2-7), ssh-nonfree (<< 2), ssh-socks, ssh2
+Size: 298278
+Description: secure shell (SSH) server, for secure access from remote machines
+ This is the portable version of OpenSSH, a free implementation of
+ the Secure Shell protocol as specified by the IETF secsh working
+ group.
+ .
+ Ssh (Secure Shell) is a program for logging into a remote machine
+ and for executing commands on a remote machine.
+ It provides secure encrypted communications between two untrusted
+ hosts over an insecure network. X11 connections and arbitrary TCP/IP
+ ports can also be forwarded over the secure channel.
+ It can be used to provide applications with a secure communication
+ channel.
+ .
+ This package provides the sshd server.
+ .
+ In some countries it may be illegal to use any encryption at all
+ without a special permit.
+ .
+ sshd replaces the insecure rshd program, which is obsolete for most
+ purposes.
+Homepage: http://www.openssh.org/
+
+Package: dnsmasq
+Priority: optional
+Section: net
+Installed-Size: 120
+Maintainer: Simon Kelley <simon@thekelleys.org.uk>
+Architecture: all
+Version: 2.55-2
+Depends: netbase, adduser, dnsmasq-base (>= 2.55-2)
+Suggests: resolvconf
+Conflicts: resolvconf (<< 1.15)
+Size: 14222
+Description: A small caching DNS proxy and DHCP/TFTP server
+ Dnsmasq is a lightweight, easy to configure, DNS forwarder and DHCP
+ server. It is designed to provide DNS and optionally, DHCP, to a
+ small network. It can serve the names of local machines which are
+ not in the global DNS. The DHCP server integrates with the DNS
+ server and allows machines with DHCP-allocated addresses
+ to appear in the DNS with names configured either in each host or
+ in a central configuration file. Dnsmasq supports static and dynamic
+ DHCP leases and BOOTP/TFTP for network booting of diskless machines.
 
 Package: liblzma2
 Priority: required
@@ -2524,6 +2687,20 @@ SHA256: af656f704e59ba8d03609ace111d8297a1d6405b329b663ebd019505a8cd26a3
 Homepage: http://search.cpan.org/dist/gettext/gettext.pm
 Tag: devel::{i18n,lang:perl,library}, implemented-in::perl, role::shared-lib
 
+Package: openssh-blacklist
+Priority: optional
+Section: net
+Installed-Size: 4092
+Maintainer: Kees Cook <kees@outflux.net>
+Architecture: all
+Version: 0.4.1
+Pre-Depends: dpkg (>= 1.10.24)
+Recommends: openssh-client
+Size: 2124918
+Description: list of default blacklisted OpenSSH RSA and DSA keys
+ Contains the list of known-bad default OpenSSH keys, for ssh-vulnkeys to
+ use when examining suspect keys: DSA-1024, RSA-2048
+
 Package: dmsetup
 Priority: optional
 Section: admin
@@ -2677,6 +2854,34 @@ SHA256: 7f671d6f5f98bdc6b4a6342beaebc2d3cd915d1c85f33e02bc2baf6cea28e42a
 Homepage: http://www.bzip.org/
 Tag: devel::library, role::shared-lib, use::compressing
 
+Package: linux-image-3.3.6-limeroot
+Priority: optional
+Section: kernel
+Installed-Size: 4796
+Maintainer: Unknown Kernel Package Maintainer <unknown@unconfigured.in.etc.kernel-pkg.conf>
+Architecture: i386
+Source: linux-source-3.3.6-limeroot
+Version: 1.2.3
+Provides: linux-image, linux-image-3.3
+Depends: coreutils (>= 5.96)
+Pre-Depends: debconf (>= 0.2.17) | debconf-2.0
+Suggests: fdutils, linux-doc-3.3.6-limeroot | linux-source-3.3.6-limeroot, ksymoops, linux-image-3.3.6-limeroot-dbg
+Size: 3392372
+Description: Linux kernel binary image for version 3.3.6-limeroot
+ This package contains the Linux kernel image for version
+ 3.3.6-limeroot.
+ .
+ It also contains the corresponding System.map file, and the modules
+ built by the packager.  It also contains scripts that try to ensure
+ that the system is not left in a unbootable state after an update.
+ .
+ Kernel image packages are generally produced using kernel-package,
+ and it is suggested that you install that package if you wish to
+ create a custom kernel from the sources. Please look at kernel-img.conf(5),
+ and /usr/share/doc/kernel-package/README.gz  from the package kernel-package
+ for details on how to tailor the  installation of this or any other kernel
+ image package
+
 Package: libevtlog0
 Priority: extra
 Section: libs
@@ -2818,6 +3023,23 @@ Description: Transitional package to ensure multiarch compatibility
 Multi-Arch: foreign
 Homepage: http://www.eglibc.org
 
+Package: libedit2
+Priority: standard
+Section: libs
+Installed-Size: 168
+Maintainer: Anibal Monsalve Salazar <anibal@debian.org>
+Architecture: i386
+Source: libedit
+Version: 2.11-20080614-2
+Depends: libbsd0 (>= 0.0), libc6 (>= 2.3.4), libncurses5 (>= 5.7+20100313)
+Size: 63046
+Description: BSD editline and history libraries
+ The editline library provides generic line editing and
+ history functions.
+ .
+ It slightly resembles GNU readline
+Homepage: http://ftp.netbsd.org/pub/NetBSD/NetBSD-release-5-0/src/lib/libedit/
+
 Package: nano
 Priority: important
 Section: editors
@@ -2880,6 +3102,45 @@ Description: SELinux runtime shared libraries
 SHA1: 396c1e6b54e4899bc44cbda3f3f032348af1e1bd
 SHA256: fee4880eae49c29fe8d9d4fd3cc91560c53236a26ea05f87a856b3a7039fb2c8
 Tag: role::shared-lib, security::authentication, security::ids
+
+Package: openssh-client
+Priority: standard
+Section: net
+Installed-Size: 2044
+Maintainer: Debian OpenSSH Maintainers <debian-ssh@lists.debian.org>
+Architecture: i386
+Source: openssh
+Version: 1:5.5p1-6+squeeze3
+Replaces: ssh, ssh-krb5
+Provides: rsh-client, ssh-client
+Depends: libc6 (>= 2.11), libedit2 (>= 2.11-20080614-1), libgssapi-krb5-2 (>= 1.7+dfsg), libssl0.9.8 (>= 0.9.8m-1), zlib1g (>= 1:1.1.4), debconf (>= 1.2.0) | debconf-2.0, adduser (>= 3.10), dpkg (>= 1.7.0), passwd
+Recommends: xauth, openssh-blacklist, openssh-blacklist-extra
+Suggests: ssh-askpass, libpam-ssh, keychain
+Conflicts: rsh-client (<< 0.16.1-1), sftp, ssh (<< 1:3.8.1p1-9), ssh-krb5 (<< 1:4.3p2-7)
+Size: 882070
+Description: secure shell (SSH) client, for secure access to remote machines
+ This is the portable version of OpenSSH, a free implementation of
+ the Secure Shell protocol as specified by the IETF secsh working
+ group.
+ .
+ Ssh (Secure Shell) is a program for logging into a remote machine
+ and for executing commands on a remote machine.
+ It provides secure encrypted communications between two untrusted
+ hosts over an insecure network. X11 connections and arbitrary TCP/IP
+ ports can also be forwarded over the secure channel.
+ It can be used to provide applications with a secure communication
+ channel.
+ .
+ This package provides the ssh, scp and sftp clients, the ssh-agent
+ and ssh-add programs to make public key authentication more convenient,
+ and the ssh-keygen, ssh-keyscan, ssh-copy-id and ssh-argv0 utilities.
+ .
+ In some countries it may be illegal to use any encryption at all
+ without a special permit.
+ .
+ ssh replaces the insecure rsh, rcp and rlogin programs, which are
+ obsolete for most purposes.
+Homepage: http://www.openssh.org/
 
 Package: libc6
 Priority: required
