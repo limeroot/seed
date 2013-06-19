@@ -53,6 +53,8 @@
 /lib/modules/3.3.6-limeroot/kernel/drivers/video/backlight
 /lib/modules/3.3.6-limeroot/kernel/drivers/video/backlight/backlight.ko
 /lib/modules/3.3.6-limeroot/kernel/drivers/video/backlight/generic_bl.ko
+/lib/modules/3.3.6-limeroot/kernel/drivers/net
+/lib/modules/3.3.6-limeroot/kernel/drivers/net/ifb.ko
 /lib/modules/3.3.6-limeroot/kernel/drivers/scsi
 /lib/modules/3.3.6-limeroot/kernel/drivers/scsi/scsi_wait_scan.ko
 /lib/modules/3.3.6-limeroot/modules.dep.bin

@@ -2883,16 +2883,16 @@ Tag: devel::library, role::shared-lib, use::compressing
 Package: linux-image-3.3.6-limeroot
 Priority: optional
 Section: kernel
-Installed-Size: 7304
+Installed-Size: 7456
 Maintainer: Unknown Kernel Package Maintainer <unknown@unconfigured.in.etc.kernel-pkg.conf>
 Architecture: i386
 Source: linux-source-3.3.6-limeroot
-Version: 1.2.4
+Version: 1.2.7
 Provides: linux-image, linux-image-3.3
 Depends: coreutils (>= 5.96)
 Pre-Depends: debconf (>= 0.2.17) | debconf-2.0
 Suggests: fdutils, linux-doc-3.3.6-limeroot | linux-source-3.3.6-limeroot, ksymoops, linux-image-3.3.6-limeroot-dbg
-Size: 5678392
+Size: 5784978
 Description: Linux kernel binary image for version 3.3.6-limeroot
  This package contains the Linux kernel image for version
  3.3.6-limeroot.

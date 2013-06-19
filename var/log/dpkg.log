@@ -2750,3 +2750,54 @@
 2013-06-15 17:54:33 status half-configured linux-image-3.3.6-limeroot 1.2.4
 2013-06-15 17:54:35 status installed linux-image-3.3.6-limeroot 1.2.4
 2013-06-15 17:54:40 startup packages purge
+2013-06-17 17:19:14 startup packages remove
+2013-06-17 17:19:14 status installed linux-image-3.3.6-limeroot 1.2.4
+2013-06-17 17:19:15 remove linux-image-3.3.6-limeroot 1.2.4 1.2.4
+2013-06-17 17:19:15 status half-configured linux-image-3.3.6-limeroot 1.2.4
+2013-06-17 17:19:15 status half-installed linux-image-3.3.6-limeroot 1.2.4
+2013-06-17 17:19:16 status config-files linux-image-3.3.6-limeroot 1.2.4
+2013-06-17 17:19:16 status config-files linux-image-3.3.6-limeroot 1.2.4
+2013-06-17 17:19:28 startup archives install
+2013-06-17 17:19:28 install linux-image-3.3.6-limeroot 1.2.4 1.2.5
+2013-06-17 17:19:28 status half-installed linux-image-3.3.6-limeroot 1.2.4
+2013-06-17 17:19:29 status unpacked linux-image-3.3.6-limeroot 1.2.5
+2013-06-17 17:19:29 status unpacked linux-image-3.3.6-limeroot 1.2.5
+2013-06-17 17:19:29 configure linux-image-3.3.6-limeroot 1.2.5 1.2.5
+2013-06-17 17:19:29 status unpacked linux-image-3.3.6-limeroot 1.2.5
+2013-06-17 17:19:29 status half-configured linux-image-3.3.6-limeroot 1.2.5
+2013-06-17 17:19:33 status installed linux-image-3.3.6-limeroot 1.2.5
+2013-06-17 17:19:35 startup packages purge
+2013-06-17 21:41:01 startup packages remove
+2013-06-17 21:41:01 status installed linux-image-3.3.6-limeroot 1.2.5
+2013-06-17 21:41:01 remove linux-image-3.3.6-limeroot 1.2.5 1.2.5
+2013-06-17 21:41:01 status half-configured linux-image-3.3.6-limeroot 1.2.5
+2013-06-17 21:41:01 status half-installed linux-image-3.3.6-limeroot 1.2.5
+2013-06-17 21:41:01 status config-files linux-image-3.3.6-limeroot 1.2.5
+2013-06-17 21:41:01 status config-files linux-image-3.3.6-limeroot 1.2.5
+2013-06-17 21:41:13 startup archives install
+2013-06-17 21:41:14 install linux-image-3.3.6-limeroot 1.2.5 1.2.6
+2013-06-17 21:41:14 status half-installed linux-image-3.3.6-limeroot 1.2.5
+2013-06-17 21:41:14 status unpacked linux-image-3.3.6-limeroot 1.2.6
+2013-06-17 21:41:14 status unpacked linux-image-3.3.6-limeroot 1.2.6
+2013-06-17 21:41:15 configure linux-image-3.3.6-limeroot 1.2.6 1.2.6
+2013-06-17 21:41:15 status unpacked linux-image-3.3.6-limeroot 1.2.6
+2013-06-17 21:41:15 status half-configured linux-image-3.3.6-limeroot 1.2.6
+2013-06-17 21:41:17 status installed linux-image-3.3.6-limeroot 1.2.6
+2013-06-17 21:41:19 startup packages purge
+2013-06-19 22:29:03 startup packages remove
+2013-06-19 22:29:03 status installed linux-image-3.3.6-limeroot 1.2.6
+2013-06-19 22:29:04 remove linux-image-3.3.6-limeroot 1.2.6 1.2.6
+2013-06-19 22:29:04 status half-configured linux-image-3.3.6-limeroot 1.2.6
+2013-06-19 22:29:04 status half-installed linux-image-3.3.6-limeroot 1.2.6
+2013-06-19 22:29:04 status config-files linux-image-3.3.6-limeroot 1.2.6
+2013-06-19 22:29:04 status config-files linux-image-3.3.6-limeroot 1.2.6
+2013-06-19 22:29:16 startup archives install
+2013-06-19 22:29:16 install linux-image-3.3.6-limeroot 1.2.6 1.2.7
+2013-06-19 22:29:16 status half-installed linux-image-3.3.6-limeroot 1.2.6
+2013-06-19 22:29:17 status unpacked linux-image-3.3.6-limeroot 1.2.7
+2013-06-19 22:29:17 status unpacked linux-image-3.3.6-limeroot 1.2.7
+2013-06-19 22:29:17 configure linux-image-3.3.6-limeroot 1.2.7 1.2.7
+2013-06-19 22:29:17 status unpacked linux-image-3.3.6-limeroot 1.2.7
+2013-06-19 22:29:17 status half-configured linux-image-3.3.6-limeroot 1.2.7
+2013-06-19 22:29:19 status installed linux-image-3.3.6-limeroot 1.2.7
+2013-06-19 22:29:23 startup packages purge
