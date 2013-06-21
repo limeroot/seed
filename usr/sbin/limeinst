@@ -32,7 +32,7 @@ createConfigDB(){
 }
 
 getDrive(){
-    drives=$(grep -E 'sd[a-z]$|hd[a-z]$' "/proc/partitions" | awk '{print $4":"$3/1024}')
+    drives=$(grep -E 'sd[a-z]$|hd[a-z]$' "/proc/partitions" | awk '{print $4":"int($3/1024})')
     
     for hdd in $drives; do
         ((count++))
