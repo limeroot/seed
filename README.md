@@ -10,7 +10,7 @@ it to /usr/sbin/, then execute git-cache-meta --apply from within the seed dir, 
 push it, please run git-cache-meta --store from within the seed dir, this is necesary in order to keep the aproppiate 
 file permissions BUT FIRST RUN git-cache-meta --apply.
 
-2- After doing git-cache-meta --apply execute sudo chown root.root *.
+2- After doing git-cache-meta --apply execute sudo chown root.root *
 
 3- Execute ./no_root_owner
 
