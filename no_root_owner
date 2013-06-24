@@ -1,0 +1,14 @@
+#!/bin/sh
+chown www-data var/log/lighttpd
+chown www-data var/log/lighttpd/.gitkeep
+chown avahi-autoipd.nogroup var/run/dnsmasq
+chown www-data var/run/lighttpd
+chown www-data var/run/lighttpd/php-fastcgi.socket
+chown www-data var/cache/lighttpd
+chown www-data var/cache/lighttpd/compress
+chown www-data var/cache/lighttpd/compress/.gitkeep
+chown www-data var/cache/lighttpd/uploads
+chown www-data var/cache/lighttpd/uploads/.gitkeep
+chmod 755 seed/var/run/syslog-ng
+chmod 755 seed/var/run/sshd
+
