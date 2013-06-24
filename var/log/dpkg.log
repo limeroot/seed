@@ -2801,3 +2801,5 @@
 2013-06-19 22:29:17 status half-configured linux-image-3.3.6-limeroot 1.2.7
 2013-06-19 22:29:19 status installed linux-image-3.3.6-limeroot 1.2.7
 2013-06-19 22:29:23 startup packages purge
+2013-06-24 14:50:25 startup packages purge
+2013-06-24 15:07:12 startup packages purge

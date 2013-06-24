@@ -9,6 +9,7 @@
 case "$1" in
   start)
     echo "Starting daemon linet "
+    /usr/sbin/qos
     /usr/sbin/linet &
     ;;
   stop)

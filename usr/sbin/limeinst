@@ -181,7 +181,9 @@ uninstallUnneeded(){
     apt-get install udev -q=2 >/dev/null 2>&1
     apt-get install module-init-tools -q=2 >/dev/null 2>&1
     
-    #Uninistalling live files -q=2 >/dev/null 2>&1
+    #Uninistalling
+    rm -rf /usr/sbin/limeinst
+    apt-get recovery live files -q=2 >/dev/null 2>&1
     apt-get remove live-boot -q=2 >/dev/null 2>&1
     apt-get autoremove -q=2 >/dev/null 2>&1
     dpkg --get-selections | grep deinstall | sed 's/deinstall/\lpurge/' | dpkg --set-selections; dpkg -Pa >/dev/null 2>&1
