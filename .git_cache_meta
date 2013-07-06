@@ -378,18 +378,10 @@ chown 0 dev/core
 chgrp 0 dev/core
 touch -c -d "2013-07-06 12:04:37.4817193110" dev/core
 chmod 0777 dev/core
-chown 0 dev/fd
-chgrp 0 dev/fd
-touch -c -d "2013-07-06 12:04:37.4977189720" dev/fd
-chmod 0777 dev/fd
 chown 0 dev/pts/.gitkeep
 chgrp 0 dev/pts/.gitkeep
 touch -c -d "2013-06-24 07:07:13.4958460950" dev/pts/.gitkeep
 chmod 0644 dev/pts/.gitkeep
-chown 0 dev/ram
-chgrp 0 dev/ram
-touch -c -d "2013-07-06 12:03:46.6987898660" dev/ram
-chmod 0777 dev/ram
 chown 0 dev/shm/.gitkeep
 chgrp 0 dev/shm/.gitkeep
 touch -c -d "2013-06-24 07:07:13.4958460950" dev/shm/.gitkeep
@@ -1290,10 +1282,6 @@ chown 0 etc/networks
 chgrp 0 etc/networks
 touch -c -d "2013-06-24 07:07:13.9958460950" etc/networks
 chmod 0644 etc/networks
-chown 0 etc/nologin
-chgrp 0 etc/nologin
-touch -c -d "2013-07-06 12:06:55.5787846690" etc/nologin
-chmod 0777 etc/nologin
 chown 0 etc/nsswitch.conf
 chgrp 0 etc/nsswitch.conf
 touch -c -d "2013-07-06 12:05:24.9407145190" etc/nsswitch.conf
@@ -4618,10 +4606,6 @@ chown 0 usr/bin/ipcs
 chgrp 0 usr/bin/ipcs
 touch -c -d "2013-07-06 12:07:14.4583809820" usr/bin/ipcs
 chmod 0755 usr/bin/ipcs
-chown 0 usr/bin/iptables-xml
-chgrp 0 usr/bin/iptables-xml
-touch -c -d "2013-07-06 12:07:13.6303986980" usr/bin/iptables-xml
-chmod 0777 usr/bin/iptables-xml
 chown 0 usr/bin/join
 chgrp 0 usr/bin/join
 touch -c -d "2013-07-06 12:07:14.4583809820" usr/bin/join
@@ -6974,10 +6958,6 @@ chown 0 usr/lib/libssl.so.0.9.8
 chgrp 0 usr/lib/libssl.so.0.9.8
 touch -c -d "2013-07-06 12:03:47.2587780880" usr/lib/libssl.so.0.9.8
 chmod 0644 usr/lib/libssl.so.0.9.8
-chown 0 usr/lib/libusb-0.1.so.4
-chgrp 0 usr/lib/libusb-0.1.so.4
-touch -c -d "2013-07-06 12:07:13.6583980980" usr/lib/libusb-0.1.so.4
-chmod 0777 usr/lib/libusb-0.1.so.4
 chown 0 usr/lib/libxml2.so.2
 chgrp 0 usr/lib/libxml2.so.2
 touch -c -d "2013-07-06 12:07:13.6583980980" usr/lib/libxml2.so.2
