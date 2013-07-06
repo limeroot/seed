@@ -1,0 +1,63 @@
+#!/bin/bash
+
+ram(){
+	case $1 in
+		free) free -o | grep "Mem:" | awk '{print int($4 / 1024)}' ;;
+		used) free -o | grep "Mem:" | awk '{print int($3 / 1024)}' ;;
+		total) free -mo | grep "Mem:" | awk '{print int($2)}' ;;
+		stat) free -mo | grep "Mem:" | awk '{print $3" "$4" "$5" "$6" "$7}';;
+	esac
+}
+
+network(){
+	case $2 in
+		#up) cat /proc/net/dev | grep "$1" | awk '{print int($10/1024)}' ;;
+		up) cat /sys/class/net/${1}/statistics/tx_bytes | awk '{print int($1/1024)}' ;;
+		down) cat /sys/class/net/${1}/statistics/rx_bytes | awk '{print int($1/1024)}' ;;
+		#down) cat /proc/net/dev | grep "$1" | awk '{print int($2/1024)}' ;;
+	esac
+}
+
+hdd(){
+	case $1 in
+		swap) echo "not in this version" ;;
+		*) df -h | grep -E '/dev/sd[a-z]*|hd[a-z]*' | awk '{print $1" "$2" "$3" "$5" "$6}';;
+#		*) df -h | grep -E '/dev/sd[a-z]*|hd[a-z]*' | while read fs size used free perc mp; do echo "$fs $size $used ${perc%%%*} $mp"; done;;
+	esac
+}
+
+user(){
+	#$1 action
+	#$2 user
+	#$3 pass
+	case $1 in
+		new)
+			if [ -z "$3" ]; then
+				echo "1 Password required"
+				exit 1
+			fi
+			if [ "$(grep -w "$2" /var/www/.htpasswd)" ]; then
+				echo "2 User already exist!"
+			else
+				pass="$(mkpasswd --method=md5 $3)"
+				if [ $? -eq 0 ]; then
+					echo "$2:$pass" >> /var/www/.htpasswd;
+					echo "0 User $2 now can access to limeweb"
+				else
+					echo "1 Error while try encrypt password"
+				fi
+			fi
+		;;
+		edit) sed -i '/\<'$2'\>/d' /var/www/.htpasswd; echo "$2:$3" > /var/www/.htpasswd; echo "success: Password changed" ;;
+		delete) if [ "$2" != "root" ]; then sed -i '/\<'$2'\>/d' /var/www/.htpasswd; [ $? -eq 0 ] && echo "0 Success, user $2 deleted."; else echo "2 root account can not deleted"; fi;;
+		list) cat /var/www/.htpasswd | awk -F ":" '{print $1}' ;;
+	esac
+}
+
+case $1 in
+	--mem) ram $2 $3;;
+	--net) network $2 $3;;
+	--usr) user $2 $3 $4;;
+	--hdd) hdd $2;;
+	*) echo "Too short arguments" ;;
+esac

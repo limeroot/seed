@@ -2803,3 +2803,18 @@
 2013-06-19 22:29:23 startup packages purge
 2013-06-24 14:50:25 startup packages purge
 2013-06-24 15:07:12 startup packages purge
+2013-07-06 17:06:33 startup archives unpack
+2013-07-06 17:06:33 install sudo <none> 1.8.5p2-1~bpo60+1
+2013-07-06 17:06:33 status half-installed sudo 1.8.5p2-1~bpo60+1
+2013-07-06 17:06:34 status unpacked sudo 1.8.5p2-1~bpo60+1
+2013-07-06 17:06:34 status unpacked sudo 1.8.5p2-1~bpo60+1
+2013-07-06 17:06:34 startup packages configure
+2013-07-06 17:06:34 configure sudo 1.8.5p2-1~bpo60+1 1.8.5p2-1~bpo60+1
+2013-07-06 17:06:34 status unpacked sudo 1.8.5p2-1~bpo60+1
+2013-07-06 17:06:35 status unpacked sudo 1.8.5p2-1~bpo60+1
+2013-07-06 17:06:35 status unpacked sudo 1.8.5p2-1~bpo60+1
+2013-07-06 17:06:35 status unpacked sudo 1.8.5p2-1~bpo60+1
+2013-07-06 17:06:35 status unpacked sudo 1.8.5p2-1~bpo60+1
+2013-07-06 17:06:35 status half-configured sudo 1.8.5p2-1~bpo60+1
+2013-07-06 17:06:35 status installed sudo 1.8.5p2-1~bpo60+1
+2013-07-06 17:13:59 startup packages purge

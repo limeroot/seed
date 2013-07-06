@@ -311,3 +311,8 @@ Start-Date: 2013-06-19  22:29:03
 Commandline: apt-get remove linux-image-3.3.6-limeroot
 Remove: linux-image-3.3.6-limeroot:i386 (1.2.6)
 End-Date: 2013-06-19  22:29:05
+
+Start-Date: 2013-07-06  17:06:33
+Commandline: apt-get install sudo --no-install-recommends
+Install: sudo:i386 (1.8.5p2-1~bpo60+1)
+End-Date: 2013-07-06  17:06:36

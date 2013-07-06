@@ -1,11 +1,10 @@
-TARGETS = syslog-ng bootlogs killprocs zlinet lighttpd single ssh dbus dnsmasq rc.local stop-bootlogd rmnologin
+TARGETS = syslog-ng bootlogs killprocs sudo zlinet lighttpd single dbus ssh rmnologin rc.local stop-bootlogd
 INTERACTIVE =
 zlinet: syslog-ng
 lighttpd: syslog-ng
 single: killprocs bootlogs
-ssh: syslog-ng
 dbus: syslog-ng
-dnsmasq: syslog-ng
-rc.local: syslog-ng zlinet lighttpd bootlogs ssh dbus dnsmasq
-stop-bootlogd: syslog-ng zlinet lighttpd bootlogs ssh dbus dnsmasq
-rmnologin: syslog-ng zlinet lighttpd bootlogs ssh dbus dnsmasq
+ssh: syslog-ng
+rmnologin: sudo zlinet syslog-ng lighttpd bootlogs dbus ssh
+rc.local: syslog-ng zlinet lighttpd bootlogs dbus ssh sudo
+stop-bootlogd: zlinet syslog-ng lighttpd bootlogs dbus ssh sudo
