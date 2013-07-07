@@ -19,8 +19,8 @@
         <div id="content">
             <?php include ("menu.php"); ?>
             <div id="page">
-                <h3>Overview</h3><br/>
-                <p>Index Content Here...</p>
+                <h3>Plugin Manager (Alpha)</h3><br/>
+                <p></p>
             </div>
         </div>
     </body>
