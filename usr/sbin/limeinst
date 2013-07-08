@@ -237,7 +237,7 @@ quickInst(){
     #dd if=/dev/zero of=/dev/sda bs=446 count=1 >/dev/null 2>&1
     cat /usr/lib/extlinux/mbr.bin >$hdd
     
-    Calculate if hdd size is enough for swap:
+    #Calculate if hdd size is enough for swap:
     [ $hdd_size -le 2000 ] && swap=0 || swap=1024
     [ "$1" = "noswap" ] && swap=0
     #swap=0
