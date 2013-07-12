@@ -5,6 +5,8 @@
 # Some things that run always
 #touch /var/lock/zlinet
 
+. /lib/lsb/init-functions
+
 # Carry out specific functions when asked to by the system
 case "$1" in
   start)
@@ -17,6 +19,9 @@ case "$1" in
     kill -SIGINT $(pidof linet) >/dev/null 2>&1
     kill -15 $(pidof dnsmasq) >/dev/null 2>&1
     ;;
+  status)
+    status_of_proc /usr/sbin/linet "linet daemon"
+  ;;
   *)
     echo "Usage: /etc/init.d/zlinet {start|stop}"
     exit 1
